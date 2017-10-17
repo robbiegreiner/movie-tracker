@@ -3,8 +3,14 @@ import fetchData from '../actions/index.js';
 import key from '../../apikey.js';
 
 export default class MovieIndex extends Component {
-  constructor() {
-    super();
+
+  // componentDidMount() {
+  //   console.log('getting movies')
+  //   this.props.retrieveMovies();
+  // }
+
+  componentWillRecieveProps(nextProps) {
+
   }
 
   componentDidMount() {
@@ -14,6 +20,7 @@ export default class MovieIndex extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div>
       MOVIES

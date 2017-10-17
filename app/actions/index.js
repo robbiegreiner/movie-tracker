@@ -1,3 +1,6 @@
+import MovieDataCleaner from '../helpers/movieDataCleaner';
+import mockMovieData from '../helpers/mockMovieData';
+
 //action for submitting login info- alters user
 //action for creating new user- alters user
 //action for favoriting a movie- alters userFaves
@@ -17,4 +20,14 @@ export const fetchData = (url) => {
       .then(response => response.json())
       .then(responseJSON => console.log(responseJSON))
   };
+
+};
+
+
+export const getMovies = () => {
+  const movies = new MovieDataCleaner(mockMovieData.results);
+  return ({
+    type: 'GET_MOVIES',
+    movies
+  });
 };
