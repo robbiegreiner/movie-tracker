@@ -1,6 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app';
-import MovieIndex from './components/movieIndex';
+import Routes from './components/Routes.jsx';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from './reducers';
+import DevTools from './containers/DevTools.js';
 
-ReactDOM.render(<App/>, document.getElementById('main'))
+const initialState = {};
+
+const store = createStore(
+  rootReducer,
+  initialState,
+  DevTools.instrument()
+);
+
+
+ReactDOM.render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <div>
+        <Routes />
+        <DevTools />
+      </div>
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById('main')
+);
