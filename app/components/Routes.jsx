@@ -15,9 +15,9 @@ export default class App extends Component {
     return (
       <div>
         Works!
-        {/* <Route path="/" component={ HeaderContainer }/>
+        {/* <Route path="/" component={ HeaderContainer }/> */}
         <Route exact path="/" component={ MovieIndexContainer }/>
-        <Route path="/login" component={ LogInContainer }/>
+        {/* <Route path="/login" component={ LogInContainer }/>
         <Route path="/createuser" component={ CreateUserContainer }/>
         <Route path="/favorites" component={ FavoritesContainer }/> */}
       </div>
