@@ -10,3 +10,7 @@
 // user
 // movies
 // userFaves
+
+const fetchData = (url) => {
+
+};
