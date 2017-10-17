@@ -11,7 +11,6 @@ import FavoritesContainer from '../containers/FavoritesContainer';
 
 export default class App extends Component {
 
-
   render() {
     return (
       <div>

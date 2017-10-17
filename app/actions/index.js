@@ -11,6 +11,10 @@
 // movies
 // userFaves
 
-const fetchData = (url) => {
-
+export const fetchData = (url) => {
+  return dispatch => {
+    fetch(url)
+      .then(response => response.json())
+      .then(responseJSON => console.log(responseJSON))
+  };
 };
