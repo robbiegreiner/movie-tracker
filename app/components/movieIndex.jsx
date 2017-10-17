@@ -4,20 +4,18 @@ import key from '../../apikey.js';
 
 export default class MovieIndex extends Component {
 
-  // componentDidMount() {
-  //   console.log('getting movies')
-  //   this.props.retrieveMovies();
-  // }
-
-  componentWillRecieveProps(nextProps) {
-
-  }
-
   componentDidMount() {
-    fetchData(
-      `https://api.themoviedb.org/3/movie/now_playing?api_key=${key}&language=en-US`
-    );
+    console.log('getting movies')
+    this.props.retrieveMovies();
   }
+
+
+
+  // componentDidMount() {
+  //   fetchData(
+  //     `https://api.themoviedb.org/3/movie/now_playing?api_key=${key}&language=en-US`
+  //   );
+  // }
 
   render() {
     console.log(this.props)

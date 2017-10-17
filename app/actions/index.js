@@ -25,9 +25,10 @@ export const fetchData = (url) => {
 
 
 export const getMovies = () => {
+  //pass in url instead of mock data
   const movies = new MovieDataCleaner(mockMovieData.results);
   return ({
     type: 'GET_MOVIES',
-    movies
+    movies: movies.movies
   });
 };
