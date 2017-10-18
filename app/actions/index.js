@@ -18,16 +18,6 @@ export const fetchDataSuccess = movieData => {
   };
 };
 
-// export const fetchData = () => {
-//   return () => {
-//     fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=ae328e93030c86dea9c76285dbb0fafd&language=en-US`)
-//       .then(response => response.json())
-//       .then(responseJSON => responseJSON.results)
-//       .then(moviesArray => MovieDataCleaner(moviesArray))
-//       .then(movies => fetchDataSuccess(movies));
-//   };
-// };
-
 export const fetchData = () => {
   return dispatch => {
     fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=ae328e93030c86dea9c76285dbb0fafd&language=en-US`)
