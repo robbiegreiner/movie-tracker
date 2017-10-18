@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
+import PropTypes from 'prop-types';
 
 class Login extends Component {
   constructor(props) {
@@ -34,11 +35,13 @@ class Login extends Component {
           <input
             type='text'
             placeholder='Email'
+            className='email-input'
             onChange={ (event) => this.handleChange(event, 'email' ) }
           />
           <input
             type='password'
             placeholder='Password'
+            className='password-input'
             onChange={ (event) => this.handleChange(event, 'password' ) }
           />
           <input
@@ -58,5 +61,13 @@ class Login extends Component {
     );
   }
 }
+
+Login.propTypes = {
+  retrieveUser: PropTypes.func,
+  userStatus: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool
+  ])
+};
 
 export default Login;
