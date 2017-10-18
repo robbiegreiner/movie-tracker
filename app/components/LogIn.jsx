@@ -15,9 +15,6 @@ export default class Login extends Component {
     });
   }
 
-
-
-
   render() {
     const { email, password } = this.state;
     return (

@@ -1,4 +1,5 @@
 import MovieDataCleaner from '../helpers/movieDataCleaner';
+import apikey from '../../apikey.js'
 //action for submitting login info- alters user
 //action for creating new user- alters user
 //action for favoriting a movie- alters userFaves
@@ -18,9 +19,10 @@ export const fetchDataSuccess = movieData => {
   };
 };
 
+//api utilities
 export const fetchData = () => {
   return dispatch => {
-    fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=ae328e93030c86dea9c76285dbb0fafd&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apikey}&language=en-US`)
       .then(response => response.json())
       .then(responseJSON => responseJSON.results)
       .then(moviesArray => MovieDataCleaner(moviesArray))
