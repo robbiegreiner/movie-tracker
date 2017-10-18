@@ -41,16 +41,19 @@ class CreateUser extends Component {
             type='text'
             placeholder='Name'
             data-type='name'
+            className='name-input'
             onChange={ (event) => this.handleChange(event, 'name' ) }
           />
           <input
             type='text'
             placeholder='Email'
+            className='email-input'
             onChange={ (event) => this.handleChange(event, 'email' ) }
           />
           <input
             type='password'
             placeholder='Password'
+            className='password-input'
             onChange={ (event) => this.handleChange(event, 'password' ) }
           />
           <input
@@ -70,6 +73,14 @@ class CreateUser extends Component {
     );
   }
 }
+
+CreateUser.propTypes = {
+  createNewUser: PropTypes.func,
+  userStatus: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool
+  ])
+};
 
 export default CreateUser;
 
