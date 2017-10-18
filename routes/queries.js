@@ -18,22 +18,22 @@ function getAllUsers(req, res, next) {
       });
     }).catch(function(err) {
       return next(err)
-  });
+    });
 }
 
 function signIn(req, res, next) {
   db.one('select * from users where email=${email} and password=${password}', req.body)
-  .then(function (data) {
-  res.status(200)
-    .json({
-      status: 'success',
-      data: data,
-      message: 'Retrieved ONE User'
+    .then(function (data) {
+      res.status(200)
+        .json({
+          status: 'success',
+          data: data,
+          message: 'Retrieved ONE User'
+        });
+    })
+    .catch(function (err) {
+      return next(err);
     });
-  })
-  .catch(function (err) {
-    return next(err);
-  });
 }
 
 function createUser(req, res, next) {
