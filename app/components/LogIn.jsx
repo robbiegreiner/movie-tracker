@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 
 class Login extends Component {
   constructor(props) {
@@ -19,7 +20,12 @@ class Login extends Component {
     });
   }
 
+
   render() {
+    if (this.props.userStatus === true) {
+      return <Redirect to='/'/>;
+    }
+
     return (
       <div>
         <form>
