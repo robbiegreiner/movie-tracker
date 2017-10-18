@@ -1,5 +1,6 @@
 import movieDataFetcher from '../helpers/movieDataFetcher';
 import userDataFetcher from '../helpers/userDataFetcher';
+import createUserFetcher from '../helpers/createUserFetcher';
 
 //action for creating new user- alters user
 //action for favoriting a movie- alters userFaves
@@ -26,16 +27,38 @@ export const fetchData = () => {
   };
 };
 
-export const fetchUser = userObj => {
-  return dispatch => {
-    userDataFetcher(userObj)
-      .then(userData => dispatch(fetchUserSuccess(userData)));
-  };
-};
-
 export const fetchUserSuccess = userData => {
   return {
     type: 'FETCH_USER_SUCCESS',
     user: userData
+  };
+};
+
+export const fetchUser = userObj => {
+  return dispatch => {
+    userDataFetcher(userObj)
+      .then(userData => dispatch(fetchUserSuccess(
+        Object.assign(
+          {},
+          userData,
+          { password: 'NO PASSWORDS HERE'}
+        )
+      )));
+  };
+};
+
+export const fetchCreateUser = userObj => {
+  return dispatch => {
+    createUserFetcher(userObj)
+      .then(userData => dispatch(
+        fetchUserSuccess(
+          Object.assign(
+            {},
+            {
+              name: userObj.name,
+              email: userObj.email
+            }
+          )
+        )));
   };
 };

@@ -1,5 +1,4 @@
 const userDataFetcher = userObj => {
-  console.log('in helper', userObj)
   return fetch('/api/users', {
     method: 'POST',
     body: JSON.stringify(userObj),
