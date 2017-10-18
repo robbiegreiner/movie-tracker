@@ -47,18 +47,18 @@ export const fetchUser = userObj => {
   };
 };
 
-// export const createUser = userObj => {
-//   return dispatch => {
-//     createUserFetcher(userObj)
-//       .then(userData => dispatch(
-//         fetchUserSuccess(
-//           Object.assign(
-//             {},
-//             {
-//               name: userObj.name,
-//               email: userObj.email
-//             }
-//           )
-//         )));
-//   };
-// };
+export const fetchCreateUser = userObj => {
+  return dispatch => {
+    createUserFetcher(userObj)
+      .then(userData => dispatch(
+        fetchUserSuccess(
+          Object.assign(
+            {},
+            {
+              name: userObj.name,
+              email: userObj.email
+            }
+          )
+        )));
+  };
+};

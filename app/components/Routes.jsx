@@ -17,7 +17,7 @@ export default class App extends Component {
         <Route path="/" component={ HeaderContainer }/>
         <Route exact path="/" component={ MovieIndexContainer }/>
         <Route path="/login" component={ LogInContainer }/>
-        {/* <Route path="/createuser" component={ CreateUserContainer }/> */}
+        <Route path="/createuser" component={ CreateUserContainer }/>
         {/* <Route path="/favorites" component={ FavoritesContainer }/> */}
       </div>
     );
