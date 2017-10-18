@@ -40,8 +40,8 @@ class CreateUser extends Component {
           <input
             type='text'
             placeholder='Name'
-            // data-type='name'
-            className='email-input'
+            data-type='name'
+            className='name-input'
             onChange={ (event) => this.handleChange(event, 'name' ) }
           />
           <input
@@ -73,6 +73,14 @@ class CreateUser extends Component {
     );
   }
 }
+
+CreateUser.propTypes = {
+  createNewUser: PropTypes.func,
+  userStatus: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool
+  ])
+};
 
 export default CreateUser;
 
