@@ -1,0 +1,469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    user={
+      Object {
+        "name": "Lola",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          MovieTracker
+        </h1>,
+        <div
+          className="user-box"
+        >
+          <p
+            className="user"
+          >
+            Lola
+          </p>
+          <Link
+            replace={false}
+            to="/favorites"
+          >
+            View Favorites
+          </Link>
+          <button>
+            Sign Out
+          </button>
+        </div>,
+      ],
+      "className": "header",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "MovieTracker",
+        },
+        "ref": null,
+        "rendered": "MovieTracker",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="user"
+            >
+              Lola
+            </p>,
+            <Link
+              replace={false}
+              to="/favorites"
+            >
+              View Favorites
+            </Link>,
+            <button>
+              Sign Out
+            </button>,
+          ],
+          "className": "user-box",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Lola",
+              "className": "user",
+            },
+            "ref": null,
+            "rendered": "Lola",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": "View Favorites",
+              "replace": false,
+              "to": "/favorites",
+            },
+            "ref": null,
+            "rendered": "View Favorites",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Sign Out",
+            },
+            "ref": null,
+            "rendered": "Sign Out",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            MovieTracker
+          </h1>,
+          <div
+            className="user-box"
+          >
+            <p
+              className="user"
+            >
+              Lola
+            </p>
+            <Link
+              replace={false}
+              to="/favorites"
+            >
+              View Favorites
+            </Link>
+            <button>
+              Sign Out
+            </button>
+          </div>,
+        ],
+        "className": "header",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "MovieTracker",
+          },
+          "ref": null,
+          "rendered": "MovieTracker",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="user"
+              >
+                Lola
+              </p>,
+              <Link
+                replace={false}
+                to="/favorites"
+              >
+                View Favorites
+              </Link>,
+              <button>
+                Sign Out
+              </button>,
+            ],
+            "className": "user-box",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lola",
+                "className": "user",
+              },
+              "ref": null,
+              "rendered": "Lola",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": "View Favorites",
+                "replace": false,
+                "to": "/favorites",
+              },
+              "ref": null,
+              "rendered": "View Favorites",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sign Out",
+              },
+              "ref": null,
+              "rendered": "Sign Out",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Header component should match snapshot 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    user={Object {}}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          MovieTracker
+        </h1>,
+        <div
+          className="no-user-box"
+        >
+          <Link
+            replace={false}
+            to="/login"
+          >
+            Log In
+          </Link>
+          <Link
+            replace={false}
+            to="/createuser"
+          >
+            Create Account
+          </Link>
+        </div>,
+      ],
+      "className": "header",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "MovieTracker",
+        },
+        "ref": null,
+        "rendered": "MovieTracker",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              replace={false}
+              to="/login"
+            >
+              Log In
+            </Link>,
+            <Link
+              replace={false}
+              to="/createuser"
+            >
+              Create Account
+            </Link>,
+          ],
+          "className": "no-user-box",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Log In",
+              "replace": false,
+              "to": "/login",
+            },
+            "ref": null,
+            "rendered": "Log In",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Create Account",
+              "replace": false,
+              "to": "/createuser",
+            },
+            "ref": null,
+            "rendered": "Create Account",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            MovieTracker
+          </h1>,
+          <div
+            className="no-user-box"
+          >
+            <Link
+              replace={false}
+              to="/login"
+            >
+              Log In
+            </Link>
+            <Link
+              replace={false}
+              to="/createuser"
+            >
+              Create Account
+            </Link>
+          </div>,
+        ],
+        "className": "header",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "MovieTracker",
+          },
+          "ref": null,
+          "rendered": "MovieTracker",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                replace={false}
+                to="/login"
+              >
+                Log In
+              </Link>,
+              <Link
+                replace={false}
+                to="/createuser"
+              >
+                Create Account
+              </Link>,
+            ],
+            "className": "no-user-box",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Log In",
+                "replace": false,
+                "to": "/login",
+              },
+              "ref": null,
+              "rendered": "Log In",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Create Account",
+                "replace": false,
+                "to": "/createuser",
+              },
+              "ref": null,
+              "rendered": "Create Account",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

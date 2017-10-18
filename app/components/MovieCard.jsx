@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MovieCard = ({ key, title, releaseDate, summary, score, img }) => {
+const MovieCard = ({ title, releaseDate, summary, score, img }) => {
 
   return (
     <div className='movie-card'>
@@ -11,7 +11,6 @@ const MovieCard = ({ key, title, releaseDate, summary, score, img }) => {
 };
 
 MovieCard.propTypes = {
-  key: PropTypes.string,
   title: PropTypes.string,
   releaseDate: PropTypes.string,
   summary: PropTypes.string,
