@@ -1,4 +1,4 @@
-./apikey.js
+apikey.js
 
 node_modules/
 ./app/bundle.js

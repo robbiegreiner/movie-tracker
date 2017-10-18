@@ -1,6 +1,6 @@
 const movieList = (state = [], action) => {
   switch (action.type) {
-  case 'GET_MOVIES':
+  case 'FETCH_DATA_SUCCESS':
     return action.movies;
   default:
     return state;

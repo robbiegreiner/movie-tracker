@@ -35776,7 +35776,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.fetchData = undefined;
+	exports.getMovies = exports.fetchData = undefined;
 	
 	var _movieDataCleaner = __webpack_require__(436);
 	
@@ -35811,13 +35811,14 @@
 	  };
 	};
 	
-	// export const getMovies = () => {
-	//   const movies = new MovieDataCleaner(mockMovieData.results);
-	//   return ({
-	//     type: 'GET_MOVIES',
-	//     movies
-	//   });
-	// };
+	var getMovies = exports.getMovies = function getMovies() {
+	  //pass in url instead of mock data
+	  var movies = new _movieDataCleaner2.default(_mockMovieData2.default.results);
+	  return {
+	    type: 'GET_MOVIES',
+	    movies: movies.movies
+	  };
+	};
 
 /***/ }),
 /* 436 */
@@ -35834,11 +35835,19 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var movieDataCleaner = function () {
+	  //constructor(url)
 	  function movieDataCleaner(movieData) {
 	    _classCallCheck(this, movieDataCleaner);
 	
+	    // this.movies = this.cleanData(this.fetchData(url))
 	    this.movies = this.cleanData(movieData);
 	  }
+	
+	  //fetchData() {
+	  //do the fetching
+	  // }
+	
+	  // the thing fetchData should return is the array from the results property
 	
 	  _createClass(movieDataCleaner, [{
 	    key: "cleanData",
@@ -36218,20 +36227,18 @@
 	  }
 	
 	  _createClass(MovieIndex, [{
-	    key: 'componentWillRecieveProps',
-	
-	
-	    // componentDidMount() {
-	    //   console.log('getting movies')
-	    //   this.props.retrieveMovies();
-	    // }
-	
-	    value: function componentWillRecieveProps(nextProps) {}
-	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      (0, _index2.default)('https://api.themoviedb.org/3/movie/now_playing?api_key=' + _apikey2.default + '&language=en-US');
+	      console.log('getting movies');
+	      this.props.retrieveMovies();
 	    }
+	
+	    // componentDidMount() {
+	    //   fetchData(
+	    //     `https://api.themoviedb.org/3/movie/now_playing?api_key=${key}&language=en-US`
+	    //   );
+	    // }
+	
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -36255,7 +36262,7 @@
 
 	const key = 'ae328e93030c86dea9c76285dbb0fafd';
 	
-	export default key;
+	module.exports = key;
 
 
 /***/ }),
@@ -36379,16 +36386,13 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-	
 	var movieList = function movieList() {
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 	  var action = arguments[1];
 	
 	  switch (action.type) {
 	    case 'GET_MOVIES':
-	      return [].concat(_toConsumableArray(state), _toConsumableArray(action.movies));
+	      return action.movies;
 	    default:
 	      return state;
 	  }

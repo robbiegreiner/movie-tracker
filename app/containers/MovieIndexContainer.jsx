@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { getMovies } from '../actions';
+import { fetchData } from '../actions';
 import MovieIndex from '../components/MovieIndex';
 
 const mapStateToProps =  (store) => ({ movieList: store.movieList
@@ -7,7 +7,7 @@ const mapStateToProps =  (store) => ({ movieList: store.movieList
 
 const mapDispatchToProps = (dispatch) => ({
   retrieveMovies: () => {
-    dispatch(getMovies());
+    dispatch(fetchData());
   }
 });
 
