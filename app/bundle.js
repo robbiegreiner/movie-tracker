@@ -33586,7 +33586,7 @@
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    retrieveMovies: function retrieveMovies() {
-	      dispatch((0, _actions.getMovies)());
+	      dispatch((0, _actions.fetchData)());
 	    }
 	  };
 	};
@@ -35776,7 +35776,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.getMovies = exports.fetchData = undefined;
+	exports.fetchData = exports.fetchDataSuccess = undefined;
 	
 	var _movieDataCleaner = __webpack_require__(436);
 	
@@ -35801,24 +35801,35 @@
 	// movies
 	// userFaves
 	
-	var fetchData = exports.fetchData = function fetchData(url) {
+	var fetchDataSuccess = exports.fetchDataSuccess = function fetchDataSuccess(movieData) {
+	  return {
+	    type: 'FETCH_DATA_SUCCESS',
+	    movies: movieData
+	  };
+	};
+	
+	var fetchData = exports.fetchData = function fetchData() {
 	  return function (dispatch) {
-	    fetch(url).then(function (response) {
+	    fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=ae328e93030c86dea9c76285dbb0fafd&language=en-US').then(function (response) {
 	      return response.json();
 	    }).then(function (responseJSON) {
-	      return console.log(responseJSON);
+	      return responseJSON.results;
+	    }).then(function (moviesArray) {
+	      return (0, _movieDataCleaner2.default)(moviesArray);
+	    }).then(function (movies) {
+	      return dispatch(fetchDataSuccess(movies));
 	    });
 	  };
 	};
 	
-	var getMovies = exports.getMovies = function getMovies() {
-	  //pass in url instead of mock data
-	  var movies = new _movieDataCleaner2.default(_mockMovieData2.default.results);
-	  return {
-	    type: 'GET_MOVIES',
-	    movies: movies.movies
-	  };
-	};
+	// export const getMovies = () => {
+	//   //pass in url instead of mock data
+	//   const movies = new MovieDataCleaner();
+	//   return ({
+	//     type: 'GET_MOVIES',
+	//     movies: movies.movies
+	//   });
+	// };
 
 /***/ }),
 /* 436 */
@@ -35829,44 +35840,18 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	var movieDataCleaner = function () {
-	  //constructor(url)
-	  function movieDataCleaner(movieData) {
-	    _classCallCheck(this, movieDataCleaner);
-	
-	    // this.movies = this.cleanData(this.fetchData(url))
-	    this.movies = this.cleanData(movieData);
-	  }
-	
-	  //fetchData() {
-	  //do the fetching
-	  // }
-	
-	  // the thing fetchData should return is the array from the results property
-	
-	  _createClass(movieDataCleaner, [{
-	    key: "cleanData",
-	    value: function cleanData(movieData) {
-	      return movieData.map(function (movie) {
-	        return Object.assign({}, {
-	          id: movie.id,
-	          title: movie.title,
-	          releaseDate: movie.release_date,
-	          summary: movie.overview,
-	          score: movie.vote_average,
-	          img: movie.poster_path
-	        });
-	      });
-	    }
-	  }]);
-	
-	  return movieDataCleaner;
-	}();
+	var movieDataCleaner = function movieDataCleaner(movieData) {
+	  return movieData.map(function (movie) {
+	    return Object.assign({}, {
+	      id: movie.id,
+	      title: movie.title,
+	      releaseDate: movie.release_date,
+	      summary: movie.overview,
+	      score: movie.vote_average,
+	      img: movie.poster_path
+	    });
+	  });
+	};
 	
 	exports.default = movieDataCleaner;
 
@@ -36229,7 +36214,6 @@
 	  _createClass(MovieIndex, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      console.log('getting movies');
 	      this.props.retrieveMovies();
 	    }
 	
@@ -36242,7 +36226,6 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      console.log(this.props);
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -36391,7 +36374,7 @@
 	  var action = arguments[1];
 	
 	  switch (action.type) {
-	    case 'GET_MOVIES':
+	    case 'FETCH_DATA_SUCCESS':
 	      return action.movies;
 	    default:
 	      return state;
