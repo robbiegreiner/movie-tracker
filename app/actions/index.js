@@ -1,5 +1,6 @@
 import movieDataFetcher from '../helpers/movieDataFetcher';
-//action for submitting login info- alters user
+import userDataFetcher from '../helpers/userDataFetcher';
+
 //action for creating new user- alters user
 //action for favoriting a movie- alters userFaves
 //action for unfavoriting a movie- alters userFaves
@@ -22,5 +23,19 @@ export const fetchData = () => {
   return dispatch => {
     movieDataFetcher()
       .then(movies => dispatch(fetchDataSuccess(movies)));
+  };
+};
+
+export const fetchUser = userObj => {
+  return dispatch => {
+    userDataFetcher(userObj)
+      .then(userData => dispatch(fetchUserSuccess(userData)));
+  };
+};
+
+export const fetchUserSuccess = userData => {
+  return {
+    type: 'FETCH_USER_SUCCESS',
+    user: userData
   };
 };

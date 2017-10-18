@@ -4,6 +4,6 @@ import Header from '../components/Header';
 
 const mapStateToProps =  (store) => ({ user: store.user });
 
+const mapDispatchToProps = dispatch => null;
 
-
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
