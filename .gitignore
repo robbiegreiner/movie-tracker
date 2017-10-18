@@ -1,6 +1,6 @@
-apikey.js
 
 node_modules/
 ./app/bundle.js
 ./app/bundle.js.map
-./apikey.js
+
+apikey.js

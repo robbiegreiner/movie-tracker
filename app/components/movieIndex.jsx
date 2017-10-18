@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import fetchData from '../actions/index.js';
-import key from '../../apikey.js';
+import MovieCard from './MovieCard';
+import PropTypes from 'prop-types';
 
 export default class MovieIndex extends Component {
 
@@ -8,19 +8,27 @@ export default class MovieIndex extends Component {
     this.props.retrieveMovies();
   }
 
-
-
-  // componentDidMount() {
-  //   fetchData(
-  //     `https://api.themoviedb.org/3/movie/now_playing?api_key=${key}&language=en-US`
-  //   );
-  // }
+  renderCards() {
+    return this.props.movieList.map(movie => {
+      return <MovieCard key={movie.id}
+        title={movie.title}
+        releaseDate={movie.releaseDate}
+        summary={movie.summary}
+        score={movie.score}
+        img={movie.poster_path}/>;
+    });
+  }
 
   render() {
     return (
-      <div>
-      MOVIES
+      <div className='movie-list'>
+        {this.props.movieList.length && this.renderCards()}
       </div>
     );
   }
 }
+
+MovieIndex.propTypes = {
+  retrieveMovies: PropTypes.func,
+  movieList: PropTypes.array
+};
