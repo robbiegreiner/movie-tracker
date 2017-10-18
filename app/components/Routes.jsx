@@ -14,8 +14,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        Works!
-        {/* <Route path="/" component={ HeaderContainer }/> */}
+        <Route path="/" component={ HeaderContainer }/>
         <Route exact path="/" component={ MovieIndexContainer }/>
         {/* <Route path="/login" component={ LogInContainer }/>
         <Route path="/createuser" component={ CreateUserContainer }/>
@@ -24,5 +23,3 @@ export default class App extends Component {
     );
   }
 }
-
-//components- header/nav, movie index, movie card, login page, create user page
