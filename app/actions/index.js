@@ -14,13 +14,30 @@ import mockMovieData from '../helpers/mockMovieData';
 // movies
 // userFaves
 
-
-
-export const getMovies = () => {
-  //pass in url instead of mock data
-  const movies = new MovieDataCleaner();
-  return ({
-    type: 'GET_MOVIES',
-    movies: movies.movies
-  });
+export const fetchDataSuccess = movieData => {
+  return {
+    type: 'FETCH_DATA_SUCCESS',
+    movies: movieData
+  };
 };
+
+export const fetchData = () => {
+  return dispatch => {
+    fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=ae328e93030c86dea9c76285dbb0fafd&language=en-US`)
+      .then(response => response.json())
+      .then(responseJSON => responseJSON.results)
+      .then(moviesArray => MovieDataCleaner(moviesArray))
+      .then(movies => dispatch(fetchDataSuccess(movies)));
+  };
+
+
+};
+
+// export const getMovies = () => {
+//   //pass in url instead of mock data
+//   const movies = new MovieDataCleaner();
+//   return ({
+//     type: 'GET_MOVIES',
+//     movies: movies.movies
+//   });
+// };
