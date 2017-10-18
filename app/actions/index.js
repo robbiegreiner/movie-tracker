@@ -1,11 +1,8 @@
 import MovieDataCleaner from '../helpers/movieDataCleaner';
-import mockMovieData from '../helpers/mockMovieData';
-
 //action for submitting login info- alters user
 //action for creating new user- alters user
 //action for favoriting a movie- alters userFaves
 //action for unfavoriting a movie- alters userFaves
-//action for getting movies and populating movie index? on page load?- alters movies
 //action for getting favorite movies- I don't think we need this, it's just a Link/NavLink
 //action for signing out- alters user
 
@@ -29,15 +26,4 @@ export const fetchData = () => {
       .then(moviesArray => MovieDataCleaner(moviesArray))
       .then(movies => dispatch(fetchDataSuccess(movies)));
   };
-
-
 };
-
-// export const getMovies = () => {
-//   //pass in url instead of mock data
-//   const movies = new MovieDataCleaner();
-//   return ({
-//     type: 'GET_MOVIES',
-//     movies: movies.movies
-//   });
-// };
