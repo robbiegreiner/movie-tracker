@@ -5,7 +5,6 @@ import key from '../../apikey.js';
 export default class MovieIndex extends Component {
 
   componentDidMount() {
-    console.log('getting movies')
     this.props.retrieveMovies();
   }
 
@@ -18,7 +17,6 @@ export default class MovieIndex extends Component {
   // }
 
   render() {
-    console.log(this.props)
     return (
       <div>
       MOVIES

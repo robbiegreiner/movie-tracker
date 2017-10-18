@@ -14,19 +14,11 @@ import mockMovieData from '../helpers/mockMovieData';
 // movies
 // userFaves
 
-export const fetchData = (url) => {
-  return dispatch => {
-    fetch(url)
-      .then(response => response.json())
-      .then(responseJSON => console.log(responseJSON))
-  };
-
-};
 
 
 export const getMovies = () => {
   //pass in url instead of mock data
-  const movies = new MovieDataCleaner(mockMovieData.results);
+  const movies = new MovieDataCleaner();
   return ({
     type: 'GET_MOVIES',
     movies: movies.movies

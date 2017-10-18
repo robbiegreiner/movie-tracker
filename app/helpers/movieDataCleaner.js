@@ -1,17 +1,20 @@
 class movieDataCleaner {
   //constructor(url)
-  constructor(movieData) {
-    // this.movies = this.cleanData(this.fetchData(url))
-    this.movies = this.cleanData(movieData);
+  constructor() {
+    this.movies = this.cleanData([]);
   }
 
-  //fetchData() {
-  //do the fetching
-// }
+  fetchData = () => {
+    fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=ae328e93030c86dea9c76285dbb0fafd&language=en-US`)
+      .then(response => response.json())
+      .then(responseJSON => responseJSON.results)
+      .then(movieData => dispatch(fetchDataSuccess(movieData)));
+  };
 
-// the thing fetchData should return is the array from the results property
+// we should probably import this into actions
 
   cleanData(movieData) {
+    this.fetchData();
     return movieData.map(movie => {
       return Object.assign({}, {
         id: movie.id,
