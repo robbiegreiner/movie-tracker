@@ -20,4 +20,21 @@ describe('actions', () => {
 
     expect(actions.fetchUserSuccess(mockUser)).toEqual(expectedAction);
   });
+
+  it('should create an action to sign user out', () => {
+    const expectedAction = {
+      type: 'SIGN_OUT_USER'
+    };
+
+    expect(actions.signOutUser()).toEqual(expectedAction);
+  });
+
+  it('should create an action for login error', () => {
+    const expectedAction = {
+      type: 'LOGIN_ERROR',
+      hasErrored: true
+    };
+
+    expect(actions.loginError(true)).toEqual(expectedAction);
+  });
 });
