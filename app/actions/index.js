@@ -23,8 +23,7 @@ export const fetchDataSuccess = movieData => {
 export const fetchData = () => {
   return dispatch => {
     movieDataFetcher()
-      .then(movies => dispatch(fetchDataSuccess(movies)))
-      .catch(() => dispatch(fetchDataError()));
+      .then(movies => dispatch(fetchDataSuccess(movies)));
   };
 };
 
@@ -32,12 +31,6 @@ export const fetchUserSuccess = userData => {
   return {
     type: 'FETCH_USER_SUCCESS',
     user: userData
-  };
-};
-
-export const signOutUser = () => {
-  return {
-    type: 'SIGN_OUT_USER'
   };
 };
 
@@ -52,7 +45,6 @@ export const fetchUser = userObj => {
         )
       )))
       .catch(response => dispatch(loginError(true)));
-     // .catch(() => fetchUserError());
   };
 };
 
@@ -60,6 +52,13 @@ export const fetchUser = userObj => {
 export const fetchCreateUser = userObj => {
   return dispatch => {
     createUserFetcher(userObj)
+    .then(res => {
+      if(res.status !== 200) {
+        dispatch(createUserError(true))
+      } else {
+        return res;
+      }
+    })
       .then(userData => dispatch(
         fetchUserSuccess(
           Object.assign(
@@ -70,24 +69,31 @@ export const fetchCreateUser = userObj => {
             }
           )
         )))
-      .catch(() => createUserError());
+        .catch(response => dispatch(createUserError(true)));
   };
 };
 
-export const loginError = (hasErrored) => {
+export const loginError = hasErrored => {
   return {
     type: 'LOGIN_ERROR',
     hasErrored
   };
 };
-//export const fetchDataError = () => ({
-//  type: 'FETCH_DATA_ERROR'
-//});
 
-//export const fetchUserError = () => ({
-//  type: 'FETCH_USER_ERROR'
-//});
+//
+// export const fetchDataError = () => ({
+//   type: 'FETCH_DATA_ERROR'
+// });
 
-//export const createUserError = () => ({
-//  type: 'CREATE_USER_ERROR'
-//});
+//
+export const createUserError = bool => ({
+  type: 'CREATE_USER_ERROR',
+  bool
+});
+//
+// export const createUserError = bool => {
+// 	return {
+// 	 type: 'CREATE_USER_ERROR',
+// 	 createUserError: bool
+// 	};
+// };

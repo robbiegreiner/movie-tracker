@@ -1,5 +1,4 @@
 const createUserFetcher = userObj => {
-  console.log('in helper', userObj)
   return fetch('/api/users/new', {
     method: 'POST',
     body: JSON.stringify(userObj),

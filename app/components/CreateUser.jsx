@@ -23,6 +23,8 @@ class CreateUser extends Component {
 
 
   render() {
+    const { userStatus, createUserError } = this.props;
+
     if (this.props.userStatus === true) {
       return <Redirect to='/'/>;
     }
@@ -32,6 +34,9 @@ class CreateUser extends Component {
         <form>
           <h2>Welcome to Movie Tracker</h2>
           <h2>Create Account</h2>
+          <h4 className='error'>
+            {createUserError ? 'email already exists' : null}
+          </h4>
           <input
             type='text'
             placeholder='Name'
