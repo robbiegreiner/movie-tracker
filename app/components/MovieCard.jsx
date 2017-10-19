@@ -13,7 +13,7 @@ const MovieCard = ({ title, releaseDate, summary, score, img }) => {
         <div className="score-release-container">
           <h4>Release Date</h4>
           <h3 className="release">{releaseDate}</h3>
-          <h4>User Rating</h4>
+          <h4 className="rating">User Rating</h4>
           <h3>{score}</h3>
         </div>
       </div>
