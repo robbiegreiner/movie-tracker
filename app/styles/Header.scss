@@ -5,10 +5,12 @@
 }
 
 .no-user-box{
+  width: 383px;
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  margin-left: 660px;
-  margin-top: 10px;
-  width: 180px;
+  justify-content: center;
+}
+
+.no-user-box a {
+  color: #A11811;
+  margin: 0 20px 0 20px;
 }
