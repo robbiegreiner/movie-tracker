@@ -3,14 +3,18 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 
-const Header = ({ user }) => {
+const Header = ({ user, handleSignOut }) => {
   let userBox;
 
-  const userContents = <div className='user-box'>
-    <p className='user'>{user.name}</p>
-    <Link to='/favorites'>View Favorites</Link>
-    <button>Sign Out</button>
-  </div>;
+  const userContents = (
+    <div className='user-box'>
+      <p className='user'>{user.name}</p>
+      <Link to='/favorites'>View Favorites</Link>
+      <button
+        onClick={() => handleSignOut()}>
+        Sign Out
+      </button>
+    </div>);
 
   const noUserContents = <div className='no-user-box'>
     <Link to='/login'>Log In</Link>
@@ -28,7 +32,8 @@ const Header = ({ user }) => {
 };
 
 Header.propTypes = {
-  user: PropTypes.object
+  user: PropTypes.object,
+  handleSignOut: PropTypes.func
 };
 
 export default Header;

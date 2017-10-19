@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { fetchCreateUser } from '../actions';
 
 const mapStateToProps =  store => ({
-  userStatus: store.userStatus
+  userStatus: store.userStatus,
+  createUserError: store.createUserError
 });
 
 const mapDispatchToProps = (dispatch) => ({
