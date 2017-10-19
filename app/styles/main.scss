@@ -1,7 +1,21 @@
+@import './Header.scss';
 @import './movieIndex.scss';
 @import './MovieCard.scss';
 
 * {
   margin: 0;
   padding: 0;
+}
+
+.routes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0D0F0F;
+  background-image: url("https://www.transparenttextures.com/patterns/bo-play.png");
 }

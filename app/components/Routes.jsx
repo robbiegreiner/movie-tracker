@@ -13,7 +13,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="routes">
         <Route path="/" component={ HeaderContainer }/>
         <Route exact path="/" component={ MovieIndexContainer }/>
         <Route path="/login" component={ LogInContainer }/>

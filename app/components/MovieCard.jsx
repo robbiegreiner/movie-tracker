@@ -32,7 +32,3 @@ MovieCard.propTypes = {
 };
 
 export default MovieCard;
-
-
-// let backDrop = `https://image.tmdb.org/t/p/w500${poster_path}`;
-// <img className="movie-image" src={backDrop} alt="backdrop image" />
