@@ -2,6 +2,8 @@ import movieDataFetcher from '../movieDataFetcher';
 import mockMovieData from '../mockMovieData';
 import fetchMock from 'fetch-mock';
 import apikey from '../../../apikey.js';
+import movieDataCleaner from '../movieDataCleaner';
+
 
 
 
@@ -10,7 +12,7 @@ describe('movieDataFetcher', () => {
     return new Promise(res => {
       setTimeout(() => {
         res();
-      }, 0);
+      }, 2000);
     });
   };
 
@@ -25,9 +27,12 @@ describe('movieDataFetcher', () => {
     const movieDataArray = movieDataFetcher();
 
     await pause();
+    await pause();
+
+    // console.log(movieDataArray);
 
     // expect(movieDataArray).toEqual()
 
-    // expect(movieDataArray).toEqual(mockMovieData.results);
+    expect(movieDataArray).toEqual(movieDataCleaner(mockMovieData.results));
   });
 });
