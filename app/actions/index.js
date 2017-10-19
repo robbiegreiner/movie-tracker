@@ -43,9 +43,11 @@ export const fetchUser = userObj => {
           userData,
           { password: 'NO PASSWORDS HERE'}
         )
-      )));
+      )))
+      .catch(response => dispatch(loginError(true)));
   };
 };
+
 
 export const fetchCreateUser = userObj => {
   return dispatch => {
@@ -60,5 +62,12 @@ export const fetchCreateUser = userObj => {
             }
           )
         )));
+  };
+};
+
+export const loginError = (hasErrored) => {
+  return {
+    type: 'LOGIN_ERROR',
+    hasErrored
   };
 };

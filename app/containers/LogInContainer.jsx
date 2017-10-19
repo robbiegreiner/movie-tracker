@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 import { fetchUser } from '../actions';
 
 const mapStateToProps =  store => ({
-  userStatus: store.userStatus 
+  userStatus: store.userStatus,
+  loginError: store.loginError
+
 });
 
 const mapDispatchToProps = (dispatch) => ({

@@ -1,14 +1,15 @@
 import { combineReducers } from 'redux';
 import movieList from './movielist';
 import user from './user';
-import userStatus from './userStatus';
+import { userStatus, loginError } from './userStatus';
 // import babyreducers
 
 const rootReducer = combineReducers({
   //list of babyreducers
   movieList,
   user,
-  userStatus
+  userStatus,
+  loginError
 });
 
 export default rootReducer;

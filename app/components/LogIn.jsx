@@ -23,7 +23,9 @@ class Login extends Component {
 
 
   render() {
-    if (this.props.userStatus === true) {
+    const { userStatus, loginError } = this.props;
+    console.log({ loginError })
+    if (userStatus === true) {
       return <Redirect to='/'/>;
     }
 
@@ -32,6 +34,9 @@ class Login extends Component {
         <form>
           <h2>Welcome to Movie Tracker</h2>
           <h2>LOGIN</h2>
+          <h4 className='error'>
+            {loginError ? 'Email and Password do not match' : null}
+          </h4>
           <input
             type='text'
             placeholder='Email'
