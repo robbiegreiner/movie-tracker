@@ -13,6 +13,7 @@ describe('MovieIndexContainer', () => {
   const mockFn = jest.fn();
   const initialState = { movieList: [] };
   const store = mockStore(initialState, middlewares);
+  actions.fetchData = () => ({type: 'FETCH_DATA_SUCCESS'});
   const wrapper = mount(<MovieIndexContainer
     store={store}
     movieList={initialState}

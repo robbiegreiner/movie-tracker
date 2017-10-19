@@ -22,6 +22,7 @@ export const fetchDataSuccess = movieData => {
 };
 
 export const fetchData = () => {
+  console.log('in here')
   return dispatch => {
     movieDataFetcher()
       .then(movies => dispatch(fetchDataSuccess(movies)))
