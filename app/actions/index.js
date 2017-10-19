@@ -1,6 +1,6 @@
 import movieDataFetcher from '../helpers/movieDataFetcher';
 import userDataFetcher from '../helpers/userDataFetcher';
-import createUserFetcher from '../helpers/createUserFetcher';
+// import createUserFetcher from '../helpers/createUserFetcher';
 
 //action for creating new user- alters user
 //action for favoriting a movie- alters userFaves
@@ -34,6 +34,12 @@ export const fetchUserSuccess = userData => {
   };
 };
 
+export const signOutUser = () => {
+  return {
+    type: 'SIGN_OUT_USER'
+  };
+};
+
 export const fetchUser = userObj => {
   return dispatch => {
     userDataFetcher(userObj)
@@ -48,42 +54,10 @@ export const fetchUser = userObj => {
   };
 };
 
-
-// export const fetchCreateUser = userObj => {
-//   return dispatch => {
-//     createUserFetcher(userObj)
-//     .then(res => {
-//       if(res.status !== 200) {
-//         // dispatch(createUserError(true))
-//         console.log('in if block');
-//       } else {
-//         return res;
-//       }
-//     })
-//       .then(res => res.json())
-//       .then(res => {
-//         if (res.error) {
-//           // dispatch(createUserError(true))
-//           console.log(res.error);
-//         } else {
-//           return res;
-//         }
-//       })
-//       // .then(response => console.log(response))
-//       .then(userData => dispatch(
-//         fetchUserSuccess(
-//           Object.assign(
-//             {},
-//             {
-//               name: userObj.name,
-//               email: userObj.email
-//             }
-//           )
-//         )))
-//       .catch(error => console.log(error));
-//   };
-// };
-
+export const createUserError = bool => ({
+  type: 'CREATE_USER_ERROR',
+  createUserError: bool
+});
 
 export const fetchCreateUser = userObj => {
   return dispatch => {
@@ -130,8 +104,3 @@ export const loginError = hasErrored => {
 // export const fetchDataError = () => ({
 //   type: 'FETCH_DATA_ERROR'
 // });
-
-export const createUserError = bool => ({
-  type: 'CREATE_USER_ERROR',
-  createUserError: bool
-});
