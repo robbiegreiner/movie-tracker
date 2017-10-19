@@ -21,7 +21,7 @@ export default class MovieIndex extends Component {
         releaseDate={movie.releaseDate}
         summary={movie.summary}
         score={movie.score}
-        addFavorites={this.addFavorites}
+        addFavorites={this.addFavorites.bind(this)}
         img={movie.img}/>;
     });
   }

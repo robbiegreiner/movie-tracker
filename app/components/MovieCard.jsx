@@ -8,7 +8,7 @@ const MovieCard = ({ title, releaseDate, summary, score, img, addFavorites }) =>
   return (
     <div className='movie-card'>
       <h2>{title}</h2>
-      <div className="fav-btn"></div>
+      <div className="fav-btn" onClick={() => { addFavorites(); }}></div>
       <div className="movie-container">
         <img className="movie-image" src={poster} alt="poster" />
         <div className="score-release-container">

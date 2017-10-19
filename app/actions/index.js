@@ -104,9 +104,3 @@ export const loginError = hasErrored => {
 // export const fetchDataError = () => ({
 //   type: 'FETCH_DATA_ERROR'
 // });
-<<<<<<< HEAD
-=======
-
-
-//
->>>>>>> Initial setup for favorites iteration step-one
