@@ -41,7 +41,9 @@ ShallowWrapper {
           >
             View Favorites
           </Link>
-          <button>
+          <button
+            onClick={[Function]}
+          >
             Sign Out
           </button>
         </div>,
@@ -78,7 +80,9 @@ ShallowWrapper {
             >
               View Favorites
             </Link>,
-            <button>
+            <button
+              onClick={[Function]}
+            >
               Sign Out
             </button>,
           ],
@@ -117,6 +121,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Sign Out",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Sign Out",
@@ -152,7 +157,9 @@ ShallowWrapper {
             >
               View Favorites
             </Link>
-            <button>
+            <button
+              onClick={[Function]}
+            >
               Sign Out
             </button>
           </div>,
@@ -189,7 +196,9 @@ ShallowWrapper {
               >
                 View Favorites
               </Link>,
-              <button>
+              <button
+                onClick={[Function]}
+              >
                 Sign Out
               </button>,
             ],
@@ -228,6 +237,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Sign Out",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Sign Out",
