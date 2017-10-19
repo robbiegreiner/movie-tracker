@@ -80,9 +80,10 @@ export const loginError = (hasErrored) => {
     hasErrored
   };
 };
-//export const fetchDataError = () => ({
+
+// export const fetchDataError = () => ({
 //  type: 'FETCH_DATA_ERROR'
-//});
+// });
 
 //export const fetchUserError = () => ({
 //  type: 'FETCH_USER_ERROR'

@@ -15,7 +15,7 @@ export default class MovieIndex extends Component {
         releaseDate={movie.releaseDate}
         summary={movie.summary}
         score={movie.score}
-        img={movie.poster_path}/>;
+        img={movie.img}/>;
     });
   }
 
