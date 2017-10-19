@@ -34,6 +34,12 @@ export const fetchUserSuccess = userData => {
   };
 };
 
+export const signOutUser = () => {
+  return {
+    type: 'SIGN_OUT_USER'
+  };
+};
+
 export const fetchUser = userObj => {
   return dispatch => {
     userDataFetcher(userObj)
