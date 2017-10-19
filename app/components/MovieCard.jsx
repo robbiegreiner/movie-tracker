@@ -12,10 +12,10 @@ const MovieCard = ({ title, releaseDate, summary, score, img }) => {
       <div className="movie-container">
         <img className="movie-image" src={poster} alt="poster" />
         <div className="score-release-container">
-          <h4>Release Date</h4>
+          <h4 className="release-date">Release Date</h4>
           <h3 className="release">{releaseDate}</h3>
           <h4 className="rating">User Rating</h4>
-          <h3>{score}</h3>
+          <h3 className="score">{score}</h3>
         </div>
       </div>
       <p>{summary}</p>
