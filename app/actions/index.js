@@ -105,5 +105,3 @@ export const loginError = hasErrored => {
 // export const fetchDataError = () => ({
 //   type: 'FETCH_DATA_ERROR'
 // });
-
-
