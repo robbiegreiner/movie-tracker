@@ -15,26 +15,30 @@ export default class MovieIndex extends Component {
     this.props.retrieveMovies();
   }
 
-  addFavorites() {
+  addFavorites(movieObj) {
     if (!this.props.user.name) {
       alert('Please, create an account to favorite a movie');
       this.setState({
         needToLogin: true
-      })
-
+      });
+    } else if (this.props.favorites.find(movie => movie.title === movieObj.title)){
+      return;
+    } else {
+      this.props.sendFavorite(this.props.user.id, movieObj);
     }
 
   }
 
   renderCards() {
     return this.props.movieList.map(movie => {
-      return <MovieCard key={movie.id}
+      return <MovieCard key={movie.movie_id}
+        id={movie.movie_id}
         title={movie.title}
-        releaseDate={movie.releaseDate}
-        summary={movie.summary}
-        score={movie.score}
+        releaseDate={movie.release_date}
+        summary={movie.overview}
+        score={movie.vote_average}
         addFavorites={this.addFavorites.bind(this)}
-        img={movie.img}/>;
+        img={movie.poster_path}/>;
     });
   }
 
