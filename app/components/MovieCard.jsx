@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MovieCard = ({ title, releaseDate, summary, score, img }) => {
+const MovieCard = ({ title, releaseDate, summary, score, img, addFavorites }) => {
 
   let poster = `https://image.tmdb.org/t/p/w500/${img}`;
 

@@ -8,6 +8,12 @@ export default class MovieIndex extends Component {
     this.props.retrieveMovies();
   }
 
+  addFavorites() {
+    if (!this.props.user.name) {
+      alert('Please, create an account to favorite a movie')
+    }
+  }
+
   renderCards() {
     return this.props.movieList.map(movie => {
       return <MovieCard key={movie.id}
@@ -15,6 +21,7 @@ export default class MovieIndex extends Component {
         releaseDate={movie.releaseDate}
         summary={movie.summary}
         score={movie.score}
+        addFavorites={this.addFavorites}
         img={movie.img}/>;
     });
   }
