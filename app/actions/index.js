@@ -1,6 +1,6 @@
 import movieDataFetcher from '../helpers/movieDataFetcher';
 import userDataFetcher from '../helpers/userDataFetcher';
-import createUserFetcher from '../helpers/createUserFetcher';
+// import createUserFetcher from '../helpers/createUserFetcher';
 
 //action for creating new user- alters user
 //action for favoriting a movie- alters userFaves
@@ -23,8 +23,7 @@ export const fetchDataSuccess = movieData => {
 export const fetchData = () => {
   return dispatch => {
     movieDataFetcher()
-      .then(movies => dispatch(fetchDataSuccess(movies)))
-      .catch(() => dispatch(fetchDataError()));
+      .then(movies => dispatch(fetchDataSuccess(movies)));
   };
 };
 
@@ -52,43 +51,59 @@ export const fetchUser = userObj => {
         )
       )))
       .catch(response => dispatch(loginError(true)));
-     // .catch(() => fetchUserError());
   };
 };
 
+export const createUserError = bool => ({
+  type: 'CREATE_USER_ERROR',
+  createUserError: bool
+});
 
 export const fetchCreateUser = userObj => {
   return dispatch => {
-    createUserFetcher(userObj)
-      .then(userData => dispatch(
-        fetchUserSuccess(
-          Object.assign(
-            {},
-            {
-              name: userObj.name,
-              email: userObj.email
-            }
+    fetch('/api/users/new', {
+      method: 'POST',
+      body: JSON.stringify(userObj),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(res => {
+        if (res.status !== 200) {
+          dispatch(createUserError(true));
+        } else {
+          return res;
+        }
+      })
+      .then(res => res.json())
+      .then(userData =>
+        dispatch(
+          fetchUserSuccess(
+            Object.assign(
+              {},
+              {
+                name: userObj.name,
+                email: userObj.email
+              },
+            )
           )
-        )))
-      .catch(() => createUserError());
+        )
+      )
+      .catch(() => dispatch(createUserError(true)));
   };
 };
 
-export const loginError = (hasErrored) => {
+
+export const loginError = hasErrored => {
   return {
     type: 'LOGIN_ERROR',
     hasErrored
   };
 };
 
+
 // export const fetchDataError = () => ({
-//  type: 'FETCH_DATA_ERROR'
+//   type: 'FETCH_DATA_ERROR'
 // });
 
-//export const fetchUserError = () => ({
-//  type: 'FETCH_USER_ERROR'
-//});
 
-//export const createUserError = () => ({
-//  type: 'CREATE_USER_ERROR'
-//});

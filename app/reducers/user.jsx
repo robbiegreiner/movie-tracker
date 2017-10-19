@@ -1,4 +1,4 @@
-const user = (state = {}, action) => {
+export const user = (state = {}, action) => {
   //several actions will change the user Object
   //so we will have a few switch cases in here
   switch (action.type) {
@@ -11,4 +11,14 @@ const user = (state = {}, action) => {
   }
 };
 
-export default user;
+
+export const createUserError = (state = false, action) => {
+  switch (action.type) {
+  case 'CREATE_USER_ERROR':
+    return action.createUserError
+  case 'FETCH_USER_SUCCESS':
+    return false;
+  default:
+    return state;
+  }
+};
