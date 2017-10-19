@@ -8,6 +8,23 @@
   flex-direction: column;
 }
 
+// .title-and-button {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.fav-btn {
+  position: absolute;
+  background-color: green;
+  margin-left: 300px;
+  width: 40px;
+  height: 40px;
+  background-image: url("/Users/admin/turing/mod3/movie-tracker/app/assets/red-star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
 img {
   height: 250px;
   width: 166px;
@@ -30,7 +47,6 @@ img {
 h2 {
   text-align: center;
 }
-
 
 h4 {
   margin-bottom: 10px;
