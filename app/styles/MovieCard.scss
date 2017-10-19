@@ -1,33 +1,36 @@
 .movie-card {
+  color: steelblue;
+  background-color: #0D0F0F;
   height: 500px;
   width: 350px;
   border: 2px solid steelblue;
   margin: 20px 20px 20px 20px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
 }
-
-// .title-and-button {
-//   display: flex;
-//   justify-content: center;
-// }
 
 .fav-btn {
   position: absolute;
-  background-color: green;
-  margin-left: 300px;
+  margin-left: 325px;
   width: 40px;
   height: 40px;
-  background-image: url("/Users/admin/turing/mod3/movie-tracker/app/assets/red-star.svg");
+  background-image: url("http://localhost:3000/assets/hover-star.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 20px;
+  background-size: 30px 30px;
 }
 
-img {
+.fav-btn:hover {
+  background-image: url("http://localhost:3000/assets/red-star.svg");
+  transition-delay: .05s;
+}
+
+.movie-card img {
   height: 250px;
   width: 166px;
+  border: 2px solid #A11811;
 }
 
 .movie-container {
@@ -38,24 +41,34 @@ img {
 }
 
 .score-release-container {
-  margin-right: 50px;
+  margin-right: 33px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-h2 {
+.movie-card p {
+  font-size: 12px;
+}
+
+.movie-card h2 {
+  padding: 0 10px 0 10px;
   text-align: center;
+  margin-top: 20px;
 }
 
-h4 {
+.movie-card h4 {
   margin-bottom: 10px;
 }
 
-h3 {
-  margin-bottom: 10px;
+.release-date {
+  margin-top: 30px;
 }
 
 .release {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.score {
+  text-align: center;
 }

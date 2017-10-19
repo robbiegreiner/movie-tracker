@@ -29,7 +29,7 @@ class Login extends Component {
     }
 
     return (
-      <div>
+      <div className="login">
         <form>
           <h2>Welcome to Movie Tracker</h2>
           <h2>LOGIN</h2>
