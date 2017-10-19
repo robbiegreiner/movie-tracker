@@ -1,4 +1,14 @@
 .header h1{
   color: steelblue;
   font-size: 60px;
+  display: flex;
+}
+
+.no-user-box{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-left: 660px;
+  margin-top: 10px;
+  width: 180px;
 }
