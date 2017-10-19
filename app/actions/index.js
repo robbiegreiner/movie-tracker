@@ -48,37 +48,69 @@ export const fetchUser = userObj => {
   };
 };
 
-export const fetchCreateUser = newUser => {
+
+// export const fetchCreateUser = userObj => {
+//   return dispatch => {
+//     createUserFetcher(userObj)
+//     .then(res => {
+//       if(res.status !== 200) {
+//         // dispatch(createUserError(true))
+//         console.log('in if block');
+//       } else {
+//         return res;
+//       }
+//     })
+//       .then(res => res.json())
+//       .then(res => {
+//         if (res.error) {
+//           // dispatch(createUserError(true))
+//           console.log(res.error);
+//         } else {
+//           return res;
+//         }
+//       })
+//       // .then(response => console.log(response))
+//       .then(userData => dispatch(
+//         fetchUserSuccess(
+//           Object.assign(
+//             {},
+//             {
+//               name: userObj.name,
+//               email: userObj.email
+//             }
+//           )
+//         )))
+//       .catch(error => console.log(error));
+//   };
+// };
+
+
+export const fetchCreateUser = userObj => {
   return dispatch => {
     fetch('/api/users/new', {
       method: 'POST',
-      body: JSON.stringify(newUser),
+      body: JSON.stringify(userObj),
       headers: {
         'Content-Type': 'application/json'
       }
     })
-      .then(response => {
-        if (response.status !== 200) {
+      .then(res => {
+        if (res.status !== 200) {
           dispatch(createUserError(true));
         } else {
-          return response;
+          return res;
         }
       })
-      .then(response => response.json())
-      .then(parsedResponse =>
+      .then(res => res.json())
+      .then(userData =>
         dispatch(
           fetchUserSuccess(
             Object.assign(
               {},
               {
-                name: newUser.name,
-                email: newUser.email
+                name: userObj.name,
+                email: userObj.email
               },
-              { password: 'Dont even think about it' },
-              {
-                status: parsedResponse.status,
-                id: parsedResponse.id
-              }
             )
           )
         )
