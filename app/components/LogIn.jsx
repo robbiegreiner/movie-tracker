@@ -24,7 +24,6 @@ class Login extends Component {
 
   render() {
     const { userStatus, loginError } = this.props;
-    console.log({ loginError })
     if (userStatus === true) {
       return <Redirect to='/'/>;
     }
@@ -72,7 +71,8 @@ Login.propTypes = {
   userStatus: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool
-  ])
+  ]),
+  loginError: PropTypes.bool
 };
 
 export default Login;
