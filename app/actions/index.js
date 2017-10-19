@@ -48,30 +48,45 @@ export const fetchUser = userObj => {
   };
 };
 
-
-export const fetchCreateUser = userObj => {
+export const fetchCreateUser = newUser => {
   return dispatch => {
-    createUserFetcher(userObj)
-    .then(res => {
-      if(res.status !== 200) {
-        dispatch(createUserError(true))
-      } else {
-        return res;
+    fetch('/api/users/new', {
+      method: 'POST',
+      body: JSON.stringify(newUser),
+      headers: {
+        'Content-Type': 'application/json'
       }
     })
-      .then(userData => dispatch(
-        fetchUserSuccess(
-          Object.assign(
-            {},
-            {
-              name: userObj.name,
-              email: userObj.email
-            }
+      .then(response => {
+        if (response.status !== 200) {
+          dispatch(createUserError(true));
+        } else {
+          return response;
+        }
+      })
+      .then(response => response.json())
+      .then(parsedResponse =>
+        dispatch(
+          fetchUserSuccess(
+            Object.assign(
+              {},
+              {
+                name: newUser.name,
+                email: newUser.email
+              },
+              { password: 'Dont even think about it' },
+              {
+                status: parsedResponse.status,
+                id: parsedResponse.id
+              }
+            )
           )
-        )))
-        .catch(response => dispatch(createUserError(true)));
+        )
+      )
+      .catch(() => dispatch(createUserError(true)));
   };
 };
+
 
 export const loginError = hasErrored => {
   return {
@@ -80,20 +95,11 @@ export const loginError = hasErrored => {
   };
 };
 
-//
 // export const fetchDataError = () => ({
 //   type: 'FETCH_DATA_ERROR'
 // });
 
-//
 export const createUserError = bool => ({
   type: 'CREATE_USER_ERROR',
-  bool
+  createUserError: bool
 });
-//
-// export const createUserError = bool => {
-// 	return {
-// 	 type: 'CREATE_USER_ERROR',
-// 	 createUserError: bool
-// 	};
-// };
