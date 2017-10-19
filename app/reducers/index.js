@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import movieList from './movielist';
 import user from './user';
-import userStatus from './userStatus';
-import { fetchDataError, fetchUserError, createUserError } from './errors';
+import { userStatus, loginError } from './userStatus';
+//import userStatus from './userStatus';
+//import { fetchDataError, fetchUserError, createUserError } from './errors';
+
 // import babyreducers
 
 const rootReducer = combineReducers({
@@ -10,9 +12,10 @@ const rootReducer = combineReducers({
   movieList,
   user,
   userStatus,
-  fetchDataError,
-  fetchUserError,
-  createUserError
+  loginError
+  //fetchDataError,
+  //fetchUserError,
+  //createUserError
 });
 
 export default rootReducer;

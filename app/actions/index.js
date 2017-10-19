@@ -51,9 +51,11 @@ export const fetchUser = userObj => {
           { password: 'NO PASSWORDS HERE'}
         )
       )))
-      .catch(() => fetchUserError());
+      .catch(response => dispatch(loginError(true)));
+     // .catch(() => fetchUserError());
   };
 };
+
 
 export const fetchCreateUser = userObj => {
   return dispatch => {
@@ -72,14 +74,20 @@ export const fetchCreateUser = userObj => {
   };
 };
 
-export const fetchDataError = () => ({
-  type: 'FETCH_DATA_ERROR'
-});
+export const loginError = (hasErrored) => {
+  return {
+    type: 'LOGIN_ERROR',
+    hasErrored
+  };
+};
+//export const fetchDataError = () => ({
+//  type: 'FETCH_DATA_ERROR'
+//});
 
-export const fetchUserError = () => ({
-  type: 'FETCH_USER_ERROR'
-});
+//export const fetchUserError = () => ({
+//  type: 'FETCH_USER_ERROR'
+//});
 
-export const createUserError = () => ({
-  type: 'CREATE_USER_ERROR'
-});
+//export const createUserError = () => ({
+//  type: 'CREATE_USER_ERROR'
+//});

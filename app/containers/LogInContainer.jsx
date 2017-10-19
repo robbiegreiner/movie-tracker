@@ -5,7 +5,9 @@ import { fetchUser } from '../actions';
 
 const mapStateToProps =  store => ({
   userStatus: store.userStatus,
-  fetchUserError: store.fetchUserError
+  loginError: store.loginError
+
+  //fetchUserError: store.fetchUserError
 });
 
 const mapDispatchToProps = (dispatch) => ({
