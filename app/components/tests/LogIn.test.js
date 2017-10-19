@@ -46,4 +46,14 @@ describe('Login page', () => {
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render an error if passed one', () => {
+    const altWrapper = shallow(<LogIn userStatus=''
+      retrieveUser={mockFn}
+      loginError={true}/>);
+    const error = altWrapper.find('h4');
+
+    expect(error.text()).toEqual('Email and Password do not match');
+    expect(altWrapper).toMatchSnapshot();
+  });
 });
