@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MovieCard = ({ title, releaseDate, summary, score, img }) => {
+const MovieCard = ({ title, releaseDate, summary, score, img, addFavorites }) => {
 
   let poster = `https://image.tmdb.org/t/p/w500/${img}`;
 
   return (
     <div className='movie-card'>
       <h2>{title}</h2>
-      <div className="fav-btn"></div>
+      <div className="fav-btn" onClick={() => { addFavorites(); }}></div>
       <div className="movie-container">
         <img className="movie-image" src={poster} alt="poster" />
         <div className="score-release-container">
