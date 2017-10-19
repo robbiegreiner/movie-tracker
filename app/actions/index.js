@@ -23,7 +23,8 @@ export const fetchDataSuccess = movieData => {
 export const fetchData = () => {
   return dispatch => {
     movieDataFetcher()
-      .then(movies => dispatch(fetchDataSuccess(movies)));
+      .then(movies => dispatch(fetchDataSuccess(movies)))
+      .catch(() => dispatch(fetchDataError()));
   };
 };
 
@@ -31,6 +32,12 @@ export const fetchUserSuccess = userData => {
   return {
     type: 'FETCH_USER_SUCCESS',
     user: userData
+  };
+};
+
+export const signOutUser = () => {
+  return {
+    type: 'SIGN_OUT_USER'
   };
 };
 
@@ -43,7 +50,8 @@ export const fetchUser = userObj => {
           userData,
           { password: 'NO PASSWORDS HERE'}
         )
-      )));
+      )))
+      .catch(() => fetchUserError());
   };
 };
 
@@ -59,6 +67,19 @@ export const fetchCreateUser = userObj => {
               email: userObj.email
             }
           )
-        )));
+        )))
+      .catch(() => createUserError());
   };
 };
+
+export const fetchDataError = () => ({
+  type: 'FETCH_DATA_ERROR'
+});
+
+export const fetchUserError = () => ({
+  type: 'FETCH_USER_ERROR'
+});
+
+export const createUserError = () => ({
+  type: 'CREATE_USER_ERROR'
+});
