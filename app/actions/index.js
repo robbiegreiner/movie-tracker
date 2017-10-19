@@ -24,7 +24,8 @@ export const fetchDataSuccess = movieData => {
 export const fetchData = () => {
   return dispatch => {
     movieDataFetcher()
-      .then(movies => dispatch(fetchDataSuccess(movies)));
+      .then(movies => dispatch(fetchDataSuccess(movies)))
+      .catch(() => dispatch(fetchDataError()));
   };
 };
 
