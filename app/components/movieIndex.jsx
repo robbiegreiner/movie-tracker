@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
+import { Redirect } from 'react-router';
 
 export default class MovieIndex extends Component {
+  constructor() {
+    super();
+    this.state = {
+      needToLogin: false
+    };
+  }
 
   componentDidMount() {
     this.props.retrieveMovies();
@@ -10,8 +17,13 @@ export default class MovieIndex extends Component {
 
   addFavorites() {
     if (!this.props.user.name) {
-      alert('Please, create an account to favorite a movie')
+      alert('Please, create an account to favorite a movie');
+      this.setState({
+        needToLogin: true
+      })
+
     }
+
   }
 
   renderCards() {
@@ -26,9 +38,12 @@ export default class MovieIndex extends Component {
     });
   }
 
+
+
   render() {
     return (
       <div className='movie-list'>
+        {this.state.needToLogin && <Redirect to='/createuser'/>}
         {this.props.movieList.length && this.renderCards()}
       </div>
     );
