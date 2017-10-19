@@ -2,7 +2,9 @@ import { connect } from 'react-redux';
 import { fetchData } from '../actions';
 import MovieIndex from '../components/MovieIndex';
 
-const mapStateToProps =  (store) => ({ movieList: store.movieList
+const mapStateToProps =  (store) => ({
+  movieList: store.movieList,
+  fetchDataError: store.fetchDataError
 });
 
 const mapDispatchToProps = (dispatch) => ({
