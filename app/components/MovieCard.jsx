@@ -38,7 +38,9 @@ MovieCard.propTypes = {
   releaseDate: PropTypes.string,
   summary: PropTypes.string,
   score: PropTypes.number,
-  img: PropTypes.string
+  img: PropTypes.string,
+  addFavorites: PropTypes.func,
+  id: PropTypes.number
 };
 
 export default MovieCard;

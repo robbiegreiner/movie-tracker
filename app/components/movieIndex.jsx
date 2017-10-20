@@ -16,20 +16,22 @@ export default class MovieIndex extends Component {
   }
 
   addFavorites(movieObj) {
-    if (!this.props.user.name) {
+    const { favorites, sendFavorite, user } = this.props;
+    // destructure
+    if (!user.name) {
       alert('Please, create an account to favorite a movie');
       this.setState({
         needToLogin: true
       });
-    } else if (this.props.favorites.find(movie => movie.title === movieObj.title)){
+    } else if (favorites.find(movie => movie.title === movieObj.title)){
       return;
     } else {
-      this.props.sendFavorite(this.props.user.id, movieObj);
+      sendFavorite(user.id, movieObj);
     }
-
   }
 
   renderCards() {
+    //destructure or pass movie down and destructure in movieCard
     return this.props.movieList.map(movie => {
       return <MovieCard key={movie.movie_id}
         id={movie.movie_id}
@@ -41,8 +43,6 @@ export default class MovieIndex extends Component {
         img={movie.poster_path}/>;
     });
   }
-
-
 
   render() {
     return (
