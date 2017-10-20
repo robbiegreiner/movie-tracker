@@ -14,7 +14,8 @@ const mapDispatchToProps = dispatch => ({
   },
   sendFavorite: (userId, movieObj) => {
     dispatch(postFavorite(userId, movieObj));
-  }
+  },
+  getAllFaves: () => {}
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(MovieIndex);

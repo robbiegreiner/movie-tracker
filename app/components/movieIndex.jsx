@@ -11,8 +11,11 @@ export default class MovieIndex extends Component {
     };
   }
 
+//use needToLogin in state to get faves in component did mount for movieIndexContainer
+
   componentDidMount() {
     this.props.retrieveMovies();
+    this.props.getAllFaves(this.props.user.id);
   }
 
   addFavorites(movieObj) {
