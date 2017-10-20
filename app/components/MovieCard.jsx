@@ -7,7 +7,24 @@ const MovieCard = ({ movie_id, title, releaseDate, overview, vote_average, poste
 
   return (
     <div className='movie-card'>
-      <h2>{title}</h2>
+      <div className="flip-container" >
+        <div className="flipper">
+          <div className="front">
+            <img className="movie-image" src={poster} alt="poster" />
+          </div>
+          <div className="back">
+            <h4 className="release-date">Release Date</h4>
+            <h3 className="release">{releaseDate}</h3>
+            <h4 className="rating">User Rating</h4>
+            <h3 className="score">{vote_average}</h3>
+            <p>{overview}</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* <h2>{title}</h2>
       <div className="fav-btn" onClick={() => {
         const movieObj = Object.assign({}, {
           movie_id,
@@ -28,10 +45,16 @@ const MovieCard = ({ movie_id, title, releaseDate, overview, vote_average, poste
           <h3 className="score">{vote_average}</h3>
         </div>
       </div>
-      <p>{overview}</p>
+      <p>{overview}</p> */}
     </div>
   );
 };
+
+
+
+
+
+
 
 MovieCard.propTypes = {
   title: PropTypes.string,
