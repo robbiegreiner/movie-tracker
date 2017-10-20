@@ -4,7 +4,6 @@ import MovieIndex from '../components/MovieIndex';
 
 const mapStateToProps = store => ({
   movieList: store.movieList,
-  fetchDataError: store.fetchDataError,
   user: store.user,
   favorites: store.favorites
 });
