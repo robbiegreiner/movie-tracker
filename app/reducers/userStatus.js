@@ -1,4 +1,4 @@
-export const userStatus = (state = '', action) => {
+const userStatus = (state = '', action) => {
   switch (action.type) {
   case 'FETCH_USER_SUCCESS':
     return true;
@@ -8,3 +8,5 @@ export const userStatus = (state = '', action) => {
     return state;
   }
 };
+
+export default userStatus;

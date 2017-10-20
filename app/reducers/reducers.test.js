@@ -2,6 +2,9 @@ import movieList from './movielist';
 import user from './user';
 import userStatus from './userStatus';
 import mockMovieData from '../helpers/mockMovieData';
+import createUserError from './createUserError';
+import favorites from './favorites';
+import loginError from './loginError';
 
 const mockUser = { name: 'Lola' };
 
@@ -38,5 +41,48 @@ describe('userStatus reducer', () => {
     const action = { type: 'FETCH_USER_SUCCESS', user: mockUser };
 
     expect(userStatus(undefined, action)).toEqual(true);
+  });
+});
+
+describe('createUserError reducer', () => {
+  it('should have a default state', () => {
+    expect(createUserError(undefined, {})).toEqual(false);
+  });
+
+  it('should return true if there was an error', () => {
+    const action = { type: 'CREATE_USER_ERROR', createUserError: true };
+
+    expect(createUserError(undefined, action)).toEqual(true);
+  });
+
+  it('should return false if create user success', () => {
+    const action = { type: 'FETCH_USER_SUCCESS', user: mockUser };
+
+    expect(createUserError(undefined, action)).toEqual(false);
+  });
+});
+
+describe('favorites reducer', () => {
+  it('should have a default state', () => {
+    expect(favorites(undefined, {})).toEqual([]);
+  });
+
+  it('should return updated favorites array when a fave is added', () => {
+    const action = { type: 'ADD_FAVORITE', favorite: { title: 'IT' } };
+    const expected = [{ title: 'IT' }];
+
+    expect(favorites(undefined, action)).toEqual(expected);
+  });
+});
+
+describe('loginError reducer', () => {
+  it('should have a default state', () => {
+    expect(loginError(undefined, {})).toEqual(false);
+  });
+
+  it('should return true if there was an error', () => {
+    const action = { type: 'LOGIN_ERROR', hasErrored: true };
+
+    expect(loginError(undefined, action)).toEqual(true);
   });
 });

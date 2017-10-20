@@ -37,4 +37,22 @@ describe('actions', () => {
 
     expect(actions.loginError(true)).toEqual(expectedAction);
   });
+
+  it('should create an action for create user error', () => {
+    const expectedAction = {
+      type: 'CREATE_USER_ERROR',
+      createUserError: true
+    };
+
+    expect(actions.createUserError(true)).toEqual(expectedAction);
+  });
+
+  it('should create an action for add favorite', () => {
+    const expectedAction = {
+      type: 'ADD_FAVORITE',
+      favorite: { title: 'IT' }
+    };
+
+    expect(actions.addFavorite({ title: 'IT' })).toEqual(expectedAction);
+  });
 });

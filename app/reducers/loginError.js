@@ -1,4 +1,4 @@
-export const loginError = (state = false, action) => {
+const loginError = (state = false, action) => {
   switch (action.type) {
   case 'LOGIN_ERROR':
     return action.hasErrored;
@@ -6,3 +6,5 @@ export const loginError = (state = false, action) => {
     return state;
   }
 };
+
+export default loginError;
