@@ -2,15 +2,15 @@ import { combineReducers } from 'redux';
 import movieList from './movielist';
 import { user, createUserError } from './user';
 import { userStatus, loginError } from './userStatus';
-// import babyreducers
+import favorites from './favorites';
 
 const rootReducer = combineReducers({
-  //list of babyreducers
   movieList,
   user,
   userStatus,
   loginError,
-  createUserError
+  createUserError,
+  favorites
 });
 
 export default rootReducer;

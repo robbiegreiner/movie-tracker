@@ -1,5 +1,6 @@
 import movieDataFetcher from '../helpers/movieDataFetcher';
 import userDataFetcher from '../helpers/userDataFetcher';
+import favoritesFetcher from '../helpers/favoritesFetcher';
 // import createUserFetcher from '../helpers/createUserFetcher';
 
 //action for creating new user- alters user
@@ -99,6 +100,22 @@ export const loginError = hasErrored => {
     type: 'LOGIN_ERROR',
     hasErrored
   };
+};
+
+export const addFavorite = (favorite) => {
+  return {
+    type: 'ADD_FAVORITE',
+    favorite
+  };
+};
+
+export const postFavorite = (userId, movieObj) => {
+  const newFave = Object.assign({user_id: userId}, movieObj);
+  favoritesFetcher(newFave);
+  // return dispatch => {
+  //   dispatch(addFavorite(movieObj));
+  // };
+  return addFavorite(movieObj);
 };
 
 // export const fetchDataError = () => ({
