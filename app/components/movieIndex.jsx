@@ -16,33 +16,33 @@ export default class MovieIndex extends Component {
   }
 
   addFavorites(movieObj) {
-    if (!this.props.user.name) {
+    const { favorites, sendFavorite, user } = this.props;
+    // destructure
+    if (!user.name) {
       alert('Please, create an account to favorite a movie');
       this.setState({
         needToLogin: true
       });
-    } else if (this.props.favorites.find(movie => movie.title === movieObj.title)){
+    } else if (favorites.find(movie => movie.title === movieObj.title)){
       return;
     } else {
-      this.props.sendFavorite(this.props.user.id, movieObj);
+      sendFavorite(user.id, movieObj);
     }
-
   }
 
   renderCards() {
+    //destructure or pass movie down and destructure in movieCard
     return this.props.movieList.map(movie => {
       return <MovieCard key={movie.movie_id}
-        id={movie.movie_id}
+        addFavorites={this.addFavorites.bind(this)}
+        movie_id={movie.movie_id}
         title={movie.title}
         releaseDate={movie.release_date}
-        summary={movie.overview}
-        score={movie.vote_average}
-        addFavorites={this.addFavorites.bind(this)}
-        img={movie.poster_path}/>;
+        overview={movie.overview}
+        vote_average={movie.vote_average}
+        poster_path={movie.poster_path}/>;
     });
   }
-
-
 
   render() {
     return (
@@ -56,5 +56,8 @@ export default class MovieIndex extends Component {
 
 MovieIndex.propTypes = {
   retrieveMovies: PropTypes.func,
-  movieList: PropTypes.array
+  movieList: PropTypes.array,
+  favorites: PropTypes.array,
+  sendFavorite: PropTypes.func,
+  user: PropTypes.object
 };

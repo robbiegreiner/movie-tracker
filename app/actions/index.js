@@ -102,7 +102,7 @@ export const loginError = hasErrored => {
   };
 };
 
-export const addFavorite = (favorite) => {
+export const addFavorite = favorite => {
   return {
     type: 'ADD_FAVORITE',
     favorite

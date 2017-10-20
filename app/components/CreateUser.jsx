@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
+import PropTypes from 'prop-types';
 
 class CreateUser extends Component {
   constructor(props) {
@@ -21,25 +22,25 @@ class CreateUser extends Component {
     });
   }
 
-
   render() {
-    const { userStatus, createUserError } = this.props;
+    const { userStatus, createNewUser, createUserError } = this.props;
 
-    if (this.props.userStatus === true) {
+    if (userStatus === true) {
       return <Redirect to='/'/>;
     }
-
+// event.target.getAttribute('data-type')
     return (
       <div>
         <form>
           <h2>Welcome to Movie Tracker</h2>
           <h2>Create Account</h2>
           <h4 className='error'>
-            {createUserError ? 'email already exists' : null}
+            { createUserError ? 'email already exists' : null }
           </h4>
           <input
             type='text'
             placeholder='Name'
+            data-type='name'
             onChange={ (event) => this.handleChange(event, 'name' ) }
           />
           <input
@@ -60,7 +61,7 @@ class CreateUser extends Component {
                 event.preventDefault();
                 //pass state to action that makes fetch post request to get user back
                 const userObj = Object.assign({}, this.state);
-                this.props.createNewUser(userObj);
+                createNewUser(userObj);
               }
             }
           />
@@ -71,3 +72,11 @@ class CreateUser extends Component {
 }
 
 export default CreateUser;
+
+CreateUser.propTypes = {
+  retrieveMovies: PropTypes.func,
+  movieList: PropTypes.array,
+  userStatus: PropTypes.string,
+  createNewUser: PropTypes.func,
+  createUserError: PropTypes.bool
+};

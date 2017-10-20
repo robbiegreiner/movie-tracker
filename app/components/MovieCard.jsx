@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MovieCard = ({ id, title, releaseDate, summary, score, img, addFavorites }) => {
+const MovieCard = ({ movie_id, title, releaseDate, overview, vote_average, poster_path, addFavorites }) => {
 
-  let poster = `https://image.tmdb.org/t/p/w500/${img}`;
+  let poster = `https://image.tmdb.org/t/p/w500/${poster_path}`;
 
   return (
     <div className='movie-card'>
       <h2>{title}</h2>
       <div className="fav-btn" onClick={() => {
         const movieObj = Object.assign({}, {
-          movie_id: id,
-          title: title,
-          overview: summary,
-          vote_average: score,
-          poster_path: img,
-          release_date: releaseDate
+          movie_id,
+          title,
+          overview,
+          vote_average,
+          poster_path,
+          releaseDate
         });
         addFavorites(movieObj);
       }}></div>
@@ -25,10 +25,10 @@ const MovieCard = ({ id, title, releaseDate, summary, score, img, addFavorites }
           <h4 className="release-date">Release Date</h4>
           <h3 className="release">{releaseDate}</h3>
           <h4 className="rating">User Rating</h4>
-          <h3 className="score">{score}</h3>
+          <h3 className="score">{vote_average}</h3>
         </div>
       </div>
-      <p>{summary}</p>
+      <p>{overview}</p>
     </div>
   );
 };
@@ -36,9 +36,11 @@ const MovieCard = ({ id, title, releaseDate, summary, score, img, addFavorites }
 MovieCard.propTypes = {
   title: PropTypes.string,
   releaseDate: PropTypes.string,
-  summary: PropTypes.string,
-  score: PropTypes.number,
-  img: PropTypes.string
+  overview: PropTypes.string,
+  vote_average: PropTypes.number,
+  poster_path: PropTypes.string,
+  addFavorites: PropTypes.func,
+  movie_id: PropTypes.number
 };
 
 export default MovieCard;
