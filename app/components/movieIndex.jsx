@@ -34,13 +34,13 @@ export default class MovieIndex extends Component {
     //destructure or pass movie down and destructure in movieCard
     return this.props.movieList.map(movie => {
       return <MovieCard key={movie.movie_id}
-        id={movie.movie_id}
+        addFavorites={this.addFavorites.bind(this)}
+        movie_id={movie.movie_id}
         title={movie.title}
         releaseDate={movie.release_date}
-        summary={movie.overview}
-        score={movie.vote_average}
-        addFavorites={this.addFavorites.bind(this)}
-        img={movie.poster_path}/>;
+        overview={movie.overview}
+        vote_average={movie.vote_average}
+        poster_path={movie.poster_path}/>;
     });
   }
 
@@ -56,5 +56,8 @@ export default class MovieIndex extends Component {
 
 MovieIndex.propTypes = {
   retrieveMovies: PropTypes.func,
-  movieList: PropTypes.array
+  movieList: PropTypes.array,
+  favorites: PropTypes.array,
+  sendFavorite: PropTypes.func,
+  user: PropTypes.object
 };

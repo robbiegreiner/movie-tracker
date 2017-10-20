@@ -48,26 +48,26 @@ function createUser(req, res, next) {
 function addFavorite(req, res, next) {
   db.one('insert into favorites(movie_id, user_id, title, poster_path, release_date, vote_average, overview)' +
   'values(${movie_id}, ${user_id}, ${title}, ${poster_path}, ${release_date}, ${vote_average}, ${overview}) returning id', req.body)
-  .then(function(data) {
-    res.status(200).json({ status: 'success', message: "Movie was added to favorites", id: data.id});
-  }).catch(function(err) {
-    next(err);
-  })
+    .then(function(data) {
+      res.status(200).json({ status: 'success', message: "Movie was added to favorites", id: data.id});
+    }).catch(function(err) {
+      next(err);
+    })
 }
 
 function getAllFavorites(req, res, next) {
   var user_id = parseInt(req.params.id);
   db.any('select * from favorites where user_id=$1', user_id)
-  .then(function(data) {
-    res.status(200).json({
-      status: 'success',
-      data: data,
-      message: 'Retrieved All favorites'
+    .then(function(data) {
+      res.status(200).json({
+        status: 'success',
+        data: data,
+        message: 'Retrieved All favorites'
+      });
+    })
+    .catch(function(err) {
+      return next(err);
     });
-  })
-  .catch(function(err) {
-    return next(err);
-  });
 }
 
 function deleteFavorite(req, res, next) {
@@ -75,11 +75,11 @@ function deleteFavorite(req, res, next) {
   var user_id = parseInt(req.params.id);
   db.result('delete from favorites where user_id = $1 and movie_id = $2', [user_id, movie_id]).then(function(result) {
     res.status(200)
-    .json({status: 'success', message: `${result.rowCount} row was deleted.`})
+      .json({status: 'success', message: `${result.rowCount} row was deleted.`})
   })
-  .catch(function(err) {
-    return next(err);
-  })
+    .catch(function(err) {
+      return next(err);
+    })
 }
 
 module.exports = {
