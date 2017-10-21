@@ -8,24 +8,30 @@ const Header = ({ user, handleSignOut }) => {
 
   const userContents = (
     <div className='user-box'>
-      <p className='user'>{user.name}</p>
-      <Link to='/favorites'>View Favorites</Link>
-      <button
+      <p className='user'>Welcome, {user.name}!</p>
+      <Link className='login-link favorites-link' to='/favorites'>View Favorites</Link>
+      <Link
+        className='login-link signout'
+        to='/login'
         onClick={() => handleSignOut()}>
         Sign Out
-      </button>
+      </Link>
     </div>);
 
-  const noUserContents = <div className='no-user-box'>
-    <Link to='/login'>Log In</Link>
-    <Link to='/createuser'>Create Account</Link>
+  const noUserContents =
+  <div className='no-user-box'>
+    <Link className='login-link' to='/login'>Log In</Link>
+    <Link className='login-link' to='/createuser'>Create Account</Link>
   </div>;
 
   (!user.name) ? userBox = noUserContents : userBox = userContents;
 
   return (
     <div className='header'>
-      <h1>MovieTracker</h1>
+      <h1>
+        <span className='header-one'>Movie</span>
+        <span className='header-two'>Tracker</span>
+      </h1>
       {userBox}
     </div>
   );

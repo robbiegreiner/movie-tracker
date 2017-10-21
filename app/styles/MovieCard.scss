@@ -1,14 +1,11 @@
 .movie-card {
   color: steelblue;
-  background-color: #0D0F0F;
+  // background-color: #0D0F0F;
   height: 500px;
   width: 350px;
-  border: 2px solid steelblue;
-  margin: 20px 20px 20px 20px;
-  padding: 0 20px 20px 20px;
+  margin: 20px 40px 20px 40px;
   display: flex;
   flex-direction: column;
-  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
 }
 
 .fav-btn {
@@ -28,9 +25,10 @@
 }
 
 .movie-card img {
-  height: 250px;
-  width: 166px;
-  border: 2px solid #A11811;
+  height: 500px;
+  width: 350px;
+  box-shadow: 5px 10px 10px #888888;
+
 }
 
 .movie-container {
@@ -71,4 +69,60 @@
 
 .score {
   text-align: center;
+}
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 350px;
+	height: 500px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.9s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+  box-shadow: 5px 10px 10px #888888;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+
+
+  // width: 240px;
+  // display: flex;
+  // flex-direction: column;
+  // margin: 10px;
+  // padding: 10px;
+  // box-shadow: 5px 10px 10px #888888;
+  // background-color: white;
+  // border-radius: 10%;
+
 }
