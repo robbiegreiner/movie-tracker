@@ -17,6 +17,12 @@ describe('MovieCard', () => {
   it('should render a card', () => {
     const card = wrapper.find('.movie-card');
 
-    expect(card.length).toEqual(1);  
+    expect(card.length).toEqual(1);
+  });
+
+  it('should render an img', () => {
+    const img = wrapper.find('img');
+
+    expect(img.length).toEqual(1);
   });
 });
