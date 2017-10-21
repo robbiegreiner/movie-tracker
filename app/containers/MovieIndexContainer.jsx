@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchData, postFavorite } from '../actions';
+import { fetchData, postFavorite, favoritesGetter } from '../actions';
 import MovieIndex from '../components/MovieIndex';
 
 const mapStateToProps = store => ({
@@ -15,6 +15,9 @@ const mapDispatchToProps = dispatch => ({
   },
   sendFavorite: (userId, movieObj) => {
     dispatch(postFavorite(userId, movieObj));
+  },
+  retrieveFavorites: userId => {
+    dispatch(favoritesGetter(userId));
   }
 });
 
