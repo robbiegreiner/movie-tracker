@@ -3,6 +3,7 @@ import { mount } from 'enzyme';
 import LogInContainer from '../LogInContainer';
 import LogIn from '../../components/LogIn';
 import React from 'react';
+import * as actions from '../../actions';
 
 describe('LogInContainer', () => {
   const mockStore = configureStore();
