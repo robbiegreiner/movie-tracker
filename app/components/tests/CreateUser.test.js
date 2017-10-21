@@ -1,37 +1,37 @@
 import React from "react";
-import LogIn from '../LogIn';
+import CreateUser from '../CreateUser';
 import { shallow } from "enzyme";
 
-describe('Login page', () => {
-  let wrapper;
-  let mockFn = jest.fn();
-
-  beforeEach(() => {
-    wrapper = shallow(<LogIn userStatus=''
-      retrieveUser={mockFn}/>);
-  });
+describe('CreateUser page', () => {
+  const mockFn = jest.fn();
+  const wrapper = shallow(<CreateUser userStatus=''
+    createNewUser={mockFn}/>);
 
   it('should exist', () => {
     expect(wrapper).toBeDefined();
   });
 
   it('should have an empty default state', () => {
+    expect(wrapper.state().name).toEqual('');
     expect(wrapper.state().email).toEqual('');
     expect(wrapper.state().password).toEqual('');
   });
 
-  it('should render three inputs', () => {
+  it('should render four inputs', () => {
     const inputs = wrapper.find('input');
 
-    expect(inputs.length).toEqual(3);
+    expect(inputs.length).toEqual(4);
   });
 
   it('should change state on input', () => {
+    const nameInput = wrapper.find('.name-input');
     const emailInput = wrapper.find('.email-input');
     const passwordInput = wrapper.find('.password-input');
 
+    nameInput.simulate('change', { target: { value: 'Lola' } });
     emailInput.simulate('change', { target: { value: 'lolabrenner@gmail.com' } });
     passwordInput.simulate('change', { target: { value: 'complete' } });
+    expect(wrapper.state().name).toEqual('Lola');
     expect(wrapper.state().email).toEqual('lolabrenner@gmail.com');
     expect(wrapper.state().password).toEqual('complete');
   });
@@ -45,15 +45,5 @@ describe('Login page', () => {
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render an error if passed one', () => {
-    const altWrapper = shallow(<LogIn userStatus=''
-      retrieveUser={mockFn}
-      loginError={true}/>);
-    const error = altWrapper.find('h4');
-
-    expect(error.text()).toEqual('Email and Password do not match');
-    expect(altWrapper).toMatchSnapshot();
   });
 });
