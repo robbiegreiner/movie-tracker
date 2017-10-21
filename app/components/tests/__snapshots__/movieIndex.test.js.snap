@@ -20,11 +20,17 @@ ShallowWrapper {
     "key": null,
     "nodeType": "host",
     "props": Object {
-      "children": 0,
+      "children": Array [
+        false,
+        0,
+      ],
       "className": "movie-list",
     },
     "ref": null,
-    "rendered": 0,
+    "rendered": Array [
+      false,
+      0,
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -33,11 +39,17 @@ ShallowWrapper {
       "key": null,
       "nodeType": "host",
       "props": Object {
-        "children": 0,
+        "children": Array [
+          false,
+          0,
+        ],
         "className": "movie-list",
       },
       "ref": null,
-      "rendered": 0,
+      "rendered": Array [
+        false,
+        0,
+      ],
       "type": "div",
     },
   ],
@@ -473,161 +485,207 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <MovieCard
-          img="/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="It"
-        />,
-        <MovieCard
-          img="/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Blade Runner 2049"
-        />,
-        <MovieCard
-          img="/3vYhLLxrTtZLysXtIWktmd57Snv.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="War for the Planet of the Apes"
-        />,
-        <MovieCard
-          img="/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Kingsman: The Golden Circle"
-        />,
-        <MovieCard
-          img="/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="mother!"
-        />,
-        <MovieCard
-          img="/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Baby Driver"
-        />,
-        <MovieCard
-          img="/o40BAqdTQHiN3cUfpgieDUYI71z.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="American Assassin"
-        />,
-        <MovieCard
-          img="/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Happy Death Day"
-        />,
-        <MovieCard
-          img="/z5CtCxpblBke2G8c7CMkstedMgY.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Home Again"
-        />,
-        <MovieCard
-          img="/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Rememory"
-        />,
-        <MovieCard
-          img="/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Ex Libris – New York Public Library"
-        />,
-        <MovieCard
-          img="/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Blade Runner"
-        />,
-        <MovieCard
-          img="/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Annabelle: Creation"
-        />,
-        <MovieCard
-          img="/i9GUSgddIqrroubiLsvvMRYyRy0.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="The Dark Tower"
-        />,
-        <MovieCard
-          img="/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="The Snowman"
-        />,
-        <MovieCard
-          img="/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="Captain Underpants: The First Epic Movie"
-        />,
-        <MovieCard
-          img="/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="American Made"
-        />,
-        <MovieCard
-          img="/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="The Hitman's Bodyguard"
-        />,
-        <MovieCard
-          img="/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="The Emoji Movie"
-        />,
-        <MovieCard
-          img="/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg"
-          releaseDate={undefined}
-          score={undefined}
-          summary={undefined}
-          title="A Silent Voice"
-        />,
+        false,
+        Array [
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise."
+            poster_path="/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
+            releaseDate="2017-09-05"
+            title="It"
+            vote_average={7.4}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years."
+            poster_path="/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg"
+            releaseDate="2017-10-04"
+            title="Blade Runner 2049"
+            vote_average={7.8}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet."
+            poster_path="/3vYhLLxrTtZLysXtIWktmd57Snv.jpg"
+            releaseDate="2017-07-11"
+            title="War for the Planet of the Apes"
+            vote_average={6.7}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="When an attack on the Kingsman headquarters takes place and a new villain rises, Eggsy and Merlin are forced to work together with the American agency known as the Statesman to save the world."
+            poster_path="/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg"
+            releaseDate="2017-09-20"
+            title="Kingsman: The Golden Circle"
+            vote_average={7.3}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="A couple's relationship is tested when uninvited guests arrive at their home, disrupting their tranquil existence."
+            poster_path="/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg"
+            releaseDate="2017-09-13"
+            title="mother!"
+            vote_average={6.9}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail."
+            poster_path="/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg"
+            releaseDate="2017-06-28"
+            title="Baby Driver"
+            vote_average={7.2}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Following the murder of his fiancée, Mitch Rapp trains under the instruction of Cold War has-been Stan Hurley. The pair then is enlisted to investigate a wave of apparently random attacks on military and civilian targets."
+            poster_path="/o40BAqdTQHiN3cUfpgieDUYI71z.jpg"
+            releaseDate="2017-09-14"
+            title="American Assassin"
+            vote_average={5.1}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="A college student relives the day of her murder over and over again as she tries to discover her killer's identity."
+            poster_path="/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg"
+            releaseDate="2017-10-12"
+            title="Happy Death Day"
+            vote_average={7.3}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Life for a single mom in Los Angeles takes an expected turn when she allows three young guys to move in with her."
+            poster_path="/z5CtCxpblBke2G8c7CMkstedMgY.jpg"
+            releaseDate="2017-09-07"
+            title="Home Again"
+            vote_average={4.3}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="The widow of a wise professor stumbles upon one of his inventions that's able to record and play a person's memory."
+            poster_path="/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg"
+            releaseDate="2017-09-08"
+            title="Rememory"
+            vote_average={6}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="A documentary about how a dominant cultural and demographic institution both sustains their traditional activities and adapts to the digital revolution."
+            poster_path="/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg"
+            releaseDate="2017-09-13"
+            title="Ex Libris – New York Public Library"
+            vote_average={4.5}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans."
+            poster_path="/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg"
+            releaseDate="1982-06-25"
+            title="Blade Runner"
+            vote_average={7.9}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Several years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the dollmaker's possessed creation, Annabelle."
+            poster_path="/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg"
+            releaseDate="2017-08-03"
+            title="Annabelle: Creation"
+            vote_average={6.4}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="The last Gunslinger, Roland Deschain, has been locked in an eternal battle with Walter O’Dim, also known as the Man in Black, determined to prevent him from toppling the Dark Tower, which holds the universe together. With the fate of the worlds at stake, good and evil will collide in the ultimate battle as only Roland can defend the Tower from the Man in Black."
+            poster_path="/i9GUSgddIqrroubiLsvvMRYyRy0.jpg"
+            releaseDate="2017-08-03"
+            title="The Dark Tower"
+            vote_average={5.7}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Detective Harry Hole investigates the disappearance of a woman whose pink scarf is found wrapped around an ominous looking snowman."
+            poster_path="/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg"
+            releaseDate="2017-10-12"
+            title="The Snowman"
+            vote_average={4.9}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Two mischievous kids hypnotize their mean elementary school principal and turn him into their comic book creation, the kind-hearted and elastic-banded Captain Underpants."
+            poster_path="/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg"
+            releaseDate="2017-06-01"
+            title="Captain Underpants: The First Epic Movie"
+            vote_average={6.4}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="The true story of pilot Barry Seal, who transported contraband for the CIA and the Medellin cartel in the 1980s."
+            poster_path="/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg"
+            releaseDate="2017-08-17"
+            title="American Made"
+            vote_average={6.3}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="The world's top bodyguard gets a new client, a hit man who must testify at the International Court of Justice. They must put their differences aside and work together to make it to the trial on time."
+            poster_path="/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg"
+            releaseDate="2017-08-16"
+            title="The Hitman's Bodyguard"
+            vote_average={6.6}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Gene, a multi-expressional emoji, sets out on a journey to become a normal emoji."
+            poster_path="/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg"
+            releaseDate="2017-07-28"
+            title="The Emoji Movie"
+            vote_average={5.7}
+          />,
+          <MovieCard
+            addFavorites={[Function]}
+            movie_id={undefined}
+            overview="Shouya Ishida starts bullying the new girl in class, Shouko Nishimiya, because she is deaf. But as the teasing continues, the rest of the class starts to turn on Shouya for his lack of compassion. When they leave elementary school, Shouko and Shouya do not speak to each other again... until an older, wiser Shouya, tormented by his past behaviour, decides he must see Shouko once more. He wants to atone for his sins, but is it already too late...?"
+            poster_path="/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg"
+            releaseDate="2016-09-17"
+            title="A Silent Voice"
+            vote_average={8.2}
+          />,
+        ],
       ],
       "className": "movie-list",
     },
     "ref": null,
     "rendered": Array [
+      false,
       Object {
         "instance": null,
-        "key": "346364",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.",
+          "poster_path": "/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
+          "releaseDate": "2017-09-05",
           "title": "It",
+          "vote_average": 7.4,
         },
         "ref": null,
         "rendered": null,
@@ -635,14 +693,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "335984",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
+          "poster_path": "/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg",
+          "releaseDate": "2017-10-04",
           "title": "Blade Runner 2049",
+          "vote_average": 7.8,
         },
         "ref": null,
         "rendered": null,
@@ -650,14 +710,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "281338",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/3vYhLLxrTtZLysXtIWktmd57Snv.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.",
+          "poster_path": "/3vYhLLxrTtZLysXtIWktmd57Snv.jpg",
+          "releaseDate": "2017-07-11",
           "title": "War for the Planet of the Apes",
+          "vote_average": 6.7,
         },
         "ref": null,
         "rendered": null,
@@ -665,14 +727,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "343668",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "When an attack on the Kingsman headquarters takes place and a new villain rises, Eggsy and Merlin are forced to work together with the American agency known as the Statesman to save the world.",
+          "poster_path": "/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg",
+          "releaseDate": "2017-09-20",
           "title": "Kingsman: The Golden Circle",
+          "vote_average": 7.3,
         },
         "ref": null,
         "rendered": null,
@@ -680,14 +744,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "381283",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "A couple's relationship is tested when uninvited guests arrive at their home, disrupting their tranquil existence.",
+          "poster_path": "/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg",
+          "releaseDate": "2017-09-13",
           "title": "mother!",
+          "vote_average": 6.9,
         },
         "ref": null,
         "rendered": null,
@@ -695,14 +761,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "339403",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+          "poster_path": "/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg",
+          "releaseDate": "2017-06-28",
           "title": "Baby Driver",
+          "vote_average": 7.2,
         },
         "ref": null,
         "rendered": null,
@@ -710,14 +778,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "415842",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/o40BAqdTQHiN3cUfpgieDUYI71z.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Following the murder of his fiancée, Mitch Rapp trains under the instruction of Cold War has-been Stan Hurley. The pair then is enlisted to investigate a wave of apparently random attacks on military and civilian targets.",
+          "poster_path": "/o40BAqdTQHiN3cUfpgieDUYI71z.jpg",
+          "releaseDate": "2017-09-14",
           "title": "American Assassin",
+          "vote_average": 5.1,
         },
         "ref": null,
         "rendered": null,
@@ -725,14 +795,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "440021",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "A college student relives the day of her murder over and over again as she tries to discover her killer's identity.",
+          "poster_path": "/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg",
+          "releaseDate": "2017-10-12",
           "title": "Happy Death Day",
+          "vote_average": 7.3,
         },
         "ref": null,
         "rendered": null,
@@ -740,14 +812,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "427900",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/z5CtCxpblBke2G8c7CMkstedMgY.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Life for a single mom in Los Angeles takes an expected turn when she allows three young guys to move in with her.",
+          "poster_path": "/z5CtCxpblBke2G8c7CMkstedMgY.jpg",
+          "releaseDate": "2017-09-07",
           "title": "Home Again",
+          "vote_average": 4.3,
         },
         "ref": null,
         "rendered": null,
@@ -755,14 +829,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "395814",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "The widow of a wise professor stumbles upon one of his inventions that's able to record and play a person's memory.",
+          "poster_path": "/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg",
+          "releaseDate": "2017-09-08",
           "title": "Rememory",
+          "vote_average": 6,
         },
         "ref": null,
         "rendered": null,
@@ -770,14 +846,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "446173",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "A documentary about how a dominant cultural and demographic institution both sustains their traditional activities and adapts to the digital revolution.",
+          "poster_path": "/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg",
+          "releaseDate": "2017-09-13",
           "title": "Ex Libris – New York Public Library",
+          "vote_average": 4.5,
         },
         "ref": null,
         "rendered": null,
@@ -785,14 +863,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "78",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans.",
+          "poster_path": "/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg",
+          "releaseDate": "1982-06-25",
           "title": "Blade Runner",
+          "vote_average": 7.9,
         },
         "ref": null,
         "rendered": null,
@@ -800,14 +880,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "396422",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Several years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the dollmaker's possessed creation, Annabelle.",
+          "poster_path": "/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
+          "releaseDate": "2017-08-03",
           "title": "Annabelle: Creation",
+          "vote_average": 6.4,
         },
         "ref": null,
         "rendered": null,
@@ -815,14 +897,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "353491",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "The last Gunslinger, Roland Deschain, has been locked in an eternal battle with Walter O’Dim, also known as the Man in Black, determined to prevent him from toppling the Dark Tower, which holds the universe together. With the fate of the worlds at stake, good and evil will collide in the ultimate battle as only Roland can defend the Tower from the Man in Black.",
+          "poster_path": "/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
+          "releaseDate": "2017-08-03",
           "title": "The Dark Tower",
+          "vote_average": 5.7,
         },
         "ref": null,
         "rendered": null,
@@ -830,14 +914,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "372343",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Detective Harry Hole investigates the disappearance of a woman whose pink scarf is found wrapped around an ominous looking snowman.",
+          "poster_path": "/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg",
+          "releaseDate": "2017-10-12",
           "title": "The Snowman",
+          "vote_average": 4.9,
         },
         "ref": null,
         "rendered": null,
@@ -845,14 +931,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "268531",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Two mischievous kids hypnotize their mean elementary school principal and turn him into their comic book creation, the kind-hearted and elastic-banded Captain Underpants.",
+          "poster_path": "/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg",
+          "releaseDate": "2017-06-01",
           "title": "Captain Underpants: The First Epic Movie",
+          "vote_average": 6.4,
         },
         "ref": null,
         "rendered": null,
@@ -860,14 +948,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "337170",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "The true story of pilot Barry Seal, who transported contraband for the CIA and the Medellin cartel in the 1980s.",
+          "poster_path": "/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg",
+          "releaseDate": "2017-08-17",
           "title": "American Made",
+          "vote_average": 6.3,
         },
         "ref": null,
         "rendered": null,
@@ -875,14 +965,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "390043",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "The world's top bodyguard gets a new client, a hit man who must testify at the International Court of Justice. They must put their differences aside and work together to make it to the trial on time.",
+          "poster_path": "/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg",
+          "releaseDate": "2017-08-16",
           "title": "The Hitman's Bodyguard",
+          "vote_average": 6.6,
         },
         "ref": null,
         "rendered": null,
@@ -890,14 +982,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "378236",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Gene, a multi-expressional emoji, sets out on a journey to become a normal emoji.",
+          "poster_path": "/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg",
+          "releaseDate": "2017-07-28",
           "title": "The Emoji Movie",
+          "vote_average": 5.7,
         },
         "ref": null,
         "rendered": null,
@@ -905,14 +999,16 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "378064",
+        "key": null,
         "nodeType": "function",
         "props": Object {
-          "img": "/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg",
-          "releaseDate": undefined,
-          "score": undefined,
-          "summary": undefined,
+          "addFavorites": [Function],
+          "movie_id": undefined,
+          "overview": "Shouya Ishida starts bullying the new girl in class, Shouko Nishimiya, because she is deaf. But as the teasing continues, the rest of the class starts to turn on Shouya for his lack of compassion. When they leave elementary school, Shouko and Shouya do not speak to each other again... until an older, wiser Shouya, tormented by his past behaviour, decides he must see Shouko once more. He wants to atone for his sins, but is it already too late...?",
+          "poster_path": "/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg",
+          "releaseDate": "2016-09-17",
           "title": "A Silent Voice",
+          "vote_average": 8.2,
         },
         "ref": null,
         "rendered": null,
@@ -928,161 +1024,207 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <MovieCard
-            img="/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="It"
-          />,
-          <MovieCard
-            img="/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Blade Runner 2049"
-          />,
-          <MovieCard
-            img="/3vYhLLxrTtZLysXtIWktmd57Snv.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="War for the Planet of the Apes"
-          />,
-          <MovieCard
-            img="/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Kingsman: The Golden Circle"
-          />,
-          <MovieCard
-            img="/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="mother!"
-          />,
-          <MovieCard
-            img="/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Baby Driver"
-          />,
-          <MovieCard
-            img="/o40BAqdTQHiN3cUfpgieDUYI71z.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="American Assassin"
-          />,
-          <MovieCard
-            img="/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Happy Death Day"
-          />,
-          <MovieCard
-            img="/z5CtCxpblBke2G8c7CMkstedMgY.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Home Again"
-          />,
-          <MovieCard
-            img="/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Rememory"
-          />,
-          <MovieCard
-            img="/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Ex Libris – New York Public Library"
-          />,
-          <MovieCard
-            img="/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Blade Runner"
-          />,
-          <MovieCard
-            img="/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Annabelle: Creation"
-          />,
-          <MovieCard
-            img="/i9GUSgddIqrroubiLsvvMRYyRy0.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="The Dark Tower"
-          />,
-          <MovieCard
-            img="/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="The Snowman"
-          />,
-          <MovieCard
-            img="/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="Captain Underpants: The First Epic Movie"
-          />,
-          <MovieCard
-            img="/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="American Made"
-          />,
-          <MovieCard
-            img="/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="The Hitman's Bodyguard"
-          />,
-          <MovieCard
-            img="/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="The Emoji Movie"
-          />,
-          <MovieCard
-            img="/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg"
-            releaseDate={undefined}
-            score={undefined}
-            summary={undefined}
-            title="A Silent Voice"
-          />,
+          false,
+          Array [
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise."
+              poster_path="/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
+              releaseDate="2017-09-05"
+              title="It"
+              vote_average={7.4}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years."
+              poster_path="/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg"
+              releaseDate="2017-10-04"
+              title="Blade Runner 2049"
+              vote_average={7.8}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet."
+              poster_path="/3vYhLLxrTtZLysXtIWktmd57Snv.jpg"
+              releaseDate="2017-07-11"
+              title="War for the Planet of the Apes"
+              vote_average={6.7}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="When an attack on the Kingsman headquarters takes place and a new villain rises, Eggsy and Merlin are forced to work together with the American agency known as the Statesman to save the world."
+              poster_path="/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg"
+              releaseDate="2017-09-20"
+              title="Kingsman: The Golden Circle"
+              vote_average={7.3}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="A couple's relationship is tested when uninvited guests arrive at their home, disrupting their tranquil existence."
+              poster_path="/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg"
+              releaseDate="2017-09-13"
+              title="mother!"
+              vote_average={6.9}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail."
+              poster_path="/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg"
+              releaseDate="2017-06-28"
+              title="Baby Driver"
+              vote_average={7.2}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Following the murder of his fiancée, Mitch Rapp trains under the instruction of Cold War has-been Stan Hurley. The pair then is enlisted to investigate a wave of apparently random attacks on military and civilian targets."
+              poster_path="/o40BAqdTQHiN3cUfpgieDUYI71z.jpg"
+              releaseDate="2017-09-14"
+              title="American Assassin"
+              vote_average={5.1}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="A college student relives the day of her murder over and over again as she tries to discover her killer's identity."
+              poster_path="/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg"
+              releaseDate="2017-10-12"
+              title="Happy Death Day"
+              vote_average={7.3}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Life for a single mom in Los Angeles takes an expected turn when she allows three young guys to move in with her."
+              poster_path="/z5CtCxpblBke2G8c7CMkstedMgY.jpg"
+              releaseDate="2017-09-07"
+              title="Home Again"
+              vote_average={4.3}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="The widow of a wise professor stumbles upon one of his inventions that's able to record and play a person's memory."
+              poster_path="/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg"
+              releaseDate="2017-09-08"
+              title="Rememory"
+              vote_average={6}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="A documentary about how a dominant cultural and demographic institution both sustains their traditional activities and adapts to the digital revolution."
+              poster_path="/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg"
+              releaseDate="2017-09-13"
+              title="Ex Libris – New York Public Library"
+              vote_average={4.5}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans."
+              poster_path="/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg"
+              releaseDate="1982-06-25"
+              title="Blade Runner"
+              vote_average={7.9}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Several years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the dollmaker's possessed creation, Annabelle."
+              poster_path="/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg"
+              releaseDate="2017-08-03"
+              title="Annabelle: Creation"
+              vote_average={6.4}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="The last Gunslinger, Roland Deschain, has been locked in an eternal battle with Walter O’Dim, also known as the Man in Black, determined to prevent him from toppling the Dark Tower, which holds the universe together. With the fate of the worlds at stake, good and evil will collide in the ultimate battle as only Roland can defend the Tower from the Man in Black."
+              poster_path="/i9GUSgddIqrroubiLsvvMRYyRy0.jpg"
+              releaseDate="2017-08-03"
+              title="The Dark Tower"
+              vote_average={5.7}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Detective Harry Hole investigates the disappearance of a woman whose pink scarf is found wrapped around an ominous looking snowman."
+              poster_path="/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg"
+              releaseDate="2017-10-12"
+              title="The Snowman"
+              vote_average={4.9}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Two mischievous kids hypnotize their mean elementary school principal and turn him into their comic book creation, the kind-hearted and elastic-banded Captain Underpants."
+              poster_path="/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg"
+              releaseDate="2017-06-01"
+              title="Captain Underpants: The First Epic Movie"
+              vote_average={6.4}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="The true story of pilot Barry Seal, who transported contraband for the CIA and the Medellin cartel in the 1980s."
+              poster_path="/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg"
+              releaseDate="2017-08-17"
+              title="American Made"
+              vote_average={6.3}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="The world's top bodyguard gets a new client, a hit man who must testify at the International Court of Justice. They must put their differences aside and work together to make it to the trial on time."
+              poster_path="/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg"
+              releaseDate="2017-08-16"
+              title="The Hitman's Bodyguard"
+              vote_average={6.6}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Gene, a multi-expressional emoji, sets out on a journey to become a normal emoji."
+              poster_path="/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg"
+              releaseDate="2017-07-28"
+              title="The Emoji Movie"
+              vote_average={5.7}
+            />,
+            <MovieCard
+              addFavorites={[Function]}
+              movie_id={undefined}
+              overview="Shouya Ishida starts bullying the new girl in class, Shouko Nishimiya, because she is deaf. But as the teasing continues, the rest of the class starts to turn on Shouya for his lack of compassion. When they leave elementary school, Shouko and Shouya do not speak to each other again... until an older, wiser Shouya, tormented by his past behaviour, decides he must see Shouko once more. He wants to atone for his sins, but is it already too late...?"
+              poster_path="/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg"
+              releaseDate="2016-09-17"
+              title="A Silent Voice"
+              vote_average={8.2}
+            />,
+          ],
         ],
         "className": "movie-list",
       },
       "ref": null,
       "rendered": Array [
+        false,
         Object {
           "instance": null,
-          "key": "346364",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.",
+            "poster_path": "/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
+            "releaseDate": "2017-09-05",
             "title": "It",
+            "vote_average": 7.4,
           },
           "ref": null,
           "rendered": null,
@@ -1090,14 +1232,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "335984",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
+            "poster_path": "/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg",
+            "releaseDate": "2017-10-04",
             "title": "Blade Runner 2049",
+            "vote_average": 7.8,
           },
           "ref": null,
           "rendered": null,
@@ -1105,14 +1249,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "281338",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/3vYhLLxrTtZLysXtIWktmd57Snv.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.",
+            "poster_path": "/3vYhLLxrTtZLysXtIWktmd57Snv.jpg",
+            "releaseDate": "2017-07-11",
             "title": "War for the Planet of the Apes",
+            "vote_average": 6.7,
           },
           "ref": null,
           "rendered": null,
@@ -1120,14 +1266,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "343668",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "When an attack on the Kingsman headquarters takes place and a new villain rises, Eggsy and Merlin are forced to work together with the American agency known as the Statesman to save the world.",
+            "poster_path": "/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg",
+            "releaseDate": "2017-09-20",
             "title": "Kingsman: The Golden Circle",
+            "vote_average": 7.3,
           },
           "ref": null,
           "rendered": null,
@@ -1135,14 +1283,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "381283",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "A couple's relationship is tested when uninvited guests arrive at their home, disrupting their tranquil existence.",
+            "poster_path": "/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg",
+            "releaseDate": "2017-09-13",
             "title": "mother!",
+            "vote_average": 6.9,
           },
           "ref": null,
           "rendered": null,
@@ -1150,14 +1300,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "339403",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+            "poster_path": "/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg",
+            "releaseDate": "2017-06-28",
             "title": "Baby Driver",
+            "vote_average": 7.2,
           },
           "ref": null,
           "rendered": null,
@@ -1165,14 +1317,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "415842",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/o40BAqdTQHiN3cUfpgieDUYI71z.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Following the murder of his fiancée, Mitch Rapp trains under the instruction of Cold War has-been Stan Hurley. The pair then is enlisted to investigate a wave of apparently random attacks on military and civilian targets.",
+            "poster_path": "/o40BAqdTQHiN3cUfpgieDUYI71z.jpg",
+            "releaseDate": "2017-09-14",
             "title": "American Assassin",
+            "vote_average": 5.1,
           },
           "ref": null,
           "rendered": null,
@@ -1180,14 +1334,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "440021",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "A college student relives the day of her murder over and over again as she tries to discover her killer's identity.",
+            "poster_path": "/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg",
+            "releaseDate": "2017-10-12",
             "title": "Happy Death Day",
+            "vote_average": 7.3,
           },
           "ref": null,
           "rendered": null,
@@ -1195,14 +1351,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "427900",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/z5CtCxpblBke2G8c7CMkstedMgY.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Life for a single mom in Los Angeles takes an expected turn when she allows three young guys to move in with her.",
+            "poster_path": "/z5CtCxpblBke2G8c7CMkstedMgY.jpg",
+            "releaseDate": "2017-09-07",
             "title": "Home Again",
+            "vote_average": 4.3,
           },
           "ref": null,
           "rendered": null,
@@ -1210,14 +1368,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "395814",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "The widow of a wise professor stumbles upon one of his inventions that's able to record and play a person's memory.",
+            "poster_path": "/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg",
+            "releaseDate": "2017-09-08",
             "title": "Rememory",
+            "vote_average": 6,
           },
           "ref": null,
           "rendered": null,
@@ -1225,14 +1385,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "446173",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "A documentary about how a dominant cultural and demographic institution both sustains their traditional activities and adapts to the digital revolution.",
+            "poster_path": "/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg",
+            "releaseDate": "2017-09-13",
             "title": "Ex Libris – New York Public Library",
+            "vote_average": 4.5,
           },
           "ref": null,
           "rendered": null,
@@ -1240,14 +1402,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "78",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans.",
+            "poster_path": "/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg",
+            "releaseDate": "1982-06-25",
             "title": "Blade Runner",
+            "vote_average": 7.9,
           },
           "ref": null,
           "rendered": null,
@@ -1255,14 +1419,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "396422",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Several years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the dollmaker's possessed creation, Annabelle.",
+            "poster_path": "/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
+            "releaseDate": "2017-08-03",
             "title": "Annabelle: Creation",
+            "vote_average": 6.4,
           },
           "ref": null,
           "rendered": null,
@@ -1270,14 +1436,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "353491",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "The last Gunslinger, Roland Deschain, has been locked in an eternal battle with Walter O’Dim, also known as the Man in Black, determined to prevent him from toppling the Dark Tower, which holds the universe together. With the fate of the worlds at stake, good and evil will collide in the ultimate battle as only Roland can defend the Tower from the Man in Black.",
+            "poster_path": "/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
+            "releaseDate": "2017-08-03",
             "title": "The Dark Tower",
+            "vote_average": 5.7,
           },
           "ref": null,
           "rendered": null,
@@ -1285,14 +1453,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "372343",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Detective Harry Hole investigates the disappearance of a woman whose pink scarf is found wrapped around an ominous looking snowman.",
+            "poster_path": "/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg",
+            "releaseDate": "2017-10-12",
             "title": "The Snowman",
+            "vote_average": 4.9,
           },
           "ref": null,
           "rendered": null,
@@ -1300,14 +1470,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "268531",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Two mischievous kids hypnotize their mean elementary school principal and turn him into their comic book creation, the kind-hearted and elastic-banded Captain Underpants.",
+            "poster_path": "/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg",
+            "releaseDate": "2017-06-01",
             "title": "Captain Underpants: The First Epic Movie",
+            "vote_average": 6.4,
           },
           "ref": null,
           "rendered": null,
@@ -1315,14 +1487,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "337170",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "The true story of pilot Barry Seal, who transported contraband for the CIA and the Medellin cartel in the 1980s.",
+            "poster_path": "/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg",
+            "releaseDate": "2017-08-17",
             "title": "American Made",
+            "vote_average": 6.3,
           },
           "ref": null,
           "rendered": null,
@@ -1330,14 +1504,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "390043",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "The world's top bodyguard gets a new client, a hit man who must testify at the International Court of Justice. They must put their differences aside and work together to make it to the trial on time.",
+            "poster_path": "/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg",
+            "releaseDate": "2017-08-16",
             "title": "The Hitman's Bodyguard",
+            "vote_average": 6.6,
           },
           "ref": null,
           "rendered": null,
@@ -1345,14 +1521,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "378236",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Gene, a multi-expressional emoji, sets out on a journey to become a normal emoji.",
+            "poster_path": "/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg",
+            "releaseDate": "2017-07-28",
             "title": "The Emoji Movie",
+            "vote_average": 5.7,
           },
           "ref": null,
           "rendered": null,
@@ -1360,14 +1538,16 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "378064",
+          "key": null,
           "nodeType": "function",
           "props": Object {
-            "img": "/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg",
-            "releaseDate": undefined,
-            "score": undefined,
-            "summary": undefined,
+            "addFavorites": [Function],
+            "movie_id": undefined,
+            "overview": "Shouya Ishida starts bullying the new girl in class, Shouko Nishimiya, because she is deaf. But as the teasing continues, the rest of the class starts to turn on Shouya for his lack of compassion. When they leave elementary school, Shouko and Shouya do not speak to each other again... until an older, wiser Shouya, tormented by his past behaviour, decides he must see Shouko once more. He wants to atone for his sins, but is it already too late...?",
+            "poster_path": "/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg",
+            "releaseDate": "2016-09-17",
             "title": "A Silent Voice",
+            "vote_average": 8.2,
           },
           "ref": null,
           "rendered": null,

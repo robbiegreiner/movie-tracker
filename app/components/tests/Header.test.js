@@ -14,20 +14,19 @@ describe('Header component', () => {
   it('should render user name when user is signed in', () => {
     const name = wrapper.find('p');
 
-    expect(name.text()).toEqual('Lola');
+    expect(name.text()).toEqual('Welcome, Lola!');
   });
 
   it('should render a link to view favorites', () => {
     const link = wrapper.find('Link');
 
-    expect(link.length).toEqual(1);
+    expect(link.length).toEqual(2);
   });
 
   it('should render a button to sign out', () => {
-    const button = wrapper.find('button');
+    const button = wrapper.find('.signout');
 
     expect(button.length).toEqual(1);
-    expect(button.text()).toEqual('Sign Out');
   });
 
   it('should match snapshot', () => {

@@ -25,7 +25,16 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
-          MovieTracker
+          <span
+            className="header-one"
+          >
+            Movie
+          </span>
+          <span
+            className="header-two"
+          >
+            Tracker
+          </span>
         </h1>,
         <div
           className="user-box"
@@ -33,19 +42,25 @@ ShallowWrapper {
           <p
             className="user"
           >
+            Welcome,
             Lola
+            !
           </p>
           <Link
+            className="login-link favorites-link"
             replace={false}
             to="/favorites"
           >
             View Favorites
           </Link>
-          <button
+          <Link
+            className="login-link signout"
             onClick={[Function]}
+            replace={false}
+            to="/login"
           >
             Sign Out
-          </button>
+          </Link>
         </div>,
       ],
       "className": "header",
@@ -57,10 +72,46 @@ ShallowWrapper {
         "key": null,
         "nodeType": "host",
         "props": Object {
-          "children": "MovieTracker",
+          "children": Array [
+            <span
+              className="header-one"
+            >
+              Movie
+            </span>,
+            <span
+              className="header-two"
+            >
+              Tracker
+            </span>,
+          ],
         },
         "ref": null,
-        "rendered": "MovieTracker",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Movie",
+              "className": "header-one",
+            },
+            "ref": null,
+            "rendered": "Movie",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Tracker",
+              "className": "header-two",
+            },
+            "ref": null,
+            "rendered": "Tracker",
+            "type": "span",
+          },
+        ],
         "type": "h1",
       },
       Object {
@@ -72,19 +123,25 @@ ShallowWrapper {
             <p
               className="user"
             >
+              Welcome,
               Lola
+              !
             </p>,
             <Link
+              className="login-link favorites-link"
               replace={false}
               to="/favorites"
             >
               View Favorites
             </Link>,
-            <button
+            <Link
+              className="login-link signout"
               onClick={[Function]}
+              replace={false}
+              to="/login"
             >
               Sign Out
-            </button>,
+            </Link>,
           ],
           "className": "user-box",
         },
@@ -95,11 +152,19 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": "Lola",
+              "children": Array [
+                "Welcome, ",
+                "Lola",
+                "!",
+              ],
               "className": "user",
             },
             "ref": null,
-            "rendered": "Lola",
+            "rendered": Array [
+              "Welcome, ",
+              "Lola",
+              "!",
+            ],
             "type": "p",
           },
           Object {
@@ -108,6 +173,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "View Favorites",
+              "className": "login-link favorites-link",
               "replace": false,
               "to": "/favorites",
             },
@@ -118,14 +184,17 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": null,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": "Sign Out",
+              "className": "login-link signout",
               "onClick": [Function],
+              "replace": false,
+              "to": "/login",
             },
             "ref": null,
             "rendered": "Sign Out",
-            "type": "button",
+            "type": [Function],
           },
         ],
         "type": "div",
@@ -141,7 +210,16 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
-            MovieTracker
+            <span
+              className="header-one"
+            >
+              Movie
+            </span>
+            <span
+              className="header-two"
+            >
+              Tracker
+            </span>
           </h1>,
           <div
             className="user-box"
@@ -149,19 +227,25 @@ ShallowWrapper {
             <p
               className="user"
             >
+              Welcome,
               Lola
+              !
             </p>
             <Link
+              className="login-link favorites-link"
               replace={false}
               to="/favorites"
             >
               View Favorites
             </Link>
-            <button
+            <Link
+              className="login-link signout"
               onClick={[Function]}
+              replace={false}
+              to="/login"
             >
               Sign Out
-            </button>
+            </Link>
           </div>,
         ],
         "className": "header",
@@ -173,10 +257,46 @@ ShallowWrapper {
           "key": null,
           "nodeType": "host",
           "props": Object {
-            "children": "MovieTracker",
+            "children": Array [
+              <span
+                className="header-one"
+              >
+                Movie
+              </span>,
+              <span
+                className="header-two"
+              >
+                Tracker
+              </span>,
+            ],
           },
           "ref": null,
-          "rendered": "MovieTracker",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Movie",
+                "className": "header-one",
+              },
+              "ref": null,
+              "rendered": "Movie",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Tracker",
+                "className": "header-two",
+              },
+              "ref": null,
+              "rendered": "Tracker",
+              "type": "span",
+            },
+          ],
           "type": "h1",
         },
         Object {
@@ -188,19 +308,25 @@ ShallowWrapper {
               <p
                 className="user"
               >
+                Welcome,
                 Lola
+                !
               </p>,
               <Link
+                className="login-link favorites-link"
                 replace={false}
                 to="/favorites"
               >
                 View Favorites
               </Link>,
-              <button
+              <Link
+                className="login-link signout"
                 onClick={[Function]}
+                replace={false}
+                to="/login"
               >
                 Sign Out
-              </button>,
+              </Link>,
             ],
             "className": "user-box",
           },
@@ -211,11 +337,19 @@ ShallowWrapper {
               "key": null,
               "nodeType": "host",
               "props": Object {
-                "children": "Lola",
+                "children": Array [
+                  "Welcome, ",
+                  "Lola",
+                  "!",
+                ],
                 "className": "user",
               },
               "ref": null,
-              "rendered": "Lola",
+              "rendered": Array [
+                "Welcome, ",
+                "Lola",
+                "!",
+              ],
               "type": "p",
             },
             Object {
@@ -224,6 +358,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "View Favorites",
+                "className": "login-link favorites-link",
                 "replace": false,
                 "to": "/favorites",
               },
@@ -234,14 +369,17 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": null,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "children": "Sign Out",
+                "className": "login-link signout",
                 "onClick": [Function],
+                "replace": false,
+                "to": "/login",
               },
               "ref": null,
               "rendered": "Sign Out",
-              "type": "button",
+              "type": [Function],
             },
           ],
           "type": "div",
@@ -281,18 +419,29 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
-          MovieTracker
+          <span
+            className="header-one"
+          >
+            Movie
+          </span>
+          <span
+            className="header-two"
+          >
+            Tracker
+          </span>
         </h1>,
         <div
           className="no-user-box"
         >
           <Link
+            className="login-link"
             replace={false}
             to="/login"
           >
             Log In
           </Link>
           <Link
+            className="login-link"
             replace={false}
             to="/createuser"
           >
@@ -309,10 +458,46 @@ ShallowWrapper {
         "key": null,
         "nodeType": "host",
         "props": Object {
-          "children": "MovieTracker",
+          "children": Array [
+            <span
+              className="header-one"
+            >
+              Movie
+            </span>,
+            <span
+              className="header-two"
+            >
+              Tracker
+            </span>,
+          ],
         },
         "ref": null,
-        "rendered": "MovieTracker",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Movie",
+              "className": "header-one",
+            },
+            "ref": null,
+            "rendered": "Movie",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Tracker",
+              "className": "header-two",
+            },
+            "ref": null,
+            "rendered": "Tracker",
+            "type": "span",
+          },
+        ],
         "type": "h1",
       },
       Object {
@@ -322,12 +507,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Link
+              className="login-link"
               replace={false}
               to="/login"
             >
               Log In
             </Link>,
             <Link
+              className="login-link"
               replace={false}
               to="/createuser"
             >
@@ -344,6 +531,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Log In",
+              "className": "login-link",
               "replace": false,
               "to": "/login",
             },
@@ -357,6 +545,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Create Account",
+              "className": "login-link",
               "replace": false,
               "to": "/createuser",
             },
@@ -378,18 +567,29 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
-            MovieTracker
+            <span
+              className="header-one"
+            >
+              Movie
+            </span>
+            <span
+              className="header-two"
+            >
+              Tracker
+            </span>
           </h1>,
           <div
             className="no-user-box"
           >
             <Link
+              className="login-link"
               replace={false}
               to="/login"
             >
               Log In
             </Link>
             <Link
+              className="login-link"
               replace={false}
               to="/createuser"
             >
@@ -406,10 +606,46 @@ ShallowWrapper {
           "key": null,
           "nodeType": "host",
           "props": Object {
-            "children": "MovieTracker",
+            "children": Array [
+              <span
+                className="header-one"
+              >
+                Movie
+              </span>,
+              <span
+                className="header-two"
+              >
+                Tracker
+              </span>,
+            ],
           },
           "ref": null,
-          "rendered": "MovieTracker",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Movie",
+                "className": "header-one",
+              },
+              "ref": null,
+              "rendered": "Movie",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Tracker",
+                "className": "header-two",
+              },
+              "ref": null,
+              "rendered": "Tracker",
+              "type": "span",
+            },
+          ],
           "type": "h1",
         },
         Object {
@@ -419,12 +655,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Link
+                className="login-link"
                 replace={false}
                 to="/login"
               >
                 Log In
               </Link>,
               <Link
+                className="login-link"
                 replace={false}
                 to="/createuser"
               >
@@ -441,6 +679,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "Log In",
+                "className": "login-link",
                 "replace": false,
                 "to": "/login",
               },
@@ -454,6 +693,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "Create Account",
+                "className": "login-link",
                 "replace": false,
                 "to": "/createuser",
               },
