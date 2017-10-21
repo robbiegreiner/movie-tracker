@@ -88,7 +88,7 @@
 
 /* flip speed goes here */
 .flipper {
-	transition: 0.9s;
+	transition: 1.5s;
 	transform-style: preserve-3d;
 
 	position: relative;
@@ -123,5 +123,18 @@
   // box-shadow: 5px 10px 10px #888888;
   // background-color: white;
   // border-radius: 10%;
+
+}
+
+@media (min-height: 910px) {
+  .movie-card, .movie-card img {
+    height: 630px;
+    width: 443px;
+  }
+
+  .flip-container, .front, .back {
+  	height: 600px;
+  	width: 443px;
+  }
 
 }

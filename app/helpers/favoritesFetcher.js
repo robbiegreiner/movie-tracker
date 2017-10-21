@@ -7,7 +7,7 @@ const favoritesFetcher = newFavorite => {
     }
   })
     .then(res => res.json())
-    .then(resJson => resJson.id);
+    .then(resJson => console.log(resJson.id));
 };
 
 export default favoritesFetcher;

@@ -111,6 +111,22 @@ export const addFavorite = favorite => {
   };
 };
 
+export const getAllFavorites = favorites => {
+  return {
+    type: 'GET_ALL_FAVORITES',
+    favorites
+  };
+};
+
+export const favoritesGetter = userId => {
+  console.log('hey');
+  return dispatch => {
+    fetch(`api/users/${userId}/favorites`)
+      .then(response => response.json())
+      .then(jsonResponse => dispatch(getAllFavorites(jsonResponse.data)));
+  };
+};
+
 export const postFavorite = (userId, movieObj) => {
   const newFave = Object.assign({user_id: userId}, movieObj);
   favoritesFetcher(newFave);
