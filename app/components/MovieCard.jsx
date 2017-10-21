@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MovieCard = ({ movie_id, title, release_date, overview, vote_average, poster_path, addFavorites }) => {
+const MovieCard = ({ movie, addFavorites }) => {
 
-  let poster = `https://image.tmdb.org/t/p/w500/${poster_path}`;
+  const { release_date,
+    overview,
+    vote_average,
+    poster_path } = movie;
+
+  const poster = `https://image.tmdb.org/t/p/w500/${poster_path}`;
 
   return (
     <div className='movie-card'>
@@ -68,13 +73,8 @@ const MovieCard = ({ movie_id, title, release_date, overview, vote_average, post
 
 
 MovieCard.propTypes = {
-  title: PropTypes.string,
-  release_date: PropTypes.string,
-  overview: PropTypes.string,
-  vote_average: PropTypes.number,
-  poster_path: PropTypes.string,
-  addFavorites: PropTypes.func,
-  movie_id: PropTypes.number
+  movie: PropTypes.object,
+  addFavorites: PropTypes.func
 };
 
 export default MovieCard;

@@ -18,7 +18,6 @@ export default class MovieIndex extends Component {
 
   addFavorites(movieObj) {
     const { favorites, sendFavorite, user } = this.props;
-    // destructure
     if (!user.name) {
       alert('Please, create an account to favorite a movie');
       this.setState({
@@ -36,12 +35,7 @@ export default class MovieIndex extends Component {
     return this.props.movieList.map(movie => {
       return <MovieCard key={movie.movie_id}
         addFavorites={this.addFavorites.bind(this)}
-        movie_id={movie.movie_id}
-        title={movie.title}
-        release_date={movie.release_date}
-        overview={movie.overview}
-        vote_average={movie.vote_average}
-        poster_path={movie.poster_path}/>;
+        movie={movie}/>;
     });
   }
 
