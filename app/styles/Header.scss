@@ -21,7 +21,7 @@
 
 .header-one {
   font-size: 75px;
-  color: #fff;
+  color: #F4F4F4;
 }
 
 .header-two {
@@ -55,4 +55,11 @@
   margin: 0 10px;
   border: 1px solid #F4F4F4;
   border-radius: 10px;
+}
+
+.signout:hover,
+.favorites-link:hover,
+.login-link:hover {
+  background-color: #D23321;
+  border: none;
 }

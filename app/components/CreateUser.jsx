@@ -32,7 +32,7 @@ class CreateUser extends Component {
     return (
       <div className="login">
         <form>
-          <h2>Welcome to Movie Tracker</h2>
+          {/* <h2>Welcome to Movie Tracker</h2> */}
           <h2>Create Account</h2>
           <h4 className='error'>
             { createUserError ? 'email already exists' : null }
