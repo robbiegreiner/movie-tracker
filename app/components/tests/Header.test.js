@@ -20,7 +20,7 @@ describe('Header component', () => {
   it('should render a link to view favorites', () => {
     const link = wrapper.find('Link');
 
-    expect(link.length).toEqual(2);
+    expect(link.length).toEqual(3);
   });
 
   it('should render a button to sign out', () => {
@@ -44,7 +44,7 @@ describe('Header component', () => {
   it('should render 2 links', () => {
     const links = altWrapper.find('Link');
 
-    expect(links.length).toEqual(2);
+    expect(links.length).toEqual(3);
   });
 
   it('should match snapshot', () => {
