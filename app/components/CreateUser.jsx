@@ -32,7 +32,6 @@ class CreateUser extends Component {
         key={inputType}
         type='text'
         placeholder={inputType.charAt(0).toUpperCase() + inputType.slice(1)}
-        data-type='inputType'
         className={`${inputType}-input`}
         onChange={ (event) => this.handleChange(event, inputType ) }
       />;
