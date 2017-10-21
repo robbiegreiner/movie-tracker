@@ -28,7 +28,8 @@
 }
 
 .password-input,
-.email-input {
+.email-input,
+.name-input {
   width: 100%;
   background-color: transparent;
   border: none;
@@ -38,7 +39,8 @@
   margin: 20px 0;
 }
 .password-input:focus,
-.email-input:focus {
+.email-input:focus,
+.name-input:focus {
   outline: none;
   border-bottom: 2px solid #D23321;
 }
