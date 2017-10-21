@@ -1,15 +1,61 @@
 .login {
-  color: steelblue;
+  // color: steelblue;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  // align-items: center;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 280px;
+  width: 400px;
+  border-radius: 5px;
+  padding: 30px;
+  overflow: hidden;
+  animation: appear 0.2s linear;
+
+  margin: 40px 0 0;
 }
 
 .login h2 {
-  margin-top: 30px;
+  // margin-top: 30px;
   text-align: center;
 }
 
 .login input {
   margin-top: 30px;
+}
+
+.password-input,
+.email-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 20px 0;
+}
+.password-input:focus,
+.email-input:focus {
+  outline: none;
+  border-bottom: 2px solid #8fbcfb;
+}
+
+.form-button {
+  background-color: #8fbcfb;
+  border: none;
+  border-radius: 10px;
+  text-transform: lowercase;
+  width: 100px;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: lighter;
+  align-self: flex-end;
+  margin: 20px 0;
 }
