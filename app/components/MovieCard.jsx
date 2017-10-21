@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MovieCard = ({ movie_id, title, releaseDate, overview, vote_average, poster_path, addFavorites }) => {
+const MovieCard = ({ movie_id, title, release_date, overview, vote_average, poster_path, addFavorites }) => {
 
   let poster = `https://image.tmdb.org/t/p/w500/${poster_path}`;
 
@@ -20,12 +20,12 @@ const MovieCard = ({ movie_id, title, releaseDate, overview, vote_average, poste
                 overview,
                 vote_average,
                 poster_path,
-                releaseDate
+                release_date
               });
               addFavorites(movieObj);
             }}></div>
             <h4 className="release-date">Release Date</h4>
-            <h3 className="release">{releaseDate}</h3>
+            <h3 className="release">{release_date}</h3>
             <h4 className="rating">User Rating</h4>
             <h3 className="score">{vote_average}</h3>
             <p>{overview}</p>
@@ -43,7 +43,7 @@ const MovieCard = ({ movie_id, title, releaseDate, overview, vote_average, poste
           overview,
           vote_average,
           poster_path,
-          releaseDate
+          release_date
         });
         addFavorites(movieObj);
       }}></div>
@@ -51,7 +51,7 @@ const MovieCard = ({ movie_id, title, releaseDate, overview, vote_average, poste
         <img className="movie-image" src={poster} alt="poster" />
         <div className="score-release-container">
           <h4 className="release-date">Release Date</h4>
-          <h3 className="release">{releaseDate}</h3>
+          <h3 className="release">{release_date}</h3>
           <h4 className="rating">User Rating</h4>
           <h3 className="score">{vote_average}</h3>
         </div>
@@ -69,7 +69,7 @@ const MovieCard = ({ movie_id, title, releaseDate, overview, vote_average, poste
 
 MovieCard.propTypes = {
   title: PropTypes.string,
-  releaseDate: PropTypes.string,
+  release_date: PropTypes.string,
   overview: PropTypes.string,
   vote_average: PropTypes.number,
   poster_path: PropTypes.string,

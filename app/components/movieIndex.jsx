@@ -13,6 +13,7 @@ export default class MovieIndex extends Component {
 
   componentDidMount() {
     this.props.retrieveMovies();
+    this.props.retrieveFavorites(this.props.user.id);
   }
 
   addFavorites(movieObj) {
@@ -37,7 +38,7 @@ export default class MovieIndex extends Component {
         addFavorites={this.addFavorites.bind(this)}
         movie_id={movie.movie_id}
         title={movie.title}
-        releaseDate={movie.release_date}
+        release_date={movie.release_date}
         overview={movie.overview}
         vote_average={movie.vote_average}
         poster_path={movie.poster_path}/>;

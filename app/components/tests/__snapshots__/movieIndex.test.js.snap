@@ -475,140 +475,140 @@ ShallowWrapper {
       "children": Array [
         <MovieCard
           img="/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="It"
         />,
         <MovieCard
           img="/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Blade Runner 2049"
         />,
         <MovieCard
           img="/3vYhLLxrTtZLysXtIWktmd57Snv.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="War for the Planet of the Apes"
         />,
         <MovieCard
           img="/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Kingsman: The Golden Circle"
         />,
         <MovieCard
           img="/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="mother!"
         />,
         <MovieCard
           img="/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Baby Driver"
         />,
         <MovieCard
           img="/o40BAqdTQHiN3cUfpgieDUYI71z.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="American Assassin"
         />,
         <MovieCard
           img="/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Happy Death Day"
         />,
         <MovieCard
           img="/z5CtCxpblBke2G8c7CMkstedMgY.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Home Again"
         />,
         <MovieCard
           img="/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Rememory"
         />,
         <MovieCard
           img="/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Ex Libris – New York Public Library"
         />,
         <MovieCard
           img="/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Blade Runner"
         />,
         <MovieCard
           img="/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Annabelle: Creation"
         />,
         <MovieCard
           img="/i9GUSgddIqrroubiLsvvMRYyRy0.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="The Dark Tower"
         />,
         <MovieCard
           img="/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="The Snowman"
         />,
         <MovieCard
           img="/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="Captain Underpants: The First Epic Movie"
         />,
         <MovieCard
           img="/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="American Made"
         />,
         <MovieCard
           img="/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="The Hitman's Bodyguard"
         />,
         <MovieCard
           img="/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="The Emoji Movie"
         />,
         <MovieCard
           img="/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg"
-          releaseDate={undefined}
+          release_date={undefined}
           score={undefined}
           summary={undefined}
           title="A Silent Voice"
@@ -624,7 +624,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "It",
@@ -639,7 +639,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Blade Runner 2049",
@@ -654,7 +654,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/3vYhLLxrTtZLysXtIWktmd57Snv.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "War for the Planet of the Apes",
@@ -669,7 +669,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Kingsman: The Golden Circle",
@@ -684,7 +684,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "mother!",
@@ -699,7 +699,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Baby Driver",
@@ -714,7 +714,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/o40BAqdTQHiN3cUfpgieDUYI71z.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "American Assassin",
@@ -729,7 +729,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Happy Death Day",
@@ -744,7 +744,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/z5CtCxpblBke2G8c7CMkstedMgY.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Home Again",
@@ -759,7 +759,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Rememory",
@@ -774,7 +774,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Ex Libris – New York Public Library",
@@ -789,7 +789,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Blade Runner",
@@ -804,7 +804,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Annabelle: Creation",
@@ -819,7 +819,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "The Dark Tower",
@@ -834,7 +834,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "The Snowman",
@@ -849,7 +849,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "Captain Underpants: The First Epic Movie",
@@ -864,7 +864,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "American Made",
@@ -879,7 +879,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "The Hitman's Bodyguard",
@@ -894,7 +894,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "The Emoji Movie",
@@ -909,7 +909,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "img": "/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg",
-          "releaseDate": undefined,
+          "release_date": undefined,
           "score": undefined,
           "summary": undefined,
           "title": "A Silent Voice",
@@ -930,140 +930,140 @@ ShallowWrapper {
         "children": Array [
           <MovieCard
             img="/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="It"
           />,
           <MovieCard
             img="/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Blade Runner 2049"
           />,
           <MovieCard
             img="/3vYhLLxrTtZLysXtIWktmd57Snv.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="War for the Planet of the Apes"
           />,
           <MovieCard
             img="/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Kingsman: The Golden Circle"
           />,
           <MovieCard
             img="/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="mother!"
           />,
           <MovieCard
             img="/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Baby Driver"
           />,
           <MovieCard
             img="/o40BAqdTQHiN3cUfpgieDUYI71z.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="American Assassin"
           />,
           <MovieCard
             img="/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Happy Death Day"
           />,
           <MovieCard
             img="/z5CtCxpblBke2G8c7CMkstedMgY.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Home Again"
           />,
           <MovieCard
             img="/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Rememory"
           />,
           <MovieCard
             img="/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Ex Libris – New York Public Library"
           />,
           <MovieCard
             img="/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Blade Runner"
           />,
           <MovieCard
             img="/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Annabelle: Creation"
           />,
           <MovieCard
             img="/i9GUSgddIqrroubiLsvvMRYyRy0.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="The Dark Tower"
           />,
           <MovieCard
             img="/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="The Snowman"
           />,
           <MovieCard
             img="/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="Captain Underpants: The First Epic Movie"
           />,
           <MovieCard
             img="/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="American Made"
           />,
           <MovieCard
             img="/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="The Hitman's Bodyguard"
           />,
           <MovieCard
             img="/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="The Emoji Movie"
           />,
           <MovieCard
             img="/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg"
-            releaseDate={undefined}
+            release_date={undefined}
             score={undefined}
             summary={undefined}
             title="A Silent Voice"
@@ -1079,7 +1079,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "It",
@@ -1094,7 +1094,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/aMpyrCizvSdc0UIMblJ1srVgAEF.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Blade Runner 2049",
@@ -1109,7 +1109,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/3vYhLLxrTtZLysXtIWktmd57Snv.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "War for the Planet of the Apes",
@@ -1124,7 +1124,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Kingsman: The Golden Circle",
@@ -1139,7 +1139,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/qmi2dsuoyzZdJ0WFZYQazbX8ILj.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "mother!",
@@ -1154,7 +1154,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Baby Driver",
@@ -1169,7 +1169,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/o40BAqdTQHiN3cUfpgieDUYI71z.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "American Assassin",
@@ -1184,7 +1184,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/FFm2DNpzfPDvIy8DKSyZ71et8W.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Happy Death Day",
@@ -1199,7 +1199,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/z5CtCxpblBke2G8c7CMkstedMgY.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Home Again",
@@ -1214,7 +1214,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/sGQ4kix7bIT35ePpJzA2rNNaxPY.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Rememory",
@@ -1229,7 +1229,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/5UAtolZFuOFYqUpHcDYamsVKWvb.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Ex Libris – New York Public Library",
@@ -1244,7 +1244,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Blade Runner",
@@ -1259,7 +1259,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Annabelle: Creation",
@@ -1274,7 +1274,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "The Dark Tower",
@@ -1289,7 +1289,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/bQHgpTVsAWjNQWS0frsl7DlzLX1.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "The Snowman",
@@ -1304,7 +1304,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "Captain Underpants: The First Epic Movie",
@@ -1319,7 +1319,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "American Made",
@@ -1334,7 +1334,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/5CGjlz2vyBhW5xHW4eNOZIdgzYq.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "The Hitman's Bodyguard",
@@ -1349,7 +1349,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/f5pF4OYzh4wb1dYL2ARQNdqUsEZ.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "The Emoji Movie",
@@ -1364,7 +1364,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "img": "/drlyoSKDOPnxzJFrRWGqzDsyJvR.jpg",
-            "releaseDate": undefined,
+            "release_date": undefined,
             "score": undefined,
             "summary": undefined,
             "title": "A Silent Voice",

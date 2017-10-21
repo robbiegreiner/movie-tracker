@@ -1,4 +1,5 @@
 const favoritesFetcher = newFavorite => {
+  console.log(newFavorite);
   return fetch('/api/users/favorites/new', {
     method: 'POST',
     body: JSON.stringify(newFavorite),
@@ -7,7 +8,7 @@ const favoritesFetcher = newFavorite => {
     }
   })
     .then(res => res.json())
-    .then(resJson => resJson.id);
+    .then(resJson => console.log(resJson.id));
 };
 
 export default favoritesFetcher;
