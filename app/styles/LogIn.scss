@@ -15,9 +15,6 @@
   width: 400px;
   border-radius: 5px;
   padding: 30px;
-  overflow: hidden;
-  animation: appear 0.2s linear;
-
   margin: 40px 0 0;
 }
 
@@ -58,4 +55,9 @@
   font-weight: lighter;
   align-self: flex-end;
   margin: 20px 0;
+}
+
+.form-button:focus {
+  outline: none;
+
 }

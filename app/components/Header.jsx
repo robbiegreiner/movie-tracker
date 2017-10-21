@@ -16,9 +16,10 @@ const Header = ({ user, handleSignOut }) => {
       </button>
     </div>);
 
-  const noUserContents = <div className='no-user-box'>
-    <Link to='/login'>Log In</Link>
-    <Link to='/createuser'>Create Account</Link>
+  const noUserContents =
+  <div className='no-user-box'>
+    <Link className='login-link' to='/login'>Log In</Link>
+    <Link className='login-link' to='/createuser'>Create Account</Link>
   </div>;
 
   (!user.name) ? userBox = noUserContents : userBox = userContents;

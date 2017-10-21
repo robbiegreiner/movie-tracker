@@ -17,12 +17,24 @@
 }
 
 .no-user-box{
-  width: 383px;
+  // width: 383px;
   display: flex;
   justify-content: center;
 }
 
 .no-user-box a {
-  color: #A11811;
-  margin: 0 20px 0 20px;
+  // color: #A11811;
+  // margin: 0 20px 0 20px;
+}
+
+.login-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin: 0 10px;
+  border: 1px solid #979797;
+  border-radius: 10px;
 }
