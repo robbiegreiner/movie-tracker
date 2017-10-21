@@ -59,6 +59,10 @@ ShallowWrapper {
           <div
             className="back"
           >
+            <div
+              className="fav-btn"
+              onClick={[Function]}
+            />
             <h4
               className="release-date"
             >
@@ -108,6 +112,10 @@ ShallowWrapper {
           <div
             className="back"
           >
+            <div
+              className="fav-btn"
+              onClick={[Function]}
+            />
             <h4
               className="release-date"
             >
@@ -154,6 +162,10 @@ ShallowWrapper {
             <div
               className="back"
             >
+              <div
+                className="fav-btn"
+                onClick={[Function]}
+              />
               <h4
                 className="release-date"
               >
@@ -217,6 +229,10 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                <div
+                  className="fav-btn"
+                  onClick={[Function]}
+                />,
                 <h4
                   className="release-date"
                 >
@@ -245,6 +261,18 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fav-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
               Object {
                 "instance": null,
                 "key": null,
@@ -338,6 +366,10 @@ ShallowWrapper {
             <div
               className="back"
             >
+              <div
+                className="fav-btn"
+                onClick={[Function]}
+              />
               <h4
                 className="release-date"
               >
@@ -387,6 +419,10 @@ ShallowWrapper {
             <div
               className="back"
             >
+              <div
+                className="fav-btn"
+                onClick={[Function]}
+              />
               <h4
                 className="release-date"
               >
@@ -433,6 +469,10 @@ ShallowWrapper {
               <div
                 className="back"
               >
+                <div
+                  className="fav-btn"
+                  onClick={[Function]}
+                />
                 <h4
                   className="release-date"
                 >
@@ -496,6 +536,10 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
+                  <div
+                    className="fav-btn"
+                    onClick={[Function]}
+                  />,
                   <h4
                     className="release-date"
                   >
@@ -524,6 +568,18 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fav-btn",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
                 Object {
                   "instance": null,
                   "key": null,

@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 const MovieCard = ({ movie, addFavorites }) => {
 
-  const { release_date,
+  const { movie_id,
+    title,
+    release_date,
     overview,
     vote_average,
     poster_path } = movie;
