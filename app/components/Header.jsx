@@ -9,11 +9,13 @@ const Header = ({ user, handleSignOut }) => {
   const userContents = (
     <div className='user-box'>
       <p className='user'>{user.name}</p>
-      <Link to='/favorites'>View Favorites</Link>
-      <button
+      <Link className='login-link favorites-link' to='/favorites'>View Favorites</Link>
+      <Link
+        className='login-link signout'
+        to='/login'
         onClick={() => handleSignOut()}>
         Sign Out
-      </button>
+      </Link>
     </div>);
 
   const noUserContents =
