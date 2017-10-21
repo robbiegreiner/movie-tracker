@@ -31,7 +31,6 @@ export default class MovieIndex extends Component {
   }
 
   renderCards() {
-    //destructure or pass movie down and destructure in movieCard
     return this.props.movieList.map(movie => {
       return <MovieCard key={movie.movie_id}
         addFavorites={this.addFavorites.bind(this)}
