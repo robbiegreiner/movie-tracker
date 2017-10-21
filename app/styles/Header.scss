@@ -32,6 +32,16 @@
   justify-content: center;
 }
 
+.user {
+  font-size: 20px;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  padding-right: 300px;
+
+}
+
+
 .signout,
 .favorites-link,
 .login-link {

@@ -8,7 +8,7 @@ const Header = ({ user, handleSignOut }) => {
 
   const userContents = (
     <div className='user-box'>
-      <p className='user'>{user.name}</p>
+      <p className='user'>Welcome, {user.name}!</p>
       <Link className='login-link favorites-link' to='/favorites'>View Favorites</Link>
       <Link
         className='login-link signout'
