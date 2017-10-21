@@ -28,7 +28,10 @@ const Header = ({ user, handleSignOut }) => {
 
   return (
     <div className='header'>
-      <h1>MovieTracker</h1>
+      <h1>
+        <span className='header-one'>Movie</span>
+        <span className='header-two'>Tracker</span>
+      </h1>
       {userBox}
     </div>
   );

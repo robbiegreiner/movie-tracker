@@ -1,10 +1,7 @@
 .login {
-  // color: steelblue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: center;
-
   position: fixed;
   top: 50%;
   left: 50%;
@@ -19,7 +16,6 @@
 }
 
 .login h2 {
-  // margin-top: 30px;
   text-align: center;
 }
 
@@ -40,11 +36,11 @@
 .password-input:focus,
 .email-input:focus {
   outline: none;
-  border-bottom: 2px solid #8fbcfb;
+  border-bottom: 2px solid #D23321;
 }
 
 .form-button {
-  background-color: #8fbcfb;
+  background-color: #D23321;
   border: none;
   border-radius: 10px;
   text-transform: lowercase;

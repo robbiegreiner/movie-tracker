@@ -2,45 +2,46 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
-  background-color: #fff;
+  height: 120px;
+  // background-color: #D23321;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #0D0F0F;
+
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
 }
 
 .header h1{
-  color: steelblue;
   font-size: 60px;
   display: flex;
+  margin-left: 75px;
 }
 
-.no-user-box{
-  // width: 383px;
-  display: flex;
-  justify-content: center;
+.header-one {
+  font-size: 75px;
+  color: #fff;
 }
 
-.no-user-box a {
-  // color: #A11811;
-  // margin: 0 20px 0 20px;
+.header-two {
+  font-size: 75px;
+  color: #D23321;
 }
 
+.no-user-box,
 .user-box {
   display: flex;
   justify-content: center;
+  margin-right: 75px;
 }
 
 .user {
   font-size: 20px;
   display: flex;
-  // justify-content: center;
   align-items: center;
-  padding-right: 300px;
-
+  padding-right: 200px;
 }
-
 
 .signout,
 .favorites-link,
@@ -48,10 +49,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: #F4F4F4;
   text-decoration: none;
   padding: 5px 20px;
   margin: 0 10px;
-  border: 1px solid #979797;
+  border: 1px solid #F4F4F4;
   border-radius: 10px;
 }

@@ -1,16 +1,11 @@
 .movie-card {
   color: steelblue;
-  background-color: #0D0F0F;
+  // background-color: #0D0F0F;
   height: 500px;
   width: 350px;
-  // border: 2px solid steelblue;
   margin: 20px 40px 20px 40px;
   display: flex;
   flex-direction: column;
-  // background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
-
-
-
 }
 
 .fav-btn {
@@ -32,9 +27,7 @@
 .movie-card img {
   height: 500px;
   width: 350px;
-  // border: 2px solid #A11811;
-  box-shadow: 5px 10px 10px #000;
-
+  box-shadow: 5px 10px 10px #888888;
 
 }
 
@@ -105,7 +98,7 @@
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-  box-shadow: 5px 10px 10px #000;
+  box-shadow: 5px 10px 10px #888888;
 	position: absolute;
 	top: 0;
 	left: 0;
