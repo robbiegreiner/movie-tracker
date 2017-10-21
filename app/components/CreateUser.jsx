@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 import PropTypes from 'prop-types';
+import validator from 'email-validator';
 
 class CreateUser extends Component {
   constructor(props) {
@@ -33,6 +34,15 @@ class CreateUser extends Component {
     if (userStatus === true) {
       return <Redirect to='/'/>;
     }
+    const validateEmail = () => {
+      validator.validate(this.state.email) ?
+        createNewUser(this.state) :
+        alert('Please submit a valid email address.');
+    };
+    const validatePwd = () => {
+      this.state.password.length >= 8 ? validateEmail() :
+        alert('Your password must be eight characters long.');
+    };
 // event.target.getAttribute('data-type')
     return (
       <div className="login">
@@ -68,9 +78,7 @@ class CreateUser extends Component {
             onClick={
               (event) => {
                 event.preventDefault();
-                //pass state to action that makes fetch post request to get user back
-                const userObj = Object.assign({}, this.state);
-                createNewUser(userObj);
+                validatePwd();
               }
             }
           />
