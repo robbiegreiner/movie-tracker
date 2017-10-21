@@ -29,8 +29,14 @@ describe('CreateUser Container', () => {
       userStatus={initialState.userStatus}
       createUserError={initialState.createUserError}
       createNewUser={mockCreateNewUser}/>);
+    const nameInput = altWrapper.find('.name-input');
+    const emailInput = altWrapper.find('.email-input');
+    const passwordInput = altWrapper.find('.password-input');
     const button = altWrapper.find('.form-button');
 
+    nameInput.simulate('change', { target: { value: 'Lola' } });
+    emailInput.simulate('change', { target: { value: 'lola@aol.com' } });
+    passwordInput.simulate('change', { target: { value: 'password' } });
     button.simulate('click');
     expect(mockCreateNewUser).toHaveBeenCalledTimes(1);
   });

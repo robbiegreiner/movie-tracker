@@ -47,7 +47,7 @@ ShallowWrapper {
           <p
             className="user"
           >
-            Welcome,
+            Welcome, 
             Lola
             !
           </p>
@@ -151,7 +151,7 @@ ShallowWrapper {
             <p
               className="user"
             >
-              Welcome,
+              Welcome, 
               Lola
               !
             </p>,
@@ -260,7 +260,7 @@ ShallowWrapper {
             <p
               className="user"
             >
-              Welcome,
+              Welcome, 
               Lola
               !
             </p>
@@ -364,7 +364,7 @@ ShallowWrapper {
               <p
                 className="user"
               >
-                Welcome,
+                Welcome, 
                 Lola
                 !
               </p>,

@@ -32,7 +32,11 @@ describe('LogInContainer', () => {
       retrieveUser={mockRetrieveUser}/>);
 
     const button = altWrapper.find('input').last();
+    const emailInput = altWrapper.find('.email-input');
+    const passwordInput = altWrapper.find('.password-input');
 
+    emailInput.simulate('change', { target: { value: 'lola@aol.com' } });
+    passwordInput.simulate('change', { target: { value: 'password' } });
     button.simulate('click');
     expect(mockRetrieveUser).toHaveBeenCalledTimes(1);
   });

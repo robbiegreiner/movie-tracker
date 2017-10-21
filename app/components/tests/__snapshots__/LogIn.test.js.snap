@@ -113,6 +113,306 @@ ShallowWrapper {
           "key": "email",
           "nodeType": "host",
           "props": Object {
+            "className": "email-input",
+            "onChange": [Function],
+            "placeholder": "Email",
+            "type": "text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": "password",
+          "nodeType": "host",
+          "props": Object {
+            "className": "password-input",
+            "onChange": [Function],
+            "placeholder": "Password",
+            "type": "text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "className": "form-button",
+            "disabled": true,
+            "onClick": [Function],
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+      ],
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form>
+          <h2>
+            LOGIN
+          </h2>
+          <h4
+            className="error"
+          />
+          <input
+            className="email-input"
+            onChange={[Function]}
+            placeholder="Email"
+            type="text"
+          />
+          <input
+            className="password-input"
+            onChange={[Function]}
+            placeholder="Password"
+            type="text"
+          />
+          <input
+            className="form-button"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          />
+        </form>,
+        "className": "login",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              LOGIN
+            </h2>,
+            <h4
+              className="error"
+            />,
+            Array [
+              <input
+                className="email-input"
+                onChange={[Function]}
+                placeholder="Email"
+                type="text"
+              />,
+              <input
+                className="password-input"
+                onChange={[Function]}
+                placeholder="Password"
+                type="text"
+              />,
+            ],
+            <input
+              className="form-button"
+              disabled={true}
+              onClick={[Function]}
+              type="submit"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "LOGIN",
+            },
+            "ref": null,
+            "rendered": "LOGIN",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": null,
+              "className": "error",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": "email",
+            "nodeType": "host",
+            "props": Object {
+              "className": "email-input",
+              "onChange": [Function],
+              "placeholder": "Email",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": "password",
+            "nodeType": "host",
+            "props": Object {
+              "className": "password-input",
+              "onChange": [Function],
+              "placeholder": "Password",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-button",
+              "disabled": true,
+              "onClick": [Function],
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "form",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Login page should render an error if passed one 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Login
+    loginError={true}
+    retrieveUser={[Function]}
+    userStatus=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": <form>
+        <h2>
+          LOGIN
+        </h2>
+        <h4
+          className="error"
+        >
+          Email and Password do not match
+        </h4>
+        <input
+          className="email-input"
+          onChange={[Function]}
+          placeholder="Email"
+          type="text"
+        />
+        <input
+          className="password-input"
+          onChange={[Function]}
+          placeholder="Password"
+          type="text"
+        />
+        <input
+          className="form-button"
+          disabled={true}
+          onClick={[Function]}
+          type="submit"
+        />
+      </form>,
+      "className": "login",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            LOGIN
+          </h2>,
+          <h4
+            className="error"
+          >
+            Email and Password do not match
+          </h4>,
+          Array [
+            <input
+              className="email-input"
+              onChange={[Function]}
+              placeholder="Email"
+              type="text"
+            />,
+            <input
+              className="password-input"
+              onChange={[Function]}
+              placeholder="Password"
+              type="text"
+            />,
+          ],
+          <input
+            className="form-button"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "LOGIN",
+          },
+          "ref": null,
+          "rendered": "LOGIN",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
             "children": "Email and Password do not match",
             "className": "error",
           },
@@ -122,7 +422,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": "email",
           "nodeType": "host",
           "props": Object {
             "className": "email-input",
@@ -179,13 +479,9 @@ ShallowWrapper {
           </h2>
           <h4
             className="error"
-<<<<<<< HEAD
           >
             Email and Password do not match
           </h4>
-=======
-          />
->>>>>>> fixes some tests
           <input
             className="email-input"
             onChange={[Function]}
@@ -219,24 +515,9 @@ ShallowWrapper {
             </h2>,
             <h4
               className="error"
-<<<<<<< HEAD
             >
               Email and Password do not match
             </h4>,
-            <input
-              className="email-input"
-              onChange={[Function]}
-              placeholder="Email"
-              type="text"
-            />,
-            <input
-              className="password-input"
-              onChange={[Function]}
-              placeholder="Password"
-              type="password"
-=======
->>>>>>> fixes some tests
-            />,
             Array [
               <input
                 className="email-input"
@@ -277,18 +558,6 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": null,
-              "className": "error",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "h4",
-          },
-          Object {
-            "instance": null,
-            "key": "email",
-            "nodeType": "host",
-            "props": Object {
               "children": "Email and Password do not match",
               "className": "error",
             },
@@ -298,7 +567,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": "email",
             "nodeType": "host",
             "props": Object {
               "className": "email-input",
