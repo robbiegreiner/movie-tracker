@@ -27,6 +27,10 @@ class Login extends Component {
     if (userStatus === true) {
       return <Redirect to='/'/>;
     }
+    const isDisabled = (
+      this.state.email.length &&
+      this.state.password.length
+    ) ? false : true;
 
     return (
       <div className="login">
@@ -51,6 +55,7 @@ class Login extends Component {
           <input
             className='form-button'
             type='submit'
+            disabled={isDisabled}
             onClick={
               (event) => {
                 event.preventDefault();

@@ -24,6 +24,11 @@ class CreateUser extends Component {
 
   render() {
     const { userStatus, createNewUser, createUserError } = this.props;
+    const isDisabled = (
+      this.state.name.length &&
+      this.state.email.length &&
+      this.state.password.length
+    ) ? false : true;
 
     if (userStatus === true) {
       return <Redirect to='/'/>;
@@ -59,6 +64,7 @@ class CreateUser extends Component {
           <input
             className='form-button'
             type='submit'
+            disabled={isDisabled}
             onClick={
               (event) => {
                 event.preventDefault();
