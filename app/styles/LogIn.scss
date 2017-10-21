@@ -13,10 +13,14 @@
   border-radius: 5px;
   padding: 30px;
   margin: 40px 0 0;
+  box-shadow: 5px 10px 10px #bdbdbd;
+
 }
 
 .login h2 {
   text-align: center;
+  color: #D23321;
+
 }
 
 .login input {
@@ -40,20 +44,21 @@
 }
 
 .form-button {
-  background-color: #D23321;
+  background-color: #bdbdbd;
   border: none;
   border-radius: 10px;
-  text-transform: lowercase;
-  width: 100px;
   color: #fff;
-  padding: 5px 20px;
+  padding: 8px 20px;
   font-size: 16px;
-  font-weight: lighter;
-  align-self: flex-end;
   margin: 20px 0;
+  width: 100%;
 }
 
 .form-button:focus {
   outline: none;
+}
+
+.form-button:hover {
+  background-color: #D23321 ;
 
 }

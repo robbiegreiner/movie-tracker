@@ -31,7 +31,7 @@ class Login extends Component {
     return (
       <div className="login">
         <form>
-          <h2>Welcome to Movie Tracker</h2>
+          {/* <h2>Welcome to Movie Tracker</h2> */}
           <h2>LOGIN</h2>
           <h4 className='error'>
             {loginError ? 'Email and Password do not match' : null}
