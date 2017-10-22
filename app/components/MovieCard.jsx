@@ -17,10 +17,6 @@ const MovieCard = ({ movie, addFavorites }) => {
       <div className="flip-container" >
         <div className="flipper">
           <div className="front">
-            <img className="movie-image" src={poster} alt="poster" />
-          </div>
-          <div className="back">
-
             <div className="fav-btn" onClick={() => {
               const movieObj = Object.assign({}, {
                 movie_id,
@@ -32,15 +28,28 @@ const MovieCard = ({ movie, addFavorites }) => {
               });
               addFavorites(movieObj);
             }}></div>
-            <div className="card-text">
-              <h4 className="release-date">Release Date</h4>
-              <h3 className="release">{release_date}</h3>
-              <h4 className="rating">User Rating</h4>
-              <h3 className="score">{vote_average}</h3>
-            </div>
+            <img className="movie-image" src={poster} alt="poster" />
+          </div>
+          <div className="back">
+            <div className="fav-btn" onClick={() => {
+              const movieObj = Object.assign({}, {
+                movie_id,
+                title,
+                overview,
+                vote_average,
+                poster_path,
+                release_date
+              });
+              addFavorites(movieObj);
+            }}></div>
             <img className="movie-image-back" src={poster} alt="poster" />
+            <div className="card-text">
+              <h1 className="movie-title">{title}</h1>
+              <h2 className="score">Score: {vote_average}</h2>
+              <p>{overview}</p>
+              <h4 className="release">In theaters: {release_date}</h4>
+            </div>
 
-            <p>{overview}</p>
           </div>
         </div>
       </div>
