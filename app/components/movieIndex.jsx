@@ -33,11 +33,23 @@ class MovieIndex extends Component {
   // currently rendering cards with add favorites button..
   // maybe compare favorites to movielist..
   // favorites and movieList
+  // return favorites that are in movieList
+  // movielist[0].movie_id
 
   compareFavsAndMovies(){
     const { favorites, movieList } = this.props;
-    console.log('faves: ' + favorites);
-    console.log('movies: ' + movieList);
+    const theFavorites = movieList.map( movie => {
+      return favorites.filter( favorite => {
+        return favorite.movie_id === movie.movie_id;
+      });
+    });
+    const theRealFaves = theFavorites.map( favorite => {
+        return favorite[0];
+    });
+    const theRealRealFaves = theRealFaves.filter( fave => {
+      return fave !== undefined;
+    })
+    console.log(theRealRealFaves);
   }
 
   renderCards() {
@@ -49,7 +61,7 @@ class MovieIndex extends Component {
   }
 
   render() {
-    console.log(this.compareFavsAndMovies);
+    this.compareFavsAndMovies();
     return (
       <div className='movie-list'>
         {this.state.needToLogin && <Redirect to='/createuser'/>}
