@@ -13,7 +13,7 @@ const favorites = (state = [], action) => {
     return [];
   case 'DELETE_FAVORITE':
     // remove favorite from array
-    return state.filter( favorite => favorite.movie_id !== action.favorite.movie_id );
+    return state.filter( favorite => favorite.movie_id !== action.movie.movie_id );
   default:
     return state;
   }

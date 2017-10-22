@@ -19,8 +19,8 @@ const mapDispatchToProps = dispatch => ({
   retrieveFavorites: userId => {
     dispatch(favoritesGetter(userId));
   },
-  deleteFave: movie => {
-    dispatch(removeFromFaves(movie));
+  deleteFave: (userId, movie) => {
+    dispatch(removeFromFaves(userId, movie));
   }
 });
 

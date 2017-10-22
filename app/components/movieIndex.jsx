@@ -54,15 +54,19 @@ class MovieIndex extends Component {
 
   addFavProperty() {
     const { favorites, movieList } = this.props;
-
+    const faveIds = favorites.reduce((acc, fave) => {
+      acc.push(fave.movie_id);
+      return acc;
+    }, []);
 
     if (favorites.length > 0) {
-      const favoritesID = favorites.map(favorite => favorite.movie_id);
       return movieList.map(movie => {
-        if (favoritesID.includes(movie.id)) {
-          return Object.assign({}, movie, { isFav: true });
+        if (faveIds.includes(movie.movie_id)) {
+          // console.log('includes works');
+          return Object.assign(movie, { isFav: true });
+        } else {
+          return movie;
         }
-        return movie;
       });
     } else {
       return movieList;
@@ -70,12 +74,12 @@ class MovieIndex extends Component {
   }
 
   handleFavorites(movie) {
-    const { deleteFave } = this.props;
+    const { deleteFave, user } = this.props;
 
     if (!movie.isFav) {
       this.addFavorites(movie);
     } else {
-      deleteFave(movie);
+      deleteFave(user.id, movie);
     }
   }
 
