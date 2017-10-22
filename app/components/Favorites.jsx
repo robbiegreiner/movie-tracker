@@ -3,32 +3,44 @@ import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
 
 export default class Favorites extends Component {
-  constructor() {
-    super();
-    this.state = {
-      needToLogin: false
-    };
+
+  addFavorites(movieObj) {
+    const { favorites, sendFavorite, user } = this.props;
+    if (!user.name) {
+      alert('You must create an account to favorite a movie');
+      this.setState({
+        needToLogin: true
+      });
+    } else if (favorites.find(movie => movie.title === movieObj.title)){
+      return;
+    } else {
+      sendFavorite(user.id, movieObj);
+    }
   }
 
-  componentDidMount() {
-    console.log(this.props.user.id);
-    // this.prop.retrieveFavorites(this.props.user.id);
+  handleFavorites(movie) {
+    const { deleteFave, user } = this.props;
+
+    if (!movie.isFav) {
+      this.addFavorites(movie);
+    } else {
+      deleteFave(user.id, movie);
+    }
   }
 
-  // addFavorites(movieObj) {
-  // }
+
   renderCards() {
-    return this.props.favesList.map(movie => {
+    return this.props.favorites.map(movie => {
       return <MovieCard key={movie.movie_id}
-        addFavorites={() => {}}
+        handleFavorites={this.handleFavorites.bind(this)}
         movie={movie}/>;
     });
   }
 
   render() {
     return (
-      <div className="movie-list">
-        {this.props.favesList.length && this.renderCards()}
+      <div className='movie-list'>
+        {this.props.favorites.length && this.renderCards()}
       </div>
     );
   }
@@ -37,7 +49,9 @@ export default class Favorites extends Component {
 Favorites.propTypes = {
   retrieveMovies: PropTypes.func,
   movieList: PropTypes.array,
-  favesList: PropTypes.array,
+  favorites: PropTypes.array,
   sendFavorite: PropTypes.func,
-  user: PropTypes.object
+  user: PropTypes.object,
+  deleteFave: PropTypes.function
 };
+

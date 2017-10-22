@@ -80,7 +80,8 @@ export const fetchCreateUser = userObj => {
               {},
               {
                 name: userObj.name,
-                email: userObj.email
+                email: userObj.email,
+                id: userData.id
               },
             )
           )
