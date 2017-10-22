@@ -51,21 +51,25 @@ ShallowWrapper {
             Lola
             !
           </p>
-          <Link
-            className="login-link favorites-link"
-            replace={false}
-            to="/favorites"
+          <div
+            className="two-user-btns"
           >
-            View Favorites
-          </Link>
-          <Link
-            className="login-link signout"
-            onClick={[Function]}
-            replace={false}
-            to="/login"
-          >
-            Sign Out
-          </Link>
+            <Link
+              className="favorites-link"
+              replace={false}
+              to="/favorites"
+            >
+              View Favorites
+            </Link>
+            <Link
+              className="signout"
+              onClick={[Function]}
+              replace={false}
+              to="/login"
+            >
+              Sign Out
+            </Link>
+          </div>
         </div>,
       ],
       "className": "header",
@@ -155,21 +159,25 @@ ShallowWrapper {
               Lola
               !
             </p>,
-            <Link
-              className="login-link favorites-link"
-              replace={false}
-              to="/favorites"
+            <div
+              className="two-user-btns"
             >
-              View Favorites
-            </Link>,
-            <Link
-              className="login-link signout"
-              onClick={[Function]}
-              replace={false}
-              to="/login"
-            >
-              Sign Out
-            </Link>,
+              <Link
+                className="favorites-link"
+                replace={false}
+                to="/favorites"
+              >
+                View Favorites
+              </Link>
+              <Link
+                className="signout"
+                onClick={[Function]}
+                replace={false}
+                to="/login"
+              >
+                Sign Out
+              </Link>
+            </div>,
           ],
           "className": "user-box",
         },
@@ -198,31 +206,60 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": null,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
-              "children": "View Favorites",
-              "className": "login-link favorites-link",
-              "replace": false,
-              "to": "/favorites",
+              "children": Array [
+                <Link
+                  className="favorites-link"
+                  replace={false}
+                  to="/favorites"
+                >
+                  View Favorites
+                </Link>,
+                <Link
+                  className="signout"
+                  onClick={[Function]}
+                  replace={false}
+                  to="/login"
+                >
+                  Sign Out
+                </Link>,
+              ],
+              "className": "two-user-btns",
             },
             "ref": null,
-            "rendered": "View Favorites",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": null,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Sign Out",
-              "className": "login-link signout",
-              "onClick": [Function],
-              "replace": false,
-              "to": "/login",
-            },
-            "ref": null,
-            "rendered": "Sign Out",
-            "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "View Favorites",
+                  "className": "favorites-link",
+                  "replace": false,
+                  "to": "/favorites",
+                },
+                "ref": null,
+                "rendered": "View Favorites",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Sign Out",
+                  "className": "signout",
+                  "onClick": [Function],
+                  "replace": false,
+                  "to": "/login",
+                },
+                "ref": null,
+                "rendered": "Sign Out",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
         ],
         "type": "div",
@@ -264,21 +301,25 @@ ShallowWrapper {
               Lola
               !
             </p>
-            <Link
-              className="login-link favorites-link"
-              replace={false}
-              to="/favorites"
+            <div
+              className="two-user-btns"
             >
-              View Favorites
-            </Link>
-            <Link
-              className="login-link signout"
-              onClick={[Function]}
-              replace={false}
-              to="/login"
-            >
-              Sign Out
-            </Link>
+              <Link
+                className="favorites-link"
+                replace={false}
+                to="/favorites"
+              >
+                View Favorites
+              </Link>
+              <Link
+                className="signout"
+                onClick={[Function]}
+                replace={false}
+                to="/login"
+              >
+                Sign Out
+              </Link>
+            </div>
           </div>,
         ],
         "className": "header",
@@ -368,21 +409,25 @@ ShallowWrapper {
                 Lola
                 !
               </p>,
-              <Link
-                className="login-link favorites-link"
-                replace={false}
-                to="/favorites"
+              <div
+                className="two-user-btns"
               >
-                View Favorites
-              </Link>,
-              <Link
-                className="login-link signout"
-                onClick={[Function]}
-                replace={false}
-                to="/login"
-              >
-                Sign Out
-              </Link>,
+                <Link
+                  className="favorites-link"
+                  replace={false}
+                  to="/favorites"
+                >
+                  View Favorites
+                </Link>
+                <Link
+                  className="signout"
+                  onClick={[Function]}
+                  replace={false}
+                  to="/login"
+                >
+                  Sign Out
+                </Link>
+              </div>,
             ],
             "className": "user-box",
           },
@@ -411,31 +456,60 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": null,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
-                "children": "View Favorites",
-                "className": "login-link favorites-link",
-                "replace": false,
-                "to": "/favorites",
+                "children": Array [
+                  <Link
+                    className="favorites-link"
+                    replace={false}
+                    to="/favorites"
+                  >
+                    View Favorites
+                  </Link>,
+                  <Link
+                    className="signout"
+                    onClick={[Function]}
+                    replace={false}
+                    to="/login"
+                  >
+                    Sign Out
+                  </Link>,
+                ],
+                "className": "two-user-btns",
               },
               "ref": null,
-              "rendered": "View Favorites",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Sign Out",
-                "className": "login-link signout",
-                "onClick": [Function],
-                "replace": false,
-                "to": "/login",
-              },
-              "ref": null,
-              "rendered": "Sign Out",
-              "type": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "View Favorites",
+                    "className": "favorites-link",
+                    "replace": false,
+                    "to": "/favorites",
+                  },
+                  "ref": null,
+                  "rendered": "View Favorites",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Sign Out",
+                    "className": "signout",
+                    "onClick": [Function],
+                    "replace": false,
+                    "to": "/login",
+                  },
+                  "ref": null,
+                  "rendered": "Sign Out",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
             },
           ],
           "type": "div",

@@ -5,8 +5,15 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MovieIndex
+    favorites={Array []}
     movieList={Array []}
+    retrieveFavorites={[Function]}
     retrieveMovies={[Function]}
+    user={
+      Object {
+        "id": 4,
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -68,6 +75,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MovieIndex
+    favorites={Array []}
     movieList={
       Array [
         Object {
@@ -470,7 +478,13 @@ ShallowWrapper {
         },
       ]
     }
+    retrieveFavorites={[Function]}
     retrieveMovies={[Function]}
+    user={
+      Object {
+        "id": 4,
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -488,7 +502,7 @@ ShallowWrapper {
         false,
         Array [
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -513,7 +527,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -539,7 +553,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -564,7 +578,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -589,7 +603,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -613,7 +627,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -637,7 +651,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -661,7 +675,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -686,7 +700,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -710,7 +724,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -735,7 +749,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -758,7 +772,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -783,7 +797,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -807,7 +821,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -834,7 +848,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -861,7 +875,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -887,7 +901,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -913,7 +927,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -937,7 +951,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -962,7 +976,7 @@ ShallowWrapper {
             }
           />,
           <MovieCard
-            addFavorites={[Function]}
+            handleFavorites={[Function]}
             movie={
               Object {
                 "adult": false,
@@ -997,7 +1011,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg",
@@ -1028,7 +1042,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/mVr0UiqyltcfqxbAUcLl9zWL8ah.jpg",
@@ -1060,7 +1074,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/ulMscezy9YX0bhknvJbZoUgQxO5.jpg",
@@ -1091,7 +1105,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/uExPmkOHJySrbJyJDJylHDqaT58.jpg",
@@ -1122,7 +1136,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/uuQpQ8VDOtVL2IO4y2pR58odkS5.jpg",
@@ -1152,7 +1166,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/goCvLSUFz0p7k8R10Hv4CVh3EQv.jpg",
@@ -1182,7 +1196,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/puKZWmBIpuEMwGCn2hZkublG1rO.jpg",
@@ -1212,7 +1226,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/g8RPRNaXqF456tEo2PA6ejrD8Bh.jpg",
@@ -1243,7 +1257,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/pxpEFY66yYr5bA1N4PCm5b4uz40.jpg",
@@ -1273,7 +1287,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/3vSrGsnMjzAycIU80udh7NFAJkP.jpg",
@@ -1304,7 +1318,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": null,
@@ -1333,7 +1347,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/5hJ0XDCxE3qGfp1H3h7HQP9rLfU.jpg",
@@ -1364,7 +1378,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/o8u0NyEigCEaZHBdCYTRfXR8U4i.jpg",
@@ -1394,7 +1408,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/pVVobDO8cezhVPvwD6EBUN0g3mt.jpg",
@@ -1427,7 +1441,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/tAg6KUBANIVbYUpTHy5oKibhhw3.jpg",
@@ -1460,7 +1474,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/4F2np8VZjzNJh0SXvVyG4xph9eO.jpg",
@@ -1492,7 +1506,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/jcKzxRGYiXuS7ctTHLdw9wH8d7V.jpg",
@@ -1524,7 +1538,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/7KsqfXDECZMryX1Rv4RKsT7SIjQ.jpg",
@@ -1554,7 +1568,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/kTrgxhRSj2sun89bDbnGCPBiey6.jpg",
@@ -1585,7 +1599,7 @@ ShallowWrapper {
         "key": null,
         "nodeType": "function",
         "props": Object {
-          "addFavorites": [Function],
+          "handleFavorites": [Function],
           "movie": Object {
             "adult": false,
             "backdrop_path": "/geINneHhMbGDeDCGun0elRjVQ1Z.jpg",
@@ -1623,7 +1637,7 @@ ShallowWrapper {
           false,
           Array [
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1648,7 +1662,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1674,7 +1688,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1699,7 +1713,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1724,7 +1738,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1748,7 +1762,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1772,7 +1786,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1796,7 +1810,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1821,7 +1835,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1845,7 +1859,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1870,7 +1884,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1893,7 +1907,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1918,7 +1932,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1942,7 +1956,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1969,7 +1983,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -1996,7 +2010,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -2022,7 +2036,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -2048,7 +2062,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -2072,7 +2086,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -2097,7 +2111,7 @@ ShallowWrapper {
               }
             />,
             <MovieCard
-              addFavorites={[Function]}
+              handleFavorites={[Function]}
               movie={
                 Object {
                   "adult": false,
@@ -2132,7 +2146,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg",
@@ -2163,7 +2177,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/mVr0UiqyltcfqxbAUcLl9zWL8ah.jpg",
@@ -2195,7 +2209,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/ulMscezy9YX0bhknvJbZoUgQxO5.jpg",
@@ -2226,7 +2240,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/uExPmkOHJySrbJyJDJylHDqaT58.jpg",
@@ -2257,7 +2271,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/uuQpQ8VDOtVL2IO4y2pR58odkS5.jpg",
@@ -2287,7 +2301,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/goCvLSUFz0p7k8R10Hv4CVh3EQv.jpg",
@@ -2317,7 +2331,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/puKZWmBIpuEMwGCn2hZkublG1rO.jpg",
@@ -2347,7 +2361,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/g8RPRNaXqF456tEo2PA6ejrD8Bh.jpg",
@@ -2378,7 +2392,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/pxpEFY66yYr5bA1N4PCm5b4uz40.jpg",
@@ -2408,7 +2422,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/3vSrGsnMjzAycIU80udh7NFAJkP.jpg",
@@ -2439,7 +2453,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": null,
@@ -2468,7 +2482,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/5hJ0XDCxE3qGfp1H3h7HQP9rLfU.jpg",
@@ -2499,7 +2513,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/o8u0NyEigCEaZHBdCYTRfXR8U4i.jpg",
@@ -2529,7 +2543,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/pVVobDO8cezhVPvwD6EBUN0g3mt.jpg",
@@ -2562,7 +2576,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/tAg6KUBANIVbYUpTHy5oKibhhw3.jpg",
@@ -2595,7 +2609,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/4F2np8VZjzNJh0SXvVyG4xph9eO.jpg",
@@ -2627,7 +2641,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/jcKzxRGYiXuS7ctTHLdw9wH8d7V.jpg",
@@ -2659,7 +2673,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/7KsqfXDECZMryX1Rv4RKsT7SIjQ.jpg",
@@ -2689,7 +2703,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/kTrgxhRSj2sun89bDbnGCPBiey6.jpg",
@@ -2720,7 +2734,7 @@ ShallowWrapper {
           "key": null,
           "nodeType": "function",
           "props": Object {
-            "addFavorites": [Function],
+            "handleFavorites": [Function],
             "movie": Object {
               "adult": false,
               "backdrop_path": "/geINneHhMbGDeDCGun0elRjVQ1Z.jpg",

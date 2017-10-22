@@ -1,6 +1,6 @@
 import configureStore from 'redux-mock-store';
 import { mount } from 'enzyme';
-import MovieIndexContainer from '../MovieIndexContainer';
+import FavoritesContainer from '../FavoritesContainer';
 import MovieIndex from '../../components/movieIndex';
 import React from 'react';
 import * as actions from '../../actions';
@@ -8,7 +8,7 @@ import thunk from 'redux-thunk';
 import mockMovieData from '../../helpers/mockMovieData';
 import movieDataCleaner from '../../helpers/movieDataCleaner';
 
-describe('MovieIndexContainer', () => {
+describe('FavoritesContainer', () => {
   const middlewares = [thunk];
   const mockStore = configureStore();
   const mockRetrieveMovies = jest.fn();
@@ -25,7 +25,7 @@ describe('MovieIndexContainer', () => {
   actions.postFavorites = () => ({ type: 'ADD_FAVORITE' });
   actions.favoritesGetter = () => ({ type: 'GET_ALL_FAVORITES' });
   actions.removeFromFaves = () => ({ type: 'DELETE_FAVORITE'});
-  const wrapper = mount(<MovieIndexContainer
+  const wrapper = mount(<FavoritesContainer
     store={store}
     movieList={initialState.movieList}
     fetchDataError={initialState.fetchDataError}
