@@ -59,8 +59,8 @@ class CreateUser extends Component {
 
     return (
       <input
-        className='form-button'
-        type='submit'
+        className="form-button"
+        type="submit"
         disabled={isDisabled}
         onClick={(event) => {
           event.preventDefault();
@@ -80,10 +80,10 @@ class CreateUser extends Component {
     return (
       <div className="login">
         <form>
-          <div className='heading'>
+          <div className="heading">
             <h2>Create Account</h2>
-            <h4 className='error'>
-              { createUserError ? 'Email already exists.' : this.state.error }
+            <h4 className="error">
+              { createUserError ? "Email already exists." : this.state.error }
             </h4>
           </div>
           {this.renderInputs()}

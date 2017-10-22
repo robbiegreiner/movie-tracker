@@ -17,7 +17,6 @@ export default class Favorites extends Component {
 
   // addFavorites(movieObj) {
   // }
-
   renderCards() {
     return this.props.favesList.map(movie => {
       return <MovieCard key={movie.movie_id}
@@ -28,7 +27,7 @@ export default class Favorites extends Component {
 
   render() {
     return (
-      <div className='movie-list'>
+      <div className="movie-list">
         {this.props.favesList.length && this.renderCards()}
       </div>
     );
