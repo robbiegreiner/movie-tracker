@@ -66,6 +66,13 @@ class CreateUser extends Component {
           event.preventDefault();
           this.validatePwd();
         }}
+        onKeyDown={(event) => {
+          const key = event.which;
+          event.preventDefault();
+          if (key === 13) {
+            this.validatePwd();
+          }
+        }}
       />
     );
   };

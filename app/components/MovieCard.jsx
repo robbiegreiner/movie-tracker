@@ -20,13 +20,17 @@ const MovieCard = ({ movie, handleFavorites }) => {
             <div className="fav-btn" onClick={() => {
               handleFavorites(movie);
             }}></div>
-            <img className="movie-image" src={poster} alt="poster" />
+            <img className="movie-image"
+              src={poster}
+              alt={`A promotional poster for the movie ${movie.title}`} />
           </div>
           <div className="back">
             <div className="fav-btn" onClick={() => {
               handleFavorites(movie);
             }}></div>
-            <img className="movie-image-back" src={poster} alt="poster" />
+            <img className="movie-image-back"
+              src={poster}
+              alt={`A promotional poster for the movie ${movie.title}`} />
             <div className="card-text">
               <h1 className="movie-title">{movie.title}</h1>
               <h2 className="score">Score: {movie.vote_average}</h2>
