@@ -55,4 +55,13 @@ describe('actions', () => {
 
     expect(actions.addFavorite({ title: 'IT' })).toEqual(expectedAction);
   });
+
+  it('should create an action for fetch data error', () => {
+    const expectedAction = {
+      type: 'FETCH_DATA_ERROR',
+      fetchDataError: true
+    };
+
+    expect(actions.fetchDataError(true)).toEqual(expectedAction);
+  });
 });

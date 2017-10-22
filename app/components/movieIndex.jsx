@@ -12,8 +12,9 @@ class MovieIndex extends Component {
   }
 
   componentDidMount() {
-    this.props.retrieveMovies();
-    this.props.retrieveFavorites(this.props.user.id);
+    const { retrieveMovies, retrieveFavorites } = this.props;
+    retrieveMovies();
+    retrieveFavorites(this.props.user.id);
   }
 
   addFavorites(movieObj) {
