@@ -1,6 +1,4 @@
 .movie-card {
-  // color: steelblue;
-  // background-color: #0D0F0F;
   height: 500px;
   width: 350px;
   margin: 20px 40px 20px 40px;
@@ -71,7 +69,8 @@ p {
 }
 
 .movie-card p {
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .movie-card h2 {
@@ -95,7 +94,6 @@ p {
 .score {
   text-align: center;
 }
-
 
 
 /* entire container, keeps perspective */
