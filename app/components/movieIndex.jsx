@@ -30,10 +30,63 @@ class MovieIndex extends Component {
     }
   }
 
+  // currently rendering cards with add favorites button..
+  // maybe compare favorites to movielist..
+  // favorites and movieList
+  // return favorites that are in movieList
+  // movielist[0].movie_id
+
+  // compareFavsAndMovies(){
+  //   const { favorites, movieList } = this.props;
+  //   const theFavorites = movieList.map( movie => {
+  //     return favorites.filter( favorite => {
+  //       return favorite.movie_id !== movie.movie_id;
+  //     });
+  //   });
+  //   const theRealFaves = theFavorites.map( favorite => {
+  //       return favorite[0];
+  //   });
+  //   const theRealRealFaves = theRealFaves.filter( fave => {
+  //     return fave !== undefined;
+  //   })
+  //   console.log(theFavorites);
+  // }
+
+  addFavProperty() {
+    const { favorites, movieList } = this.props;
+    const faveIds = favorites.reduce((acc, fave) => {
+      acc.push(fave.movie_id);
+      return acc;
+    }, []);
+
+    if (favorites.length > 0) {
+      return movieList.map(movie => {
+        if (faveIds.includes(movie.movie_id)) {
+          // console.log('includes works');
+          return Object.assign(movie, { isFav: true });
+        } else {
+          return movie;
+        }
+      });
+    } else {
+      return movieList;
+    }
+  }
+
+  handleFavorites(movie) {
+    const { deleteFave, user } = this.props;
+
+    if (!movie.isFav) {
+      this.addFavorites(movie);
+    } else {
+      deleteFave(user.id, movie);
+    }
+  }
+
   renderCards() {
-    return this.props.movieList.map(movie => {
+    return this.addFavProperty().map(movie => {
       return <MovieCard key={movie.movie_id}
-        addFavorites={this.addFavorites.bind(this)}
+        handleFavorites={this.handleFavorites.bind(this)}
         movie={movie}/>;
     });
   }
@@ -59,7 +112,8 @@ MovieIndex.propTypes = {
   sendFavorite: PropTypes.func,
   user: PropTypes.object,
   retrieveFavorites: PropTypes.func,
-  fetchDataError: PropTypes.func
+  fetchDataError: PropTypes.func,
+  deleteFave: PropTypes.func
 };
 
 export default MovieIndex;
