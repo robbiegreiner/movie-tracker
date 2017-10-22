@@ -4,6 +4,13 @@ const movieList = (state = [], action) => {
     return action.movies.map( movie => {
       return Object.assign({}, movie, { isFav: false });
     });
+  case 'ADD_FAVORITE':
+    return state.map( movie => {
+      if ( action.favorite.title === movie.title ) {
+        return Object.assign({}, movie, action.favorite, { isFav: true });
+      }
+      return movie;
+    });
   // case 'FETCH_DATA_SUCCESS':
   //   return action.movies;
   default:

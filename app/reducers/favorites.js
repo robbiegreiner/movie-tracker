@@ -1,10 +1,12 @@
 const favorites = (state = [], action) => {
   switch (action.type) {
   case 'ADD_FAVORITE':
-    return [...state, action.favorite];
+
+    return [...state, Object.assign({}, action.favorite, { isFav: true })];
+    // return [...state, action.favorite];
   case 'GET_ALL_FAVORITES':
     return action.favorites.map(favorite =>
-      Object.assign({ isFaved: true }, favorite)
+      Object.assign({ isFav: true }, favorite)
     );
 
   case 'SIGN_OUT_USER':
