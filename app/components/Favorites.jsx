@@ -54,4 +54,3 @@ Favorites.propTypes = {
   user: PropTypes.object,
   deleteFave: PropTypes.function
 };
-

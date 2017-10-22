@@ -48,6 +48,13 @@ class Login extends Component {
           event.preventDefault();
           retrieveUser(this.state);
         }}
+        onKeyDown={(event) => {
+          const key = event.which;
+          event.preventDefault();
+          if (key === 13) {
+            retrieveUser(this.state);
+          }
+        }}
       />
     );
   }
