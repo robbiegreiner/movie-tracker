@@ -21,9 +21,6 @@ const movieList = (state = [], action) => {
       return stateMovie;
     });
 
-
-  // case 'FETCH_DATA_SUCCESS':
-  //   return action.movies;
   default:
     return state;
   }
