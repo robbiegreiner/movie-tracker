@@ -64,4 +64,22 @@ describe('actions', () => {
 
     expect(actions.fetchDataError(true)).toEqual(expectedAction);
   });
+
+  it('should create an action for delete favorite', () => {
+    const expectedAction = {
+      type: 'DELETE_FAVORITE',
+      movie: { title: 'IT' }
+    };
+
+    expect(actions.deleteFavorite({ title: 'IT' })).toEqual(expectedAction);
+  });
+
+  it('should create an action for getting favorites', () => {
+    const expectedAction = {
+      type: 'GET_ALL_FAVORITES',
+      favorites: []
+    };
+
+    expect(actions.getAllFavorites([])).toEqual(expectedAction);
+  });
 });
