@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 
 const MovieCard = ({ movie, handleFavorites }) => {
 
-  // const { movie_id,
-  //   title,
-  //   release_date,
-  //   overview,
-  //   vote_average,
-  //   poster_path } = movie;
-
   const poster = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
 
   return (
     <div className='movie-card'>
-      <div className="flip-container" tabIndex={0}>
+      <div className="flip-container"
+        tabIndex={0}
+        onKeyDown={(event) => {
+          const key = event.which;
+          if (key === 13) {
+            handleFavorites(movie);
+          }
+        }}>
         <div className="flipper">
           <div className="front">
             <div className="fav-btn" onClick={() => {
