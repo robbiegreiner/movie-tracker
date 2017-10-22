@@ -13,8 +13,8 @@ const MovieCard = ({ movie, handleFavorites }) => {
   const poster = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
 
   return (
-    <div className="movie-card">
-      <div className="flip-container" >
+    <div className='movie-card'>
+      <div className="flip-container" tabIndex={0}>
         <div className="flipper">
           <div className="front">
             <div className="fav-btn" onClick={() => {
