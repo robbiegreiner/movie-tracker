@@ -22,9 +22,6 @@ ShallowWrapper {
     "props": Object {
       "children": <form>
         <h2>
-          Welcome to Movie Tracker
-        </h2>
-        <h2>
           LOGIN
         </h2>
         <h4
@@ -40,14 +37,16 @@ ShallowWrapper {
           className="password-input"
           onChange={[Function]}
           placeholder="Password"
-          type="password"
+          type="text"
         />
         <input
           className="form-button"
+          disabled={true}
           onClick={[Function]}
           type="submit"
         />
       </form>,
+      "className": "login",
     },
     "ref": null,
     "rendered": Object {
@@ -57,28 +56,28 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            Welcome to Movie Tracker
-          </h2>,
-          <h2>
             LOGIN
           </h2>,
           <h4
             className="error"
           />,
-          <input
-            className="email-input"
-            onChange={[Function]}
-            placeholder="Email"
-            type="text"
-          />,
-          <input
-            className="password-input"
-            onChange={[Function]}
-            placeholder="Password"
-            type="password"
-          />,
+          Array [
+            <input
+              className="email-input"
+              onChange={[Function]}
+              placeholder="Email"
+              type="text"
+            />,
+            <input
+              className="password-input"
+              onChange={[Function]}
+              placeholder="Password"
+              type="text"
+            />,
+          ],
           <input
             className="form-button"
+            disabled={true}
             onClick={[Function]}
             type="submit"
           />,
@@ -86,17 +85,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": null,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Welcome to Movie Tracker",
-          },
-          "ref": null,
-          "rendered": "Welcome to Movie Tracker",
-          "type": "h2",
-        },
         Object {
           "instance": null,
           "key": null,
@@ -122,7 +110,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": "email",
           "nodeType": "host",
           "props": Object {
             "className": "email-input",
@@ -136,13 +124,13 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": "password",
           "nodeType": "host",
           "props": Object {
             "className": "password-input",
             "onChange": [Function],
             "placeholder": "Password",
-            "type": "password",
+            "type": "text",
           },
           "ref": null,
           "rendered": null,
@@ -154,6 +142,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "className": "form-button",
+            "disabled": true,
             "onClick": [Function],
             "type": "submit",
           },
@@ -174,9 +163,6 @@ ShallowWrapper {
       "props": Object {
         "children": <form>
           <h2>
-            Welcome to Movie Tracker
-          </h2>
-          <h2>
             LOGIN
           </h2>
           <h4
@@ -192,14 +178,16 @@ ShallowWrapper {
             className="password-input"
             onChange={[Function]}
             placeholder="Password"
-            type="password"
+            type="text"
           />
           <input
             className="form-button"
+            disabled={true}
             onClick={[Function]}
             type="submit"
           />
         </form>,
+        "className": "login",
       },
       "ref": null,
       "rendered": Object {
@@ -209,28 +197,28 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h2>
-              Welcome to Movie Tracker
-            </h2>,
-            <h2>
               LOGIN
             </h2>,
             <h4
               className="error"
             />,
-            <input
-              className="email-input"
-              onChange={[Function]}
-              placeholder="Email"
-              type="text"
-            />,
-            <input
-              className="password-input"
-              onChange={[Function]}
-              placeholder="Password"
-              type="password"
-            />,
+            Array [
+              <input
+                className="email-input"
+                onChange={[Function]}
+                placeholder="Email"
+                type="text"
+              />,
+              <input
+                className="password-input"
+                onChange={[Function]}
+                placeholder="Password"
+                type="text"
+              />,
+            ],
             <input
               className="form-button"
+              disabled={true}
               onClick={[Function]}
               type="submit"
             />,
@@ -238,17 +226,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": null,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Welcome to Movie Tracker",
-            },
-            "ref": null,
-            "rendered": "Welcome to Movie Tracker",
-            "type": "h2",
-          },
           Object {
             "instance": null,
             "key": null,
@@ -274,7 +251,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": "email",
             "nodeType": "host",
             "props": Object {
               "className": "email-input",
@@ -288,13 +265,13 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": "password",
             "nodeType": "host",
             "props": Object {
               "className": "password-input",
               "onChange": [Function],
               "placeholder": "Password",
-              "type": "password",
+              "type": "text",
             },
             "ref": null,
             "rendered": null,
@@ -306,6 +283,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": "form-button",
+              "disabled": true,
               "onClick": [Function],
               "type": "submit",
             },
@@ -352,9 +330,6 @@ ShallowWrapper {
     "props": Object {
       "children": <form>
         <h2>
-          Welcome to Movie Tracker
-        </h2>
-        <h2>
           LOGIN
         </h2>
         <h4
@@ -372,14 +347,16 @@ ShallowWrapper {
           className="password-input"
           onChange={[Function]}
           placeholder="Password"
-          type="password"
+          type="text"
         />
         <input
           className="form-button"
+          disabled={true}
           onClick={[Function]}
           type="submit"
         />
       </form>,
+      "className": "login",
     },
     "ref": null,
     "rendered": Object {
@@ -389,9 +366,6 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            Welcome to Movie Tracker
-          </h2>,
-          <h2>
             LOGIN
           </h2>,
           <h4
@@ -399,20 +373,23 @@ ShallowWrapper {
           >
             Email and Password do not match
           </h4>,
-          <input
-            className="email-input"
-            onChange={[Function]}
-            placeholder="Email"
-            type="text"
-          />,
-          <input
-            className="password-input"
-            onChange={[Function]}
-            placeholder="Password"
-            type="password"
-          />,
+          Array [
+            <input
+              className="email-input"
+              onChange={[Function]}
+              placeholder="Email"
+              type="text"
+            />,
+            <input
+              className="password-input"
+              onChange={[Function]}
+              placeholder="Password"
+              type="text"
+            />,
+          ],
           <input
             className="form-button"
+            disabled={true}
             onClick={[Function]}
             type="submit"
           />,
@@ -420,17 +397,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": null,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Welcome to Movie Tracker",
-          },
-          "ref": null,
-          "rendered": "Welcome to Movie Tracker",
-          "type": "h2",
-        },
         Object {
           "instance": null,
           "key": null,
@@ -456,7 +422,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": "email",
           "nodeType": "host",
           "props": Object {
             "className": "email-input",
@@ -470,13 +436,13 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": "password",
           "nodeType": "host",
           "props": Object {
             "className": "password-input",
             "onChange": [Function],
             "placeholder": "Password",
-            "type": "password",
+            "type": "text",
           },
           "ref": null,
           "rendered": null,
@@ -488,6 +454,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "className": "form-button",
+            "disabled": true,
             "onClick": [Function],
             "type": "submit",
           },
@@ -508,9 +475,6 @@ ShallowWrapper {
       "props": Object {
         "children": <form>
           <h2>
-            Welcome to Movie Tracker
-          </h2>
-          <h2>
             LOGIN
           </h2>
           <h4
@@ -528,14 +492,16 @@ ShallowWrapper {
             className="password-input"
             onChange={[Function]}
             placeholder="Password"
-            type="password"
+            type="text"
           />
           <input
             className="form-button"
+            disabled={true}
             onClick={[Function]}
             type="submit"
           />
         </form>,
+        "className": "login",
       },
       "ref": null,
       "rendered": Object {
@@ -545,9 +511,6 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h2>
-              Welcome to Movie Tracker
-            </h2>,
-            <h2>
               LOGIN
             </h2>,
             <h4
@@ -555,20 +518,23 @@ ShallowWrapper {
             >
               Email and Password do not match
             </h4>,
-            <input
-              className="email-input"
-              onChange={[Function]}
-              placeholder="Email"
-              type="text"
-            />,
-            <input
-              className="password-input"
-              onChange={[Function]}
-              placeholder="Password"
-              type="password"
-            />,
+            Array [
+              <input
+                className="email-input"
+                onChange={[Function]}
+                placeholder="Email"
+                type="text"
+              />,
+              <input
+                className="password-input"
+                onChange={[Function]}
+                placeholder="Password"
+                type="text"
+              />,
+            ],
             <input
               className="form-button"
+              disabled={true}
               onClick={[Function]}
               type="submit"
             />,
@@ -576,17 +542,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": null,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Welcome to Movie Tracker",
-            },
-            "ref": null,
-            "rendered": "Welcome to Movie Tracker",
-            "type": "h2",
-          },
           Object {
             "instance": null,
             "key": null,
@@ -612,7 +567,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": "email",
             "nodeType": "host",
             "props": Object {
               "className": "email-input",
@@ -626,13 +581,13 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": "password",
             "nodeType": "host",
             "props": Object {
               "className": "password-input",
               "onChange": [Function],
               "placeholder": "Password",
-              "type": "password",
+              "type": "text",
             },
             "ref": null,
             "rendered": null,
@@ -644,6 +599,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": "form-button",
+              "disabled": true,
               "onClick": [Function],
               "type": "submit",
             },

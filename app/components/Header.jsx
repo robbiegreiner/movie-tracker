@@ -28,10 +28,12 @@ const Header = ({ user, handleSignOut }) => {
 
   return (
     <div className='header'>
-      <h1>
-        <span className='header-one'>Movie</span>
-        <span className='header-two'>Tracker</span>
-      </h1>
+      <Link to='/'>  
+        <h1>
+          <span className='header-one'>Movie</span>
+          <span className='header-two'>Tracker</span>
+        </h1>
+      </Link>
       {userBox}
     </div>
   );
