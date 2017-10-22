@@ -1,18 +1,16 @@
 import { connect } from 'react-redux';
 import { postFavorite, favoritesGetter, removeFromFaves } from '../actions';
-import MovieIndex from '../components/MovieIndex';
-
+import Favorites from '../components/Favorites';
 
 const mapStateToProps =  (store) => ({
   favorites: store.favorites,
-  movieList: store.favorites,
-  fetchDataError: store.fetchDataError,
+  movieList: store.movieList,
+  // fetchDataError: store.fetchDataError,
   user: store.user
 
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  retrieveMovies: () => {},
   sendFavorite: () => {
     dispatch(postFavorite());
   },
@@ -24,4 +22,4 @@ const mapDispatchToProps = (dispatch) => ({
   }
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(MovieIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(Favorites);

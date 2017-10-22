@@ -2,8 +2,6 @@ import movieDataFetcher from '../helpers/movieDataFetcher';
 import userDataFetcher from '../helpers/userDataFetcher';
 import favoritesFetcher from '../helpers/favoritesFetcher';
 import createUserFetcher from '../helpers/createUserFetcher';
-import deleteFaveFetcher from '../helpers/deleteFaveFetcher';
-import allFavoritesFetcher from '../helpers/allFavoritesFetcher';
 
 
 export const fetchDataSuccess = movieData => {
@@ -101,8 +99,14 @@ export const addFavorite = favorite => {
 };
 
 export const removeFromFaves = (userId, movie) => {
-  return dispatch => {
-    deleteFaveFetcher(userId, movie)
+return dispatch => {
+    fetch(`api/users/${userId}/favorites/${movie.movie_id}`, {
+      method: 'DELETE',
+      body: JSON.stringify([userId, movie.movie_id]),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
       .then(() => dispatch(deleteFavorite(movie)));
   };
 };
@@ -123,7 +127,7 @@ export const getAllFavorites = favorites => {
 
 export const favoritesGetter = userId => {
   return dispatch => {
-    allFavoritesFetcher(userId)
+    fetch(`api/users/${userId}/favorites`)
       .then(response => response.json())
       .then(jsonResponse => dispatch(getAllFavorites(jsonResponse.data)));
   };
@@ -132,5 +136,8 @@ export const favoritesGetter = userId => {
 export const postFavorite = (userId, movieObj) => {
   const newFave = Object.assign({user_id: userId}, movieObj);
   favoritesFetcher(newFave);
+  // return dispatch => {
+  //   dispatch(addFavorite(movieObj));
+  // };
   return addFavorite(movieObj);
 };

@@ -43,8 +43,6 @@ ShallowWrapper {
     "props": Object {
       "children": <div
         className="flip-container"
-        onKeyDown={[Function]}
-        tabIndex={0}
       >
         <div
           className="flipper"
@@ -52,12 +50,8 @@ ShallowWrapper {
           <div
             className="front"
           >
-            <div
-              className="fav-btn"
-              onClick={[Function]}
-            />
             <img
-              alt="A promotional poster for the movie It"
+              alt="poster"
               className="movie-image"
               src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
             />
@@ -69,35 +63,29 @@ ShallowWrapper {
               className="fav-btn"
               onClick={[Function]}
             />
-            <img
-              alt="A promotional poster for the movie It"
-              className="movie-image-back"
-              src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-            />
-            <div
-              className="card-text"
+            <h4
+              className="release-date"
             >
-              <h1
-                className="movie-title"
-              >
-                It
-              </h1>
-              <h2
-                className="score"
-              >
-                Score: 
-                7.4
-              </h2>
-              <p>
-                In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-              </p>
-              <h4
-                className="release"
-              >
-                In theaters: 
-                2017-09-05
-              </h4>
-            </div>
+              Release Date
+            </h4>
+            <h3
+              className="release"
+            >
+              2017-09-05
+            </h3>
+            <h4
+              className="rating"
+            >
+              User Rating
+            </h4>
+            <h3
+              className="score"
+            >
+              7.4
+            </h3>
+            <p>
+              In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
+            </p>
           </div>
         </div>
       </div>,
@@ -115,12 +103,8 @@ ShallowWrapper {
           <div
             className="front"
           >
-            <div
-              className="fav-btn"
-              onClick={[Function]}
-            />
             <img
-              alt="A promotional poster for the movie It"
+              alt="poster"
               className="movie-image"
               src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
             />
@@ -132,40 +116,32 @@ ShallowWrapper {
               className="fav-btn"
               onClick={[Function]}
             />
-            <img
-              alt="A promotional poster for the movie It"
-              className="movie-image-back"
-              src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-            />
-            <div
-              className="card-text"
+            <h4
+              className="release-date"
             >
-              <h1
-                className="movie-title"
-              >
-                It
-              </h1>
-              <h2
-                className="score"
-              >
-                Score: 
-                7.4
-              </h2>
-              <p>
-                In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-              </p>
-              <h4
-                className="release"
-              >
-                In theaters: 
-                2017-09-05
-              </h4>
-            </div>
+              Release Date
+            </h4>
+            <h3
+              className="release"
+            >
+              2017-09-05
+            </h3>
+            <h4
+              className="rating"
+            >
+              User Rating
+            </h4>
+            <h3
+              className="score"
+            >
+              7.4
+            </h3>
+            <p>
+              In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
+            </p>
           </div>
         </div>,
         "className": "flip-container",
-        "onKeyDown": [Function],
-        "tabIndex": 0,
       },
       "ref": null,
       "rendered": Object {
@@ -177,12 +153,8 @@ ShallowWrapper {
             <div
               className="front"
             >
-              <div
-                className="fav-btn"
-                onClick={[Function]}
-              />
               <img
-                alt="A promotional poster for the movie It"
+                alt="poster"
                 className="movie-image"
                 src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
               />
@@ -194,35 +166,29 @@ ShallowWrapper {
                 className="fav-btn"
                 onClick={[Function]}
               />
-              <img
-                alt="A promotional poster for the movie It"
-                className="movie-image-back"
-                src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-              />
-              <div
-                className="card-text"
+              <h4
+                className="release-date"
               >
-                <h1
-                  className="movie-title"
-                >
-                  It
-                </h1>
-                <h2
-                  className="score"
-                >
-                  Score: 
-                  7.4
-                </h2>
-                <p>
-                  In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-                </p>
-                <h4
-                  className="release"
-                >
-                  In theaters: 
-                  2017-09-05
-                </h4>
-              </div>
+                Release Date
+              </h4>
+              <h3
+                className="release"
+              >
+                2017-09-05
+              </h3>
+              <h4
+                className="rating"
+              >
+                User Rating
+              </h4>
+              <h3
+                className="score"
+              >
+                7.4
+              </h3>
+              <p>
+                In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
+              </p>
             </div>,
           ],
           "className": "flipper",
@@ -234,47 +200,27 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <div
-                  className="fav-btn"
-                  onClick={[Function]}
-                />,
-                <img
-                  alt="A promotional poster for the movie It"
-                  className="movie-image"
-                  src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-                />,
-              ],
+              "children": <img
+                alt="poster"
+                className="movie-image"
+                src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
+              />,
               "className": "front",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "fav-btn",
-                  "onClick": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "div",
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "poster",
+                "className": "movie-image",
+                "src": "https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
               },
-              Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "A promotional poster for the movie It",
-                  "className": "movie-image",
-                  "src": "https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-            ],
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
             "type": "div",
           },
           Object {
@@ -287,35 +233,29 @@ ShallowWrapper {
                   className="fav-btn"
                   onClick={[Function]}
                 />,
-                <img
-                  alt="A promotional poster for the movie It"
-                  className="movie-image-back"
-                  src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-                />,
-                <div
-                  className="card-text"
+                <h4
+                  className="release-date"
                 >
-                  <h1
-                    className="movie-title"
-                  >
-                    It
-                  </h1>
-                  <h2
-                    className="score"
-                  >
-                    Score: 
-                    7.4
-                  </h2>
-                  <p>
-                    In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-                  </p>
-                  <h4
-                    className="release"
-                  >
-                    In theaters: 
-                    2017-09-05
-                  </h4>
-                </div>,
+                  Release Date
+                </h4>,
+                <h3
+                  className="release"
+                >
+                  2017-09-05
+                </h3>,
+                <h4
+                  className="rating"
+                >
+                  User Rating
+                </h4>,
+                <h3
+                  className="score"
+                >
+                  7.4
+                </h3>,
+                <p>
+                  In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
+                </p>,
               ],
               "className": "back",
             },
@@ -338,106 +278,59 @@ ShallowWrapper {
                 "key": null,
                 "nodeType": "host",
                 "props": Object {
-                  "alt": "A promotional poster for the movie It",
-                  "className": "movie-image-back",
-                  "src": "https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
+                  "children": "Release Date",
+                  "className": "release-date",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "img",
+                "rendered": "Release Date",
+                "type": "h4",
               },
               Object {
                 "instance": null,
                 "key": null,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <h1
-                      className="movie-title"
-                    >
-                      It
-                    </h1>,
-                    <h2
-                      className="score"
-                    >
-                      Score: 
-                      7.4
-                    </h2>,
-                    <p>
-                      In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-                    </p>,
-                    <h4
-                      className="release"
-                    >
-                      In theaters: 
-                      2017-09-05
-                    </h4>,
-                  ],
-                  "className": "card-text",
+                  "children": "2017-09-05",
+                  "className": "release",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": null,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "It",
-                      "className": "movie-title",
-                    },
-                    "ref": null,
-                    "rendered": "It",
-                    "type": "h1",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": null,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Score: ",
-                        7.4,
-                      ],
-                      "className": "score",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Score: ",
-                      7.4,
-                    ],
-                    "type": "h2",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": null,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems.",
-                    },
-                    "ref": null,
-                    "rendered": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems.",
-                    "type": "p",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": null,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "In theaters: ",
-                        "2017-09-05",
-                      ],
-                      "className": "release",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "In theaters: ",
-                      "2017-09-05",
-                    ],
-                    "type": "h4",
-                  },
-                ],
-                "type": "div",
+                "rendered": "2017-09-05",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "User Rating",
+                  "className": "rating",
+                },
+                "ref": null,
+                "rendered": "User Rating",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 7.4,
+                  "className": "score",
+                },
+                "ref": null,
+                "rendered": 7.4,
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems.",
+                },
+                "ref": null,
+                "rendered": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems.",
+                "type": "p",
               },
             ],
             "type": "div",
@@ -457,8 +350,6 @@ ShallowWrapper {
       "props": Object {
         "children": <div
           className="flip-container"
-          onKeyDown={[Function]}
-          tabIndex={0}
         >
           <div
             className="flipper"
@@ -466,12 +357,8 @@ ShallowWrapper {
             <div
               className="front"
             >
-              <div
-                className="fav-btn"
-                onClick={[Function]}
-              />
               <img
-                alt="A promotional poster for the movie It"
+                alt="poster"
                 className="movie-image"
                 src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
               />
@@ -483,35 +370,29 @@ ShallowWrapper {
                 className="fav-btn"
                 onClick={[Function]}
               />
-              <img
-                alt="A promotional poster for the movie It"
-                className="movie-image-back"
-                src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-              />
-              <div
-                className="card-text"
+              <h4
+                className="release-date"
               >
-                <h1
-                  className="movie-title"
-                >
-                  It
-                </h1>
-                <h2
-                  className="score"
-                >
-                  Score: 
-                  7.4
-                </h2>
-                <p>
-                  In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-                </p>
-                <h4
-                  className="release"
-                >
-                  In theaters: 
-                  2017-09-05
-                </h4>
-              </div>
+                Release Date
+              </h4>
+              <h3
+                className="release"
+              >
+                2017-09-05
+              </h3>
+              <h4
+                className="rating"
+              >
+                User Rating
+              </h4>
+              <h3
+                className="score"
+              >
+                7.4
+              </h3>
+              <p>
+                In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
+              </p>
             </div>
           </div>
         </div>,
@@ -529,12 +410,8 @@ ShallowWrapper {
             <div
               className="front"
             >
-              <div
-                className="fav-btn"
-                onClick={[Function]}
-              />
               <img
-                alt="A promotional poster for the movie It"
+                alt="poster"
                 className="movie-image"
                 src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
               />
@@ -546,40 +423,32 @@ ShallowWrapper {
                 className="fav-btn"
                 onClick={[Function]}
               />
-              <img
-                alt="A promotional poster for the movie It"
-                className="movie-image-back"
-                src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-              />
-              <div
-                className="card-text"
+              <h4
+                className="release-date"
               >
-                <h1
-                  className="movie-title"
-                >
-                  It
-                </h1>
-                <h2
-                  className="score"
-                >
-                  Score: 
-                  7.4
-                </h2>
-                <p>
-                  In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-                </p>
-                <h4
-                  className="release"
-                >
-                  In theaters: 
-                  2017-09-05
-                </h4>
-              </div>
+                Release Date
+              </h4>
+              <h3
+                className="release"
+              >
+                2017-09-05
+              </h3>
+              <h4
+                className="rating"
+              >
+                User Rating
+              </h4>
+              <h3
+                className="score"
+              >
+                7.4
+              </h3>
+              <p>
+                In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
+              </p>
             </div>
           </div>,
           "className": "flip-container",
-          "onKeyDown": [Function],
-          "tabIndex": 0,
         },
         "ref": null,
         "rendered": Object {
@@ -591,12 +460,8 @@ ShallowWrapper {
               <div
                 className="front"
               >
-                <div
-                  className="fav-btn"
-                  onClick={[Function]}
-                />
                 <img
-                  alt="A promotional poster for the movie It"
+                  alt="poster"
                   className="movie-image"
                   src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
                 />
@@ -608,35 +473,29 @@ ShallowWrapper {
                   className="fav-btn"
                   onClick={[Function]}
                 />
-                <img
-                  alt="A promotional poster for the movie It"
-                  className="movie-image-back"
-                  src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-                />
-                <div
-                  className="card-text"
+                <h4
+                  className="release-date"
                 >
-                  <h1
-                    className="movie-title"
-                  >
-                    It
-                  </h1>
-                  <h2
-                    className="score"
-                  >
-                    Score: 
-                    7.4
-                  </h2>
-                  <p>
-                    In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-                  </p>
-                  <h4
-                    className="release"
-                  >
-                    In theaters: 
-                    2017-09-05
-                  </h4>
-                </div>
+                  Release Date
+                </h4>
+                <h3
+                  className="release"
+                >
+                  2017-09-05
+                </h3>
+                <h4
+                  className="rating"
+                >
+                  User Rating
+                </h4>
+                <h3
+                  className="score"
+                >
+                  7.4
+                </h3>
+                <p>
+                  In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
+                </p>
               </div>,
             ],
             "className": "flipper",
@@ -648,47 +507,27 @@ ShallowWrapper {
               "key": null,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <div
-                    className="fav-btn"
-                    onClick={[Function]}
-                  />,
-                  <img
-                    alt="A promotional poster for the movie It"
-                    className="movie-image"
-                    src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-                  />,
-                ],
+                "children": <img
+                  alt="poster"
+                  className="movie-image"
+                  src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
+                />,
                 "className": "front",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": null,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "fav-btn",
-                    "onClick": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "div",
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "poster",
+                  "className": "movie-image",
+                  "src": "https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
                 },
-                Object {
-                  "instance": null,
-                  "key": null,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "A promotional poster for the movie It",
-                    "className": "movie-image",
-                    "src": "https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
               "type": "div",
             },
             Object {
@@ -701,35 +540,29 @@ ShallowWrapper {
                     className="fav-btn"
                     onClick={[Function]}
                   />,
-                  <img
-                    alt="A promotional poster for the movie It"
-                    className="movie-image-back"
-                    src="https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
-                  />,
-                  <div
-                    className="card-text"
+                  <h4
+                    className="release-date"
                   >
-                    <h1
-                      className="movie-title"
-                    >
-                      It
-                    </h1>
-                    <h2
-                      className="score"
-                    >
-                      Score: 
-                      7.4
-                    </h2>
-                    <p>
-                      In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-                    </p>
-                    <h4
-                      className="release"
-                    >
-                      In theaters: 
-                      2017-09-05
-                    </h4>
-                  </div>,
+                    Release Date
+                  </h4>,
+                  <h3
+                    className="release"
+                  >
+                    2017-09-05
+                  </h3>,
+                  <h4
+                    className="rating"
+                  >
+                    User Rating
+                  </h4>,
+                  <h3
+                    className="score"
+                  >
+                    7.4
+                  </h3>,
+                  <p>
+                    In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
+                  </p>,
                 ],
                 "className": "back",
               },
@@ -752,106 +585,59 @@ ShallowWrapper {
                   "key": null,
                   "nodeType": "host",
                   "props": Object {
-                    "alt": "A promotional poster for the movie It",
-                    "className": "movie-image-back",
-                    "src": "https://image.tmdb.org/t/p/w500//9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
+                    "children": "Release Date",
+                    "className": "release-date",
                   },
                   "ref": null,
-                  "rendered": null,
-                  "type": "img",
+                  "rendered": "Release Date",
+                  "type": "h4",
                 },
                 Object {
                   "instance": null,
                   "key": null,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <h1
-                        className="movie-title"
-                      >
-                        It
-                      </h1>,
-                      <h2
-                        className="score"
-                      >
-                        Score: 
-                        7.4
-                      </h2>,
-                      <p>
-                        In a small town in Maine, seven children known as The Losers Club come face to face with life problems.
-                      </p>,
-                      <h4
-                        className="release"
-                      >
-                        In theaters: 
-                        2017-09-05
-                      </h4>,
-                    ],
-                    "className": "card-text",
+                    "children": "2017-09-05",
+                    "className": "release",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": null,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "It",
-                        "className": "movie-title",
-                      },
-                      "ref": null,
-                      "rendered": "It",
-                      "type": "h1",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": null,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "Score: ",
-                          7.4,
-                        ],
-                        "className": "score",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Score: ",
-                        7.4,
-                      ],
-                      "type": "h2",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": null,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems.",
-                      },
-                      "ref": null,
-                      "rendered": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems.",
-                      "type": "p",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": null,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "In theaters: ",
-                          "2017-09-05",
-                        ],
-                        "className": "release",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "In theaters: ",
-                        "2017-09-05",
-                      ],
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
+                  "rendered": "2017-09-05",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "User Rating",
+                    "className": "rating",
+                  },
+                  "ref": null,
+                  "rendered": "User Rating",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 7.4,
+                    "className": "score",
+                  },
+                  "ref": null,
+                  "rendered": 7.4,
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems.",
+                  },
+                  "ref": null,
+                  "rendered": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems.",
+                  "type": "p",
                 },
               ],
               "type": "div",

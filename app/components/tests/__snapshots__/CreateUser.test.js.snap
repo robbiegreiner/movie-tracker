@@ -21,18 +21,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <form>
-        <div
-          className="heading"
+        <h2>
+          Create Account
+        </h2>
+        <h4
+          className="error"
         >
-          <h2>
-            Create Account
-          </h2>
-          <h4
-            className="error"
-          >
-            
-          </h4>
-        </div>
+          
+        </h4>
         <input
           className="name-input"
           onChange={[Function]}
@@ -55,7 +51,6 @@ ShallowWrapper {
           className="form-button"
           disabled={false}
           onClick={[Function]}
-          onKeyDown={[Function]}
           type="submit"
         />
       </form>,
@@ -68,18 +63,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
-            className="heading"
+          <h2>
+            Create Account
+          </h2>,
+          <h4
+            className="error"
           >
-            <h2>
-              Create Account
-            </h2>
-            <h4
-              className="error"
-            >
-              
-            </h4>
-          </div>,
+            
+          </h4>,
           Array [
             <input
               className="name-input"
@@ -104,7 +95,6 @@ ShallowWrapper {
             className="form-button"
             disabled={false}
             onClick={[Function]}
-            onKeyDown={[Function]}
             type="submit"
           />,
         ],
@@ -116,45 +106,23 @@ ShallowWrapper {
           "key": null,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <h2>
-                Create Account
-              </h2>,
-              <h4
-                className="error"
-              >
-                
-              </h4>,
-            ],
-            "className": "heading",
+            "children": "Create Account",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Create Account",
-              },
-              "ref": null,
-              "rendered": "Create Account",
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "children": "",
-                "className": "error",
-              },
-              "ref": null,
-              "rendered": "",
-              "type": "h4",
-            },
-          ],
-          "type": "div",
+          "rendered": "Create Account",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+            "className": "error",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "h4",
         },
         Object {
           "instance": null,
@@ -206,7 +174,6 @@ ShallowWrapper {
             "className": "form-button",
             "disabled": false,
             "onClick": [Function],
-            "onKeyDown": [Function],
             "type": "submit",
           },
           "ref": null,
@@ -225,18 +192,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <form>
-          <div
-            className="heading"
+          <h2>
+            Create Account
+          </h2>
+          <h4
+            className="error"
           >
-            <h2>
-              Create Account
-            </h2>
-            <h4
-              className="error"
-            >
-              
-            </h4>
-          </div>
+            
+          </h4>
           <input
             className="name-input"
             onChange={[Function]}
@@ -259,7 +222,6 @@ ShallowWrapper {
             className="form-button"
             disabled={false}
             onClick={[Function]}
-            onKeyDown={[Function]}
             type="submit"
           />
         </form>,
@@ -272,18 +234,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
-              className="heading"
+            <h2>
+              Create Account
+            </h2>,
+            <h4
+              className="error"
             >
-              <h2>
-                Create Account
-              </h2>
-              <h4
-                className="error"
-              >
-                
-              </h4>
-            </div>,
+              
+            </h4>,
             Array [
               <input
                 className="name-input"
@@ -308,7 +266,6 @@ ShallowWrapper {
               className="form-button"
               disabled={false}
               onClick={[Function]}
-              onKeyDown={[Function]}
               type="submit"
             />,
           ],
@@ -320,45 +277,23 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <h2>
-                  Create Account
-                </h2>,
-                <h4
-                  className="error"
-                >
-                  
-                </h4>,
-              ],
-              "className": "heading",
+              "children": "Create Account",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Create Account",
-                },
-                "ref": null,
-                "rendered": "Create Account",
-                "type": "h2",
-              },
-              Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "",
-                  "className": "error",
-                },
-                "ref": null,
-                "rendered": "",
-                "type": "h4",
-              },
-            ],
-            "type": "div",
+            "rendered": "Create Account",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "error",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "h4",
           },
           Object {
             "instance": null,
@@ -410,7 +345,6 @@ ShallowWrapper {
               "className": "form-button",
               "disabled": false,
               "onClick": [Function],
-              "onKeyDown": [Function],
               "type": "submit",
             },
             "ref": null,
