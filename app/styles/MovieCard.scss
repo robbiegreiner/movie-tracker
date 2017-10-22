@@ -34,6 +34,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px 60px;
+  right: 10px;
+
 }
 
 .favClass:hover {
@@ -125,7 +127,10 @@
 .flip-container:focus .flipper {
 	transform: rotateY(180deg);
   transition-delay:.9s;
+}
 
+.flip-container:focus .flipper {
+  outline: none;
 }
 
 .flip-container, .front, .back {
