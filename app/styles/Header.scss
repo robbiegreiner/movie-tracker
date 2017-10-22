@@ -39,20 +39,31 @@
   margin-right: 75px;
 }
 
+.user-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 75px;
+}
+
 .two-user-btns {
   display: flex;
   flex-direction: row;
-  margin-bottom: 35px;
+  flex-wrap: wrap;
+  // margin-bottom: 35px;
   // justify-content: center;
   // margin-right: 75px;
 }
 
 .user {
+  justify-content: flex-end;
+  display: flex;
   font-size: 20px;
-  // display: flex;
-  // align-items: center;
-  // padding-right: 200px;
+  padding-bottom: 10px;
+  padding-right: 10px;
   color: #D23321;
+
+
 }
 
 .signout,
@@ -73,5 +84,5 @@
 .favorites-link:hover,
 .login-link:hover {
   background-color: #D23321;
-  border: none;
+  border: #D23321;
 }

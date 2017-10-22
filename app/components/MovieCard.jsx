@@ -13,7 +13,7 @@ const MovieCard = ({ movie, handleFavorites }) => {
   const poster = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
 
   return (
-    <div className='movie-card'>
+    <div className="movie-card">
       <div className="flip-container" >
         <div className="flipper">
           <div className="front">
@@ -37,31 +37,6 @@ const MovieCard = ({ movie, handleFavorites }) => {
           </div>
         </div>
       </div>
-
-
-
-      {/* <h2>{title}</h2>
-      <div className="fav-btn" onClick={() => {
-        const movieObj = Object.assign({}, {
-          movie_id,
-          title,
-          overview,
-          vote_average,
-          poster_path,
-          release_date
-        });
-        addFavorites(movieObj);
-      }}></div>
-      <div className="movie-container">
-        <img className="movie-image" src={poster} alt="poster" />
-        <div className="score-release-container">
-          <h4 className="release-date">Release Date</h4>
-          <h3 className="release">{release_date}</h3>
-          <h4 className="rating">User Rating</h4>
-          <h3 className="score">{vote_average}</h3>
-        </div>
-      </div>
-      <p>{overview}</p> */}
     </div>
   );
 };

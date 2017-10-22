@@ -8,7 +8,7 @@
 
 .fav-btn {
   position: absolute;
-  margin-left: 260px;
+  right: 10px;
   margin-top: 5px;
   width: 80px;
   height: 80px;
@@ -23,18 +23,21 @@
   transition-delay: .05s;
 }
 
-.movie-card img {
+.movie-image {
   height: 500px;
   width: 350px;
   box-shadow: 5px 10px 10px #888888;
 }
 
 .movie-image-back {
+  box-shadow: 5px 10px 10px #888888;
   position: absolute;
   top: 0;
   right: 0;
   z-index: -10;
   opacity: 0.25;
+  height: 500px;
+  width: 350px;
 }
 
 .card-text {
@@ -120,7 +123,6 @@
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-  box-shadow: 5px 10px 10px #888888;
 	position: absolute;
 	top: 0;
 	left: 0;
