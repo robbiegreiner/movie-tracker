@@ -11,7 +11,6 @@ export const fetchDataSuccess = movieData => {
 };
 
 export const fetchData = () => {
-  console.log('in here')
   return dispatch => {
     movieDataFetcher()
       .then(movies => dispatch(fetchDataSuccess(movies)))
@@ -99,7 +98,6 @@ export const deleteFavorite = favorite => {
     favorite
   };
 };
-
 
 export const getAllFavorites = favorites => {
   return {

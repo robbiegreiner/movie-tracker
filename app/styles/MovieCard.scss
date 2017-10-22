@@ -30,6 +30,17 @@
   box-shadow: 5px 10px 10px #888888;
 }
 
+.movie-image-back {
+  position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    opacity: 0.5;
+}
+
+.card-text {
+  z-index: 10;
+}
 .movie-container {
   display: flex;
   justify-content: space-between;
@@ -88,9 +99,8 @@
 
 /* flip speed goes here */
 .flipper {
-	transition: 1.5s;
+	transition: 3s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 

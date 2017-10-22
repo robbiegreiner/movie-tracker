@@ -80,10 +80,12 @@ class CreateUser extends Component {
     return (
       <div className="login">
         <form>
-          <h2>Create Account</h2>
-          <h4 className='error'>
-            { createUserError ? 'Email already exists.' : this.state.error }
-          </h4>
+          <div className='heading'>
+            <h2>Create Account</h2>
+            <h4 className='error'>
+              { createUserError ? 'Email already exists.' : this.state.error }
+            </h4>
+          </div>
           {this.renderInputs()}
           {this.renderButton()}
         </form>

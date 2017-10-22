@@ -62,10 +62,12 @@ class Login extends Component {
     return (
       <div className="login">
         <form>
-          <h2>LOGIN</h2>
-          <h4 className='error'>
-            {loginError ? 'Email and Password do not match' : null}
-          </h4>
+          <div className='heading'>
+            <h2>LOGIN</h2>
+            <h4 className='error'>
+              {loginError ? 'Email and Password do not match' : null}
+            </h4>
+          </div>
           {this.renderInputs()}
           {this.renderButton()}
         </form>

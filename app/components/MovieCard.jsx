@@ -20,6 +20,7 @@ const MovieCard = ({ movie, addFavorites }) => {
             <img className="movie-image" src={poster} alt="poster" />
           </div>
           <div className="back">
+
             <div className="fav-btn" onClick={() => {
               const movieObj = Object.assign({}, {
                 movie_id,
@@ -31,10 +32,14 @@ const MovieCard = ({ movie, addFavorites }) => {
               });
               addFavorites(movieObj);
             }}></div>
-            <h4 className="release-date">Release Date</h4>
-            <h3 className="release">{release_date}</h3>
-            <h4 className="rating">User Rating</h4>
-            <h3 className="score">{vote_average}</h3>
+            <div className="card-text">
+              <h4 className="release-date">Release Date</h4>
+              <h3 className="release">{release_date}</h3>
+              <h4 className="rating">User Rating</h4>
+              <h3 className="score">{vote_average}</h3>
+            </div>
+            <img className="movie-image-back" src={poster} alt="poster" />
+
             <p>{overview}</p>
           </div>
         </div>
