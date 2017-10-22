@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 import PropTypes from 'prop-types';
+import validator from 'email-validator';
 
 class CreateUser extends Component {
   constructor(props) {
@@ -8,7 +9,8 @@ class CreateUser extends Component {
     this.state = {
       name: '',
       email: '',
-      password: ''
+      password: '',
+      error: ''
     };
   }
 
@@ -22,52 +24,68 @@ class CreateUser extends Component {
     });
   }
 
+  renderInputs = () => {
+    const inputTypes = Object.keys(this.state);
+    inputTypes.pop();
+    return inputTypes.map(inputType => {
+      return <input
+        key={inputType}
+        type='text'
+        placeholder={inputType.charAt(0).toUpperCase() + inputType.slice(1)}
+        className={`${inputType}-input`}
+        onChange={ (event) => this.handleChange(event, inputType ) }
+      />;
+    });
+  }
+
+  validateEmail = () => {
+    const { createNewUser } = this.props;
+    validator.validate(this.state.email) ?
+      createNewUser(this.state) :
+      this.setState({ error: 'Please submit a valid email address.' });
+  }
+
+  validatePwd = () => {
+    this.state.password.length >= 8 ? this.validateEmail() :
+      this.setState({ error: 'Your password must be eight characters long.' });
+  }
+
+  renderButton = () => {
+    const isDisabled = (
+      this.state.name.length &&
+      this.state.email.length &&
+      this.state.password.length
+    ) ? false : true;
+
+    return (
+      <input
+        className='form-button'
+        type='submit'
+        disabled={isDisabled}
+        onClick={(event) => {
+          event.preventDefault();
+          this.validatePwd();
+        }}
+      />
+    );
+  };
+
   render() {
-    const { userStatus, createNewUser, createUserError } = this.props;
+    const { userStatus, createUserError } = this.props;
 
     if (userStatus === true) {
       return <Redirect to='/'/>;
     }
-// event.target.getAttribute('data-type')
+
     return (
       <div className="login">
         <form>
-          {/* <h2>Welcome to Movie Tracker</h2> */}
           <h2>Create Account</h2>
           <h4 className='error'>
-            { createUserError ? 'email already exists' : null }
+            { createUserError ? 'Email already exists.' : this.state.error }
           </h4>
-          <input
-            type='text'
-            placeholder='Name'
-            data-type='name'
-            className='name-input'
-            onChange={ (event) => this.handleChange(event, 'name' ) }
-          />
-          <input
-            type='text'
-            placeholder='Email'
-            className='email-input'
-            onChange={ (event) => this.handleChange(event, 'email' ) }
-          />
-          <input
-            type='password'
-            placeholder='Password'
-            className='password-input'
-            onChange={ (event) => this.handleChange(event, 'password' ) }
-          />
-          <input
-            className='form-button'
-            type='submit'
-            onClick={
-              (event) => {
-                event.preventDefault();
-                //pass state to action that makes fetch post request to get user back
-                const userObj = Object.assign({}, this.state);
-                createNewUser(userObj);
-              }
-            }
-          />
+          {this.renderInputs()}
+          {this.renderButton()}
         </form>
       </div>
     );

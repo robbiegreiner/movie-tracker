@@ -1,18 +1,7 @@
 import movieDataFetcher from '../helpers/movieDataFetcher';
 import userDataFetcher from '../helpers/userDataFetcher';
 import favoritesFetcher from '../helpers/favoritesFetcher';
-// import createUserFetcher from '../helpers/createUserFetcher';
-
-//action for creating new user- alters user
-//action for favoriting a movie- alters userFaves
-//action for unfavoriting a movie- alters userFaves
-//action for getting favorite movies- I don't think we need this, it's just a Link/NavLink
-//action for signing out- alters user
-
-// what do we need in store?
-// user
-// movies
-// userFaves
+import createUserFetcher from '../helpers/createUserFetcher';
 
 export const fetchDataSuccess = movieData => {
   return {
@@ -64,13 +53,7 @@ export const createUserError = bool => ({
 
 export const fetchCreateUser = userObj => {
   return dispatch => {
-    fetch('/api/users/new', {
-      method: 'POST',
-      body: JSON.stringify(userObj),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
+    createUserFetcher(userObj)
       .then(res => {
         if (res.status !== 200) {
           dispatch(createUserError(true));
