@@ -5,6 +5,8 @@ const MovieCard = ({ movie, handleFavorites }) => {
 
   const poster = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
 
+  const favClass = movie.isFav ? "favClass" : "fav-btn";
+
   return (
     <div className='movie-card'>
       <div className="flip-container"
@@ -17,7 +19,7 @@ const MovieCard = ({ movie, handleFavorites }) => {
         }}>
         <div className="flipper">
           <div className="front">
-            <div className="fav-btn" onClick={() => {
+            <div className={`${favClass}`} onClick={() => {
               handleFavorites(movie);
             }}></div>
             <img className="movie-image"
@@ -25,7 +27,7 @@ const MovieCard = ({ movie, handleFavorites }) => {
               alt={`A promotional poster for the movie ${movie.title}`} />
           </div>
           <div className="back">
-            <div className="fav-btn" onClick={() => {
+            <div className={`${favClass}`} onClick={() => {
               handleFavorites(movie);
             }}></div>
             <img className="movie-image-back"
