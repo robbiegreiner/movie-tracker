@@ -39,6 +39,10 @@ class MovieIndex extends Component {
   }
 
   render() {
+
+    if (this.props.fetchDataError) {
+      return <p>Whoops...</p>;
+    }
     return (
       <div className='movie-list'>
         {this.state.needToLogin && <Redirect to='/createuser'/>}
@@ -54,7 +58,8 @@ MovieIndex.propTypes = {
   favorites: PropTypes.array,
   sendFavorite: PropTypes.func,
   user: PropTypes.object,
-  retrieveFavorites: PropTypes.func
+  retrieveFavorites: PropTypes.func,
+  fetchDataError: PropTypes.func
 };
 
 export default MovieIndex;
