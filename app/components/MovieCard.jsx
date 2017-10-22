@@ -3,27 +3,22 @@ import PropTypes from 'prop-types';
 
 const MovieCard = ({ movie, handleFavorites }) => {
 
-  // const { movie_id,
-  //   title,
-  //   release_date,
-  //   overview,
-  //   vote_average,
-  //   poster_path } = movie;
-
   const poster = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+
+  const favClass = movie.isFav ? "favClass" : "fav-btn";
 
   return (
     <div className='movie-card'>
       <div className="flip-container" >
         <div className="flipper">
           <div className="front">
-            <div className="fav-btn" onClick={() => {
+            <div className={`${favClass}`} onClick={() => {
               handleFavorites(movie);
             }}></div>
             <img className="movie-image" src={poster} alt="poster" />
           </div>
           <div className="back">
-            <div className="fav-btn" onClick={() => {
+            <div className={`${favClass}`} onClick={() => {
               handleFavorites(movie);
             }}></div>
             <img className="movie-image-back" src={poster} alt="poster" />

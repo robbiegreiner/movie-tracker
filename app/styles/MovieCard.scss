@@ -23,6 +23,23 @@
   transition-delay: .05s;
 }
 
+.favClass {
+  position: absolute;
+  margin-left: 260px;
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+  background-image: url("http://localhost:3000/assets/red-star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.favClass:hover {
+  background-image: url("http://localhost:3000/assets/hover-star.svg");
+  transition-delay: .05s;
+}
+
 .movie-card img {
   height: 500px;
   width: 350px;
