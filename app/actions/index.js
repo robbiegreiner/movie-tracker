@@ -96,7 +96,6 @@ export const fetchCreateUser = userObj => {
   };
 };
 
-
 export const loginError = hasErrored => {
   return {
     type: 'LOGIN_ERROR',
@@ -111,6 +110,14 @@ export const addFavorite = favorite => {
   };
 };
 
+export const deleteFavorite = favorite => {
+  return {
+    type: 'DELETE_FAVORITE',
+    favorite
+  };
+};
+
+
 export const getAllFavorites = favorites => {
   return {
     type: 'GET_ALL_FAVORITES',
@@ -119,7 +126,6 @@ export const getAllFavorites = favorites => {
 };
 
 export const favoritesGetter = userId => {
-  console.log('hey');
   return dispatch => {
     fetch(`api/users/${userId}/favorites`)
       .then(response => response.json())

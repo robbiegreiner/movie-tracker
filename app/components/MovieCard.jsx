@@ -43,7 +43,7 @@ const MovieCard = ({ movie_id, title, release_date, overview, vote_average, post
           overview,
           vote_average,
           poster_path,
-          releaseDate
+          release_date
         });
         addFavorites(movieObj);
       }}></div>
@@ -51,7 +51,7 @@ const MovieCard = ({ movie_id, title, release_date, overview, vote_average, post
         <img className="movie-image" src={poster} alt="poster" />
         <div className="score-release-container">
           <h4 className="release-date">Release Date</h4>
-          <h3 className="release">{releaseDate}</h3>
+          <h3 className="release">{release_date}</h3>
           <h4 className="rating">User Rating</h4>
           <h3 className="score">{vote_average}</h3>
         </div>

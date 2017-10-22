@@ -11,9 +11,11 @@ export default class Favorites extends Component {
     };
   }
 
-  // componentDidMount() {
-  // }
-  //
+  componentDidMount() {
+    console.log(this.props.user.id);
+    // this.prop.retrieveFavorites(this.props.user.id);
+  }
+
   // addFavorites(movieObj) {
   // }
 
@@ -32,6 +34,7 @@ export default class Favorites extends Component {
   }
 
   render() {
+    console.log(this.props.retrieveFavorites)
     return (
       <div className='movie-list'>
         {/* {this.state.needToLogin && <Redirect to='/createuser'/>} */}
