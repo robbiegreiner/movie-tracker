@@ -37,4 +37,14 @@ describe('MovieIndex', () => {
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  // it('should render an error if passed one', () => {
+  //   const altWrapper = shallow(<MovieIndex userStatus=''
+  //     retrieveMovies={mockFn}
+  //     fetchDataError={true}/>);
+  //   const error = altWrapper.find('div');
+  //
+  //   expect(error.text()).toEqual(console.log('fetch data error'));
+  //   expect(altWrapper).toMatchSnapshot();
+  // });
 });
