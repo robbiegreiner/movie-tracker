@@ -9,13 +9,15 @@ const Header = ({ user, handleSignOut }) => {
   const userContents = (
     <div className='user-box'>
       <p className='user'>Welcome, {user.name}!</p>
-      <Link className='login-link favorites-link' to='/favorites'>View Favorites</Link>
-      <Link
-        className='login-link signout'
-        to='/login'
-        onClick={() => handleSignOut()}>
-        Sign Out
-      </Link>
+      <div className='two-user-btns'>
+        <Link className='favorites-link' to='/favorites'>View Favorites</Link>
+        <Link
+          className='signout'
+          to='/login'
+          onClick={() => handleSignOut()}>
+          Sign Out
+        </Link>
+      </div>
     </div>);
 
   const noUserContents =
@@ -28,7 +30,7 @@ const Header = ({ user, handleSignOut }) => {
 
   return (
     <div className='header'>
-      <Link to='/'>  
+      <Link to='/'>
         <h1>
           <span className='header-one'>Movie</span>
           <span className='header-two'>Tracker</span>

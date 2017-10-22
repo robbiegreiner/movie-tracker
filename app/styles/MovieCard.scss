@@ -10,14 +10,14 @@
 
 .fav-btn {
   position: absolute;
-  margin-left: 290px;
-  margin-top: 15px;
-  width: 50px;
-  height: 50px;
+  margin-left: 260px;
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
   background-image: url("http://localhost:3000/assets/hover-star.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 40px 40px;
+  background-size: 60px 60px;
 }
 
 .fav-btn:hover {
@@ -33,10 +33,10 @@
 
 .movie-image-back {
   position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -10;
-    opacity: 0.25;
+  top: 0;
+  right: 0;
+  z-index: -10;
+  opacity: 0.25;
 }
 
 .card-text {
@@ -154,4 +154,10 @@ p {
   	width: 443px;
   }
 
+}
+
+@media only screen and (min-width: 320px) {
+  .movie-card {
+    width: 100%;
+  }
 }
