@@ -30,6 +30,16 @@ class MovieIndex extends Component {
     }
   }
 
+  // currently rendering cards with add favorites button..
+  // maybe compare favorites to movielist..
+  // favorites and movieList
+
+  compareFavsAndMovies(){
+    const { favorites, movieList } = this.props;
+    console.log('faves: ' + favorites);
+    console.log('movies: ' + movieList);
+  }
+
   renderCards() {
     return this.props.movieList.map(movie => {
       return <MovieCard key={movie.movie_id}
@@ -39,6 +49,7 @@ class MovieIndex extends Component {
   }
 
   render() {
+    console.log(this.compareFavsAndMovies);
     return (
       <div className='movie-list'>
         {this.state.needToLogin && <Redirect to='/createuser'/>}

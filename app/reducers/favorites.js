@@ -4,6 +4,8 @@ const favorites = (state = [], action) => {
     return [...state, action.favorite];
   case 'GET_ALL_FAVORITES':
     return [...state, ...action.favorites];
+  case 'SIGN_OUT_USER':
+    return [];
   default:
     return state;
   }
