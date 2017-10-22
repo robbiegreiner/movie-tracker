@@ -1,6 +1,4 @@
 .movie-card {
-  // color: steelblue;
-  // background-color: #0D0F0F;
   height: 500px;
   width: 350px;
   margin: 20px 40px 20px 40px;
@@ -10,13 +8,14 @@
 
 .fav-btn {
   position: absolute;
-  margin-left: 325px;
-  width: 40px;
-  height: 40px;
+  margin-left: 260px;
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
   background-image: url("http://localhost:3000/assets/hover-star.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 30px 30px;
+  background-size: 60px 60px;
 }
 
 .fav-btn:hover {
@@ -28,6 +27,27 @@
   height: 500px;
   width: 350px;
   box-shadow: 5px 10px 10px #888888;
+}
+
+.movie-image-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+  opacity: 0.25;
+}
+
+.card-text {
+  z-index: 10;
+  margin: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-title {
+  margin-top: 50px;
+  font-size: 30px;
 }
 
 .movie-container {
@@ -45,7 +65,9 @@
 }
 
 .movie-card p {
-  font-size: 12px;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 .movie-card h2 {
@@ -71,15 +93,17 @@
 }
 
 
-
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
 }
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+  transition-delay:.9s;
+
+}
 
 .flip-container, .front, .back {
 	width: 350px;
@@ -88,9 +112,8 @@
 
 /* flip speed goes here */
 .flipper {
-	transition: 1.5s;
+	transition: 3s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
@@ -113,17 +136,6 @@
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
-
-
-  // width: 240px;
-  // display: flex;
-  // flex-direction: column;
-  // margin: 10px;
-  // padding: 10px;
-  // box-shadow: 5px 10px 10px #888888;
-  // background-color: white;
-  // border-radius: 10%;
-
 }
 
 @media (min-height: 910px) {
@@ -137,4 +149,10 @@
   	width: 443px;
   }
 
+}
+
+@media only screen and (min-width: 320px) {
+  .movie-card {
+    width: 100%;
+  }
 }

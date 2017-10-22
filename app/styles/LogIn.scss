@@ -46,7 +46,7 @@
 }
 
 .form-button {
-  background-color: #bdbdbd;
+  background-color: #D23321;
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -61,6 +61,21 @@
 }
 
 .form-button:hover {
-  background-color: #D23321 ;
+  background-color: #aa2f1e;
+}
 
+.form-button:disabled {
+  background-color: #bdbdbd;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  margin-top: 10px;
+  color: darkgray;
 }

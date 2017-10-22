@@ -27,7 +27,6 @@ export default class Favorites extends Component {
   }
 
   render() {
-    console.log(this.props.retrieveFavorites)
     return (
       <div className='movie-list'>
         {this.props.favesList.length && this.renderCards()}

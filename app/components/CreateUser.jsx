@@ -80,10 +80,12 @@ class CreateUser extends Component {
     return (
       <div className="login">
         <form>
-          <h2>Create Account</h2>
-          <h4 className='error'>
-            { createUserError ? 'Email already exists.' : this.state.error }
-          </h4>
+          <div className='heading'>
+            <h2>Create Account</h2>
+            <h4 className='error'>
+              { createUserError ? 'Email already exists.' : this.state.error }
+            </h4>
+          </div>
           {this.renderInputs()}
           {this.renderButton()}
         </form>
@@ -93,7 +95,10 @@ class CreateUser extends Component {
 }
 
 CreateUser.propTypes = {
+  retrieveMovies: PropTypes.func,
+  movieList: PropTypes.array,
   createNewUser: PropTypes.func,
+  createUserError: PropTypes.bool,
   userStatus: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool
@@ -101,11 +106,3 @@ CreateUser.propTypes = {
 };
 
 export default CreateUser;
-
-CreateUser.propTypes = {
-  retrieveMovies: PropTypes.func,
-  movieList: PropTypes.array,
-  userStatus: PropTypes.string,
-  createNewUser: PropTypes.func,
-  createUserError: PropTypes.bool
-};

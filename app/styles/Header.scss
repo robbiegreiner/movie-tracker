@@ -33,18 +33,26 @@
   color: #D23321;
 }
 
-.no-user-box,
-.user-box {
+.no-user-box {
   display: flex;
   justify-content: center;
   margin-right: 75px;
 }
 
+.two-user-btns {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+  // justify-content: center;
+  // margin-right: 75px;
+}
+
 .user {
   font-size: 20px;
-  display: flex;
-  align-items: center;
-  padding-right: 200px;
+  // display: flex;
+  // align-items: center;
+  // padding-right: 200px;
+  color: #D23321;
 }
 
 .signout,

@@ -3,7 +3,7 @@ import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router';
 
-export default class MovieIndex extends Component {
+class MovieIndex extends Component {
   constructor() {
     super();
     this.state = {
@@ -19,7 +19,7 @@ export default class MovieIndex extends Component {
   addFavorites(movieObj) {
     const { favorites, sendFavorite, user } = this.props;
     if (!user.name) {
-      alert('Please, create an account to favorite a movie');
+      alert('You must create an account to favorite a movie');
       this.setState({
         needToLogin: true
       });
@@ -53,8 +53,11 @@ MovieIndex.propTypes = {
   movieList: PropTypes.array,
   favorites: PropTypes.array,
   sendFavorite: PropTypes.func,
-  user: PropTypes.object
+  user: PropTypes.object,
+  retrieveFavorites: PropTypes.func
 };
+
+export default MovieIndex;
 
 
 // handleFavorites(movie) {
