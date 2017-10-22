@@ -10,6 +10,14 @@ export default class Favorites extends Component {
     };
   }
 
+  componentDidMount() {
+    console.log(this.props.user.id);
+    // this.prop.retrieveFavorites(this.props.user.id);
+  }
+
+  // addFavorites(movieObj) {
+  // }
+
   renderCards() {
     return this.props.favesList.map(movie => {
       return <MovieCard key={movie.movie_id}
@@ -19,6 +27,7 @@ export default class Favorites extends Component {
   }
 
   render() {
+    console.log(this.props.retrieveFavorites)
     return (
       <div className='movie-list'>
         {this.props.favesList.length && this.renderCards()}

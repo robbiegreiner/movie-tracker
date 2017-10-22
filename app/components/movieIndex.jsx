@@ -13,7 +13,7 @@ export default class MovieIndex extends Component {
 
   componentDidMount() {
     this.props.retrieveMovies();
-    this.props.retrieveFavorites();
+    this.props.retrieveFavorites(this.props.user.id);
   }
 
   addFavorites(movieObj) {
