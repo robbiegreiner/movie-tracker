@@ -13,7 +13,6 @@ describe('MovieIndexContainer', () => {
   const mockStore = configureStore();
   const mockRetrieveMovies = jest.fn();
   const mockSendFavorite = jest.fn();
-  const mockRetrieveFavorites = jest.fn();
   const initialState = {
     movieList: [],
     fetchDataError: false,
@@ -22,9 +21,6 @@ describe('MovieIndexContainer', () => {
   };
   const store = mockStore(initialState, middlewares);
   actions.fetchData = () => ({type: 'FETCH_DATA_SUCCESS'});
-  actions.postFavorites = () => ({ type: 'ADD_FAVORITE' });
-  actions.favoritesGetter = () => ({ type: 'GET_ALL_FAVORITES' });
-  actions.removeFromFaves = () => ({ type: 'DELETE_FAVORITE'});
   const wrapper = mount(<MovieIndexContainer
     store={store}
     movieList={initialState.movieList}
@@ -33,7 +29,6 @@ describe('MovieIndexContainer', () => {
     favorites={initialState.favorites}
     retrieveMovies={mockRetrieveMovies}
     sendFavorite={mockSendFavorite}
-    retrieveFavorites={mockRetrieveFavorites}
   />);
 
   it('should have default state', () => {
@@ -54,7 +49,6 @@ describe('MovieIndexContainer', () => {
       favorites={initialState.favorites}
       retrieveMovies={mockRetrieveMovies}
       sendFavorite={mockSendFavorite}
-      retrieveFavorites={mockRetrieveFavorites}
     />);
 
     const faveBtn = altWrapper.find('.fav-btn').first();
@@ -62,6 +56,5 @@ describe('MovieIndexContainer', () => {
     faveBtn.simulate('click');
     expect(mockRetrieveMovies).toHaveBeenCalledTimes(1);
     expect(mockSendFavorite).toHaveBeenCalledTimes(1);
-    expect(mockRetrieveFavorites).toHaveBeenCalledTimes(1);
   });
 });

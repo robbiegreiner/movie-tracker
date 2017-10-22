@@ -6,10 +6,7 @@ import mockMovieData from '../../helpers/mockMovieData';
 describe('MovieIndex', () => {
   const mockFn = jest.fn();
   const emptyWrapper = shallow(<MovieIndex movieList={[]}
-    retrieveMovies={mockFn}
-    retrieveFavorites={mockFn}
-    user={{ id: 4 }}
-    favorites={[]}/>);
+    retrieveMovies={mockFn}/>);
 
   it('should exist but have no movies', () => {
     const div = emptyWrapper.find('.movie-list');
@@ -25,10 +22,7 @@ describe('MovieIndex', () => {
 
   const wrapper = shallow(<MovieIndex
     movieList={mockMovieData.results}
-    retrieveMovies={mockFn}
-    retrieveFavorites={mockFn}
-    user={{ id: 4 }}
-    favorites={[]}/>);
+    retrieveMovies={mockFn}/>);
 
   it('should render same amount of movies as passed', () => {
     const cards = wrapper.find('MovieCard');
@@ -37,7 +31,7 @@ describe('MovieIndex', () => {
   });
 
   it('should call function when mounted', () => {
-    expect(mockFn).toHaveBeenCalledTimes(4);
+    expect(mockFn).toHaveBeenCalledTimes(2);
   });
 
   it('should match snapshot', () => {

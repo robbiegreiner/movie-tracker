@@ -21,16 +21,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <form>
-        <div
-          className="heading"
-        >
-          <h2>
-            LOGIN
-          </h2>
-          <h4
-            className="error"
-          />
-        </div>
+        <h2>
+          LOGIN
+        </h2>
+        <h4
+          className="error"
+        />
         <input
           className="email-input"
           onChange={[Function]}
@@ -47,7 +43,6 @@ ShallowWrapper {
           className="form-button"
           disabled={true}
           onClick={[Function]}
-          onKeyDown={[Function]}
           type="submit"
         />
       </form>,
@@ -60,16 +55,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
-            className="heading"
-          >
-            <h2>
-              LOGIN
-            </h2>
-            <h4
-              className="error"
-            />
-          </div>,
+          <h2>
+            LOGIN
+          </h2>,
+          <h4
+            className="error"
+          />,
           Array [
             <input
               className="email-input"
@@ -88,7 +79,6 @@ ShallowWrapper {
             className="form-button"
             disabled={true}
             onClick={[Function]}
-            onKeyDown={[Function]}
             type="submit"
           />,
         ],
@@ -100,43 +90,23 @@ ShallowWrapper {
           "key": null,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <h2>
-                LOGIN
-              </h2>,
-              <h4
-                className="error"
-              />,
-            ],
-            "className": "heading",
+            "children": "LOGIN",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "children": "LOGIN",
-              },
-              "ref": null,
-              "rendered": "LOGIN",
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "children": null,
-                "className": "error",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "h4",
-            },
-          ],
-          "type": "div",
+          "rendered": "LOGIN",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": null,
+            "className": "error",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h4",
         },
         Object {
           "instance": null,
@@ -174,7 +144,6 @@ ShallowWrapper {
             "className": "form-button",
             "disabled": true,
             "onClick": [Function],
-            "onKeyDown": [Function],
             "type": "submit",
           },
           "ref": null,
@@ -193,16 +162,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <form>
-          <div
-            className="heading"
-          >
-            <h2>
-              LOGIN
-            </h2>
-            <h4
-              className="error"
-            />
-          </div>
+          <h2>
+            LOGIN
+          </h2>
+          <h4
+            className="error"
+          />
           <input
             className="email-input"
             onChange={[Function]}
@@ -219,7 +184,6 @@ ShallowWrapper {
             className="form-button"
             disabled={true}
             onClick={[Function]}
-            onKeyDown={[Function]}
             type="submit"
           />
         </form>,
@@ -232,16 +196,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
-              className="heading"
-            >
-              <h2>
-                LOGIN
-              </h2>
-              <h4
-                className="error"
-              />
-            </div>,
+            <h2>
+              LOGIN
+            </h2>,
+            <h4
+              className="error"
+            />,
             Array [
               <input
                 className="email-input"
@@ -260,7 +220,6 @@ ShallowWrapper {
               className="form-button"
               disabled={true}
               onClick={[Function]}
-              onKeyDown={[Function]}
               type="submit"
             />,
           ],
@@ -272,43 +231,23 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <h2>
-                  LOGIN
-                </h2>,
-                <h4
-                  className="error"
-                />,
-              ],
-              "className": "heading",
+              "children": "LOGIN",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "LOGIN",
-                },
-                "ref": null,
-                "rendered": "LOGIN",
-                "type": "h2",
-              },
-              Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "children": null,
-                  "className": "error",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "h4",
-              },
-            ],
-            "type": "div",
+            "rendered": "LOGIN",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": null,
+              "className": "error",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h4",
           },
           Object {
             "instance": null,
@@ -346,7 +285,6 @@ ShallowWrapper {
               "className": "form-button",
               "disabled": true,
               "onClick": [Function],
-              "onKeyDown": [Function],
               "type": "submit",
             },
             "ref": null,
@@ -391,18 +329,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <form>
-        <div
-          className="heading"
+        <h2>
+          LOGIN
+        </h2>
+        <h4
+          className="error"
         >
-          <h2>
-            LOGIN
-          </h2>
-          <h4
-            className="error"
-          >
-            Email and Password do not match
-          </h4>
-        </div>
+          Email and Password do not match
+        </h4>
         <input
           className="email-input"
           onChange={[Function]}
@@ -419,7 +353,6 @@ ShallowWrapper {
           className="form-button"
           disabled={true}
           onClick={[Function]}
-          onKeyDown={[Function]}
           type="submit"
         />
       </form>,
@@ -432,18 +365,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
-            className="heading"
+          <h2>
+            LOGIN
+          </h2>,
+          <h4
+            className="error"
           >
-            <h2>
-              LOGIN
-            </h2>
-            <h4
-              className="error"
-            >
-              Email and Password do not match
-            </h4>
-          </div>,
+            Email and Password do not match
+          </h4>,
           Array [
             <input
               className="email-input"
@@ -462,7 +391,6 @@ ShallowWrapper {
             className="form-button"
             disabled={true}
             onClick={[Function]}
-            onKeyDown={[Function]}
             type="submit"
           />,
         ],
@@ -474,45 +402,23 @@ ShallowWrapper {
           "key": null,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <h2>
-                LOGIN
-              </h2>,
-              <h4
-                className="error"
-              >
-                Email and Password do not match
-              </h4>,
-            ],
-            "className": "heading",
+            "children": "LOGIN",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "children": "LOGIN",
-              },
-              "ref": null,
-              "rendered": "LOGIN",
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Email and Password do not match",
-                "className": "error",
-              },
-              "ref": null,
-              "rendered": "Email and Password do not match",
-              "type": "h4",
-            },
-          ],
-          "type": "div",
+          "rendered": "LOGIN",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Email and Password do not match",
+            "className": "error",
+          },
+          "ref": null,
+          "rendered": "Email and Password do not match",
+          "type": "h4",
         },
         Object {
           "instance": null,
@@ -550,7 +456,6 @@ ShallowWrapper {
             "className": "form-button",
             "disabled": true,
             "onClick": [Function],
-            "onKeyDown": [Function],
             "type": "submit",
           },
           "ref": null,
@@ -569,18 +474,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <form>
-          <div
-            className="heading"
+          <h2>
+            LOGIN
+          </h2>
+          <h4
+            className="error"
           >
-            <h2>
-              LOGIN
-            </h2>
-            <h4
-              className="error"
-            >
-              Email and Password do not match
-            </h4>
-          </div>
+            Email and Password do not match
+          </h4>
           <input
             className="email-input"
             onChange={[Function]}
@@ -597,7 +498,6 @@ ShallowWrapper {
             className="form-button"
             disabled={true}
             onClick={[Function]}
-            onKeyDown={[Function]}
             type="submit"
           />
         </form>,
@@ -610,18 +510,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
-              className="heading"
+            <h2>
+              LOGIN
+            </h2>,
+            <h4
+              className="error"
             >
-              <h2>
-                LOGIN
-              </h2>
-              <h4
-                className="error"
-              >
-                Email and Password do not match
-              </h4>
-            </div>,
+              Email and Password do not match
+            </h4>,
             Array [
               <input
                 className="email-input"
@@ -640,7 +536,6 @@ ShallowWrapper {
               className="form-button"
               disabled={true}
               onClick={[Function]}
-              onKeyDown={[Function]}
               type="submit"
             />,
           ],
@@ -652,45 +547,23 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <h2>
-                  LOGIN
-                </h2>,
-                <h4
-                  className="error"
-                >
-                  Email and Password do not match
-                </h4>,
-              ],
-              "className": "heading",
+              "children": "LOGIN",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "LOGIN",
-                },
-                "ref": null,
-                "rendered": "LOGIN",
-                "type": "h2",
-              },
-              Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Email and Password do not match",
-                  "className": "error",
-                },
-                "ref": null,
-                "rendered": "Email and Password do not match",
-                "type": "h4",
-              },
-            ],
-            "type": "div",
+            "rendered": "LOGIN",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Email and Password do not match",
+              "className": "error",
+            },
+            "ref": null,
+            "rendered": "Email and Password do not match",
+            "type": "h4",
           },
           Object {
             "instance": null,
@@ -728,7 +601,6 @@ ShallowWrapper {
               "className": "form-button",
               "disabled": true,
               "onClick": [Function],
-              "onKeyDown": [Function],
               "type": "submit",
             },
             "ref": null,
