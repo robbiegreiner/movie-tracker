@@ -6,6 +6,9 @@ const userDataFetcher = userObj => {
       'Content-Type': 'application/json'
     }
   })
+    // .then( res +> {
+    //   if (response.status)
+    // })
     .then(res => res.json())
     .then(resJson => resJson.data);
 };
