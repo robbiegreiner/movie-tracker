@@ -90,7 +90,7 @@ MovieIndex.propTypes = {
   sendFavorite: PropTypes.func,
   user: PropTypes.object,
   retrieveFavorites: PropTypes.func,
-  fetchDataError: PropTypes.func,
+  fetchDataError: PropTypes.bool,
   deleteFave: PropTypes.func
 };
 

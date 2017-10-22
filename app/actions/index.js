@@ -2,6 +2,8 @@ import movieDataFetcher from '../helpers/movieDataFetcher';
 import userDataFetcher from '../helpers/userDataFetcher';
 import favoritesFetcher from '../helpers/favoritesFetcher';
 import createUserFetcher from '../helpers/createUserFetcher';
+import MovieDataCleaner from '../helpers/movieDataCleaner';
+
 
 
 export const fetchDataSuccess = movieData => {
@@ -19,8 +21,18 @@ export const fetchDataError = bool => ({
 export const fetchData = () => {
   return dispatch => {
     movieDataFetcher()
+      .then(res => {
+        if (res.status !== 200) {
+          dispatch(createUserError(true));
+        } else {
+          return res;
+        }
+      })
+      .then(res => res.json())
+      .then(resJSON => resJSON.results)
+      .then(moviesArray => MovieDataCleaner(moviesArray))
       .then(movies => dispatch(fetchDataSuccess(movies)))
-      .catch(() => dispatch(fetchDataError()));
+      .catch(() => dispatch(fetchDataError(true)));
   };
 };
 
@@ -123,6 +135,13 @@ export const getAllFavorites = favorites => {
     type: 'GET_ALL_FAVORITES',
     favorites
   };
+};
+
+export const postFaveError = bool => {
+	return {
+		type: 'ADD_TO_FAVES_ERRED',
+		addToFavesErred: bool
+	};
 };
 
 export const favoritesGetter = userId => {
