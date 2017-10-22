@@ -96,10 +96,23 @@ export const addFavorite = favorite => {
   };
 };
 
-export const deleteFavorite = favorite => {
+export const removeFromFaves = movie => {
+return dispatch => {
+    fetch(`api/users/${movie.user_id}/favorites/${movie.movie_id}`, {
+      method: 'DELETE',
+      body: JSON.stringify([movie.user_id, movie.movie_id]),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(() => dispatch(deleteFavorite(movie)));
+  };
+};
+
+export const deleteFavorite = movie => {
   return {
     type: 'DELETE_FAVORITE',
-    favorite
+    movie
   };
 };
 

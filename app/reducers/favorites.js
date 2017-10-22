@@ -3,7 +3,15 @@ const favorites = (state = [], action) => {
   case 'ADD_FAVORITE':
     return [...state, action.favorite];
   case 'GET_ALL_FAVORITES':
-    return [...state, ...action.favorites];
+    return action.favorites.map(favorite =>
+      Object.assign({ isFaved: true }, favorite)
+    );
+
+  case 'SIGN_OUT_USER':
+    return [];
+  case 'DELETE_FAVORITE':
+    // remove favorite from array
+    return state.filter( favorite => favorite.movie_id !== action.favorite.movie_id );
   default:
     return state;
   }

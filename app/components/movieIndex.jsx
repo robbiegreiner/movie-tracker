@@ -30,10 +30,59 @@ class MovieIndex extends Component {
     }
   }
 
+  // currently rendering cards with add favorites button..
+  // maybe compare favorites to movielist..
+  // favorites and movieList
+  // return favorites that are in movieList
+  // movielist[0].movie_id
+
+  // compareFavsAndMovies(){
+  //   const { favorites, movieList } = this.props;
+  //   const theFavorites = movieList.map( movie => {
+  //     return favorites.filter( favorite => {
+  //       return favorite.movie_id !== movie.movie_id;
+  //     });
+  //   });
+  //   const theRealFaves = theFavorites.map( favorite => {
+  //       return favorite[0];
+  //   });
+  //   const theRealRealFaves = theRealFaves.filter( fave => {
+  //     return fave !== undefined;
+  //   })
+  //   console.log(theFavorites);
+  // }
+
+  addFavProperty() {
+    const { favorites, movieList } = this.props;
+
+
+    if (favorites.length > 0) {
+      const favoritesID = favorites.map(favorite => favorite.movie_id);
+      return movieList.map(movie => {
+        if (favoritesID.includes(movie.id)) {
+          return Object.assign({}, movie, { isFav: true });
+        }
+        return movie;
+      });
+    } else {
+      return movieList;
+    }
+  }
+
+  handleFavorites(movie) {
+    const { deleteFave } = this.props;
+
+    if (!movie.isFav) {
+      this.addFavorites(movie);
+    } else {
+      deleteFave(movie);
+    }
+  }
+
   renderCards() {
-    return this.props.movieList.map(movie => {
+    return this.addFavProperty().map(movie => {
       return <MovieCard key={movie.movie_id}
-        addFavorites={this.addFavorites.bind(this)}
+        handleFavorites={this.handleFavorites.bind(this)}
         movie={movie}/>;
     });
   }
@@ -54,7 +103,8 @@ MovieIndex.propTypes = {
   favorites: PropTypes.array,
   sendFavorite: PropTypes.func,
   user: PropTypes.object,
-  retrieveFavorites: PropTypes.func
+  retrieveFavorites: PropTypes.func,
+  deleteFave: PropTypes.func
 };
 
 export default MovieIndex;
