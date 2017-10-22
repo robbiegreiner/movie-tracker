@@ -82,12 +82,6 @@ const MovieCard = ({ movie, addFavorites }) => {
   );
 };
 
-
-
-
-
-
-
 MovieCard.propTypes = {
   movie: PropTypes.object,
   addFavorites: PropTypes.func

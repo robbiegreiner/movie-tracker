@@ -95,7 +95,10 @@ class CreateUser extends Component {
 }
 
 CreateUser.propTypes = {
+  retrieveMovies: PropTypes.func,
+  movieList: PropTypes.array,
   createNewUser: PropTypes.func,
+  createUserError: PropTypes.bool,
   userStatus: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool
@@ -103,11 +106,3 @@ CreateUser.propTypes = {
 };
 
 export default CreateUser;
-
-CreateUser.propTypes = {
-  retrieveMovies: PropTypes.func,
-  movieList: PropTypes.array,
-  userStatus: PropTypes.string,
-  createNewUser: PropTypes.func,
-  createUserError: PropTypes.bool
-};

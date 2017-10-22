@@ -3,12 +3,17 @@ import userDataFetcher from '../helpers/userDataFetcher';
 import favoritesFetcher from '../helpers/favoritesFetcher';
 import createUserFetcher from '../helpers/createUserFetcher';
 
+
 export const fetchDataSuccess = movieData => {
   return {
     type: 'FETCH_DATA_SUCCESS',
     movies: movieData
   };
 };
+
+// export const fetchDataError = () => ({
+//   type: 'FETCH_DATA_ERROR'
+// });
 
 export const fetchData = () => {
   return dispatch => {
@@ -25,12 +30,6 @@ export const fetchUserSuccess = userData => {
   };
 };
 
-export const signOutUser = () => {
-  return {
-    type: 'SIGN_OUT_USER'
-  };
-};
-
 export const fetchUser = userObj => {
   return dispatch => {
     userDataFetcher(userObj)
@@ -42,6 +41,18 @@ export const fetchUser = userObj => {
         )
       )))
       .catch(response => dispatch(loginError(true)));
+  };
+};
+
+export const loginError = hasErrored => {
+  return {
+    type: 'LOGIN_ERROR',
+    hasErrored
+  };
+};
+export const signOutUser = () => {
+  return {
+    type: 'SIGN_OUT_USER'
   };
 };
 
@@ -75,13 +86,6 @@ export const fetchCreateUser = userObj => {
         )
       )
       .catch(() => dispatch(createUserError(true)));
-  };
-};
-
-export const loginError = hasErrored => {
-  return {
-    type: 'LOGIN_ERROR',
-    hasErrored
   };
 };
 
@@ -122,7 +126,3 @@ export const postFavorite = (userId, movieObj) => {
   // };
   return addFavorite(movieObj);
 };
-
-// export const fetchDataError = () => ({
-//   type: 'FETCH_DATA_ERROR'
-// });
