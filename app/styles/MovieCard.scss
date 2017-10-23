@@ -183,8 +183,14 @@
 
 }
 
-@media only screen and (min-width: 320px) {
-  .movie-card {
-    
+@media screen and (max-width: 450px) {
+  .movie-card, .movie-card img {
+    height: 553px;
+      width: 360px;
+  }
+
+  .flip-container, .front, .back {
+    height: 553px;
+    width: 360px;
   }
 }

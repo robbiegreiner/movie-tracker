@@ -86,53 +86,147 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .no-user-box {
-    margin: 5px;
-    margin-left: 70px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .header-one,
-  .header-two {
-    font-size: 55px;
-  }
-
-  .no-user-box {
-    margin-left: 70px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .header-one,
-  .header-two {
-    font-size: 55px;
-    justify-content: flex-end;
+    height: 200px;
   }
 
   .header h1 {
-    margin-right: 60px;
+    margin-right: 90px;
+    margin-bottom: 5px;
+  }
+
+  .header-one,
+  .header-two {
+    font-size: 80px;
+    justify-content: flex-end;
+  }
+
+  .no-user-box {
+    margin-right: 16px;
+  }
+
+  .two-user-btns {
+    margin-left: 58px;
+  }
+
+  .user {
+    justify-content: center;
+    margin-left: 125px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-right: 61px;
+  }
+
+  .signout,
+  .favorites-link,
+  .login-link {
+    font-size: 20px;
+    width: 203px;
+  }
+}
+
+// @media screen and (max-width: 650px) {
+//   .header-one,
+//   .header-two {
+//     font-size: 70px;
+//   }
+//
+//   .header h1 {
+//     margin-right: 90px;
+//     margin-bottom: 5px;
+//   }
+//
+//   .no-user-box {
+//     margin-left: 0;
+//   }
+//
+//   .signout,
+//   .favorites-link {
+//     font-size: 20px;
+//     width: 150px;
+//     padding-left: 20px;
+//   }
+//
+//   .login-link {
+//     font-size: 20px;
+//     width: 179px;
+//   }
+// }
+
+@media screen and (max-width: 670px) {
+  .header-one,
+  .header-two {
+    font-size: 70px;
+  }
+
+  .header h1 {
+    margin-right: 90px;
     margin-bottom: 5px;
   }
 
   .no-user-box {
-    margin-left: 70px;
-    margin-right: 60px;
+    flex-direction: column;
   }
+
+  .two-user-btns {
+    margin-left: -21px;
+  }
+
+  .user-box {
+    margin-right: 0;
+    margin-left: 15px;
+    align-items: center;
+  }
+
+  .user {
+    margin-left: 40px;
+  }
+
+  .header-one,
+  .header-two {
+    font-size: 70px;
+  }
+
+  .header h1 {
+    margin-right: 90px;
+    margin-bottom: 5px;
+  }
+
+  // .signout,
+  // .favorites-link {
+  //   font-size: 20px;
+  //   width: 150px;
+  //   padding-left: 20px;
+  // }
 
   .signout,
   .favorites-link,
   .login-link {
-    font-size: 18px;
+    font-size: 16px;
+    width: 400px;
+    margin: 5px;
   }
+
 }
 
-@media screen and (max-width: 450px) {
-  .signout,
-  .favorites-link,
-  .login-link {
-    font-size: 13px;
+@media screen and (max-width: 500px) {
+
+  .header-one,
+  .header-two {
+    font-size: 56px;
   }
+
+  .no-user-box {
+    flex-direction: column;
+  }
+
+  .login-link,
+  .signout,
+  .favorites-link {
+    font-size: 16px;
+    width: 312px;
+    margin: 5px;
+  }
+
+
 }
