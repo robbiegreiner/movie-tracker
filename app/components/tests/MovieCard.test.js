@@ -3,8 +3,6 @@ import MovieCard from '../MovieCard';
 import { shallow } from "enzyme";
 import mockMovieData from '../../helpers/mockMovieData';
 
-//will need a test for favorites button when we get done with iter 2
-
 describe('MovieCard', () => {
   const movie = mockMovieData.results[0];
   const wrapper = shallow(<MovieCard
@@ -20,22 +18,22 @@ describe('MovieCard', () => {
   it('should render an img', () => {
     const img = wrapper.find('img');
 
-    expect(img.length).toEqual(1);
-    expect(img.html().includes(movie.poster_path)).toEqual(true);
+    expect(img.length).toEqual(2);
+    expect(img.first().html().includes(movie.poster_path)).toEqual(true);
   });
 
   it('should render a release date', () => {
     const release = wrapper.find('.release');
 
     expect(release.length).toEqual(1);
-    expect(release.text()).toEqual(movie.release_date);
+    expect(release.text()).toEqual(`In theaters: ${movie.release_date}`);
   });
 
   it('should render a score', () => {
     const score = wrapper.find('.score');
 
     expect(score.length).toEqual(1);
-    expect(score.text()).toEqual(`${movie.vote_average}`);
+    expect(score.text()).toEqual(`Score: ${movie.vote_average}`);
   });
 
   it('should render an overview', () => {

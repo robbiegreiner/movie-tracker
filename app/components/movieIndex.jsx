@@ -40,7 +40,6 @@ class MovieIndex extends Component {
     if (favorites.length > 0) {
       return movieList.map(movie => {
         if (faveIds.includes(movie.movie_id)) {
-          // console.log('includes works');
           return Object.assign(movie, { isFav: true });
         } else {
           return movie;
@@ -95,28 +94,3 @@ MovieIndex.propTypes = {
 };
 
 export default MovieIndex;
-
-
-// handleFavorites(movie) {
-//
-//   if (movie.isFav) {
-//     this.removeFavorites(movie);
-//   } else {
-//     this.addFavorites(movie);
-//   }
-// }
-//
-// addFavProp() {
-//   if (this.props.favorites) {
-//     const favIDs = this.props.movieList.map(fav => fav.movie_id);
-//
-//     return this.props.movieList.map( movie => {
-//       if (favIDs.includes(movie.id)) {
-//         return Object.assign({}, movie, { isFav: true});
-//       }
-//       return movie;
-//     });
-//   } else {
-//     return this.props.favorites;
-//   }
-// }

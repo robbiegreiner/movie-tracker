@@ -26,7 +26,6 @@
 
 .fav-btn:hover {
   background-image: url("http://localhost:3000/assets/red-star.svg");
-  transition-delay: .02s;
 }
 
 
@@ -44,7 +43,6 @@
 
 .favClass:hover {
   background-image: url("http://localhost:3000/assets/hover-star.svg");
-  transition-delay: .05s;
 }
 
 .movie-image {
@@ -120,17 +118,16 @@
 }
 
 
-/* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
+  outline: none;
 }
 
-/* flip the pane when hovered */
 .flip-container:hover .flipper,
 .flip-container.hover .flipper,
 .flip-container:focus .flipper {
 	transform: rotateY(180deg);
-  transition-delay:.9s;
+  outline: none;
 }
 
 .flip-container:focus .flipper {
@@ -142,14 +139,12 @@
 	height: 500px;
 }
 
-/* flip speed goes here */
 .flipper {
 	transition: 3s;
 	transform-style: preserve-3d;
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
@@ -157,14 +152,11 @@
 	left: 0;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }
