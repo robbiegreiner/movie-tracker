@@ -25,7 +25,7 @@ class Login extends Component {
     return Object.keys(this.state).map(inputType => {
       return <input
         key={inputType}
-        type='text'
+        type={inputType === 'password' ? 'password' : 'text'}
         placeholder={inputType.charAt(0).toUpperCase() + inputType.slice(1)}
         className={`${inputType}-input`}
         onChange={ (event) => this.handleChange(event, inputType ) }
