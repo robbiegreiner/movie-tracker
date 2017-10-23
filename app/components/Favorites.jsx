@@ -39,7 +39,7 @@ export default class Favorites extends Component {
 
   render() {
     return (
-      <div className='movie-list'>
+      <div className='movie-list faves-list'>
         {this.props.favorites.length && this.renderCards()}
       </div>
     );
