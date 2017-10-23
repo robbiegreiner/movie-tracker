@@ -111,7 +111,7 @@ export const addFavorite = favorite => {
 };
 
 export const removeFromFaves = (userId, movie) => {
-return dispatch => {
+  return dispatch => {
     fetch(`api/users/${userId}/favorites/${movie.movie_id}`, {
       method: 'DELETE',
       body: JSON.stringify([userId, movie.movie_id]),
@@ -136,6 +136,13 @@ export const getAllFavorites = favorites => {
     favorites
   };
 };
+
+// export const postFaveError = bool => {
+//   return {
+//     type: 'ADD_TO_FAVES_ERRED',
+//     addToFavesErred: bool
+//   };
+// };
 
 export const favoritesGetter = userId => {
   return dispatch => {

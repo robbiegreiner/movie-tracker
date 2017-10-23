@@ -2,14 +2,12 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 120px;
-  // background-color: #D23321;
+  height: 200px;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #0D0F0F;
-
   background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
 }
 
@@ -50,9 +48,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // margin-bottom: 35px;
-  // justify-content: center;
-  // margin-right: 75px;
+  justify-content: center;
 }
 
 .user {
@@ -62,8 +58,6 @@
   padding-bottom: 10px;
   padding-right: 10px;
   color: #D23321;
-
-
 }
 
 .signout,
@@ -85,4 +79,129 @@
 .login-link:hover {
   background-color: #D23321;
   border: #D23321;
+}
+
+@media screen and (max-width: 950px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .header h1 {
+    margin-right: 90px;
+    margin-bottom: 5px;
+  }
+
+  .header-one,
+  .header-two {
+    font-size: 80px;
+    justify-content: flex-end;
+  }
+
+  .no-user-box {
+    margin-right: 16px;
+  }
+
+  .two-user-btns {
+    margin-left: 58px;
+  }
+
+  .user {
+    justify-content: center;
+    margin-left: 125px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-right: 61px;
+  }
+
+  .signout,
+  .favorites-link,
+  .login-link {
+    font-size: 20px;
+    width: 203px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+
+  .header {
+    height: 220px;
+  }
+
+  .header-one,
+  .header-two {
+    font-size: 70px;
+  }
+
+  .header h1 {
+    margin-right: 90px;
+    margin-bottom: 5px;
+  }
+
+  .no-user-box {
+    flex-direction: column;
+  }
+
+  .two-user-btns {
+    margin-left: -21px;
+  }
+
+  .user-box {
+    margin-right: 0;
+    margin-left: 15px;
+    align-items: center;
+  }
+
+  .user {
+    margin-left: 40px;
+  }
+
+  .header-one,
+  .header-two {
+    font-size: 70px;
+  }
+
+  .header h1 {
+    margin-right: 90px;
+    margin-bottom: 5px;
+  }
+
+  // .signout,
+  // .favorites-link {
+  //   font-size: 20px;
+  //   width: 150px;
+  //   padding-left: 20px;
+  // }
+
+  .signout,
+  .favorites-link,
+  .login-link {
+    font-size: 16px;
+    width: 400px;
+    margin: 5px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .header-one,
+  .header-two {
+    font-size: 56px;
+  }
+
+  .no-user-box {
+    flex-direction: column;
+  }
+
+  .login-link,
+  .signout,
+  .favorites-link {
+    font-size: 16px;
+    width: 312px;
+    margin: 5px;
+  }
 }

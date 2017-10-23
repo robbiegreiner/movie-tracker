@@ -4,6 +4,11 @@
   margin: 20px 40px 20px 40px;
   display: flex;
   flex-direction: column;
+  outline: none;
+}
+
+.movie-card:focus {
+  outline: none;
 }
 
 .fav-btn {
@@ -20,7 +25,7 @@
 
 .fav-btn:hover {
   background-image: url("http://localhost:3000/assets/red-star.svg");
-  transition-delay: .05s;
+  transition-delay: .02s;
 }
 
 
@@ -69,7 +74,7 @@
 }
 
 .movie-title {
-  margin-top: 50px;
+  margin-top: 60px;
   font-size: 30px;
 }
 
@@ -178,8 +183,14 @@
 
 }
 
-@media only screen and (min-width: 320px) {
-  .movie-card {
-    width: 100%;
+@media screen and (max-width: 450px) {
+  .movie-card, .movie-card img {
+    height: 553px;
+      width: 360px;
+  }
+
+  .flip-container, .front, .back {
+    height: 553px;
+    width: 360px;
   }
 }

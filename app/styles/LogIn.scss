@@ -74,3 +74,9 @@
   margin-top: 10px;
   color: darkgray;
 }
+
+@media screen and (max-width: 550px) {
+  .login {
+    width: 300px;
+  }
+}
