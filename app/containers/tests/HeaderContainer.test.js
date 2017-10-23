@@ -46,5 +46,4 @@ describe('HeaderContainer', () => {
     signOut.simulate('click');
     expect(mockHandleSignOut).toHaveBeenCalledTimes(1);
   });
-
 });

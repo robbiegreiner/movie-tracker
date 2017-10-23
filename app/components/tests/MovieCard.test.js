@@ -3,8 +3,6 @@ import MovieCard from '../MovieCard';
 import { shallow } from "enzyme";
 import mockMovieData from '../../helpers/mockMovieData';
 
-//will need a test for favorites button when we get done with iter 2
-
 describe('MovieCard', () => {
   const movie = mockMovieData.results[0];
   const wrapper = shallow(<MovieCard

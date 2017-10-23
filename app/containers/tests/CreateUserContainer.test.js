@@ -40,7 +40,4 @@ describe('CreateUser Container', () => {
     button.simulate('click');
     expect(mockCreateNewUser).toHaveBeenCalledTimes(1);
   });
-
-
-
 });

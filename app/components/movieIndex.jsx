@@ -94,28 +94,3 @@ MovieIndex.propTypes = {
 };
 
 export default MovieIndex;
-
-
-// handleFavorites(movie) {
-//
-//   if (movie.isFav) {
-//     this.removeFavorites(movie);
-//   } else {
-//     this.addFavorites(movie);
-//   }
-// }
-//
-// addFavProp() {
-//   if (this.props.favorites) {
-//     const favIDs = this.props.movieList.map(fav => fav.movie_id);
-//
-//     return this.props.movieList.map( movie => {
-//       if (favIDs.includes(movie.id)) {
-//         return Object.assign({}, movie, { isFav: true});
-//       }
-//       return movie;
-//     });
-//   } else {
-//     return this.props.favorites;
-//   }
-// }

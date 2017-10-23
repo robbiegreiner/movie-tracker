@@ -137,13 +137,6 @@ export const getAllFavorites = favorites => {
   };
 };
 
-// export const postFaveError = bool => {
-//   return {
-//     type: 'ADD_TO_FAVES_ERRED',
-//     addToFavesErred: bool
-//   };
-// };
-
 export const favoritesGetter = userId => {
   return dispatch => {
     fetch(`api/users/${userId}/favorites`)
@@ -155,8 +148,5 @@ export const favoritesGetter = userId => {
 export const postFavorite = (userId, movieObj) => {
   const newFave = Object.assign({user_id: userId}, movieObj);
   favoritesFetcher(newFave);
-  // return dispatch => {
-  //   dispatch(addFavorite(movieObj));
-  // };
   return addFavorite(movieObj);
 };
