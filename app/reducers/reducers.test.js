@@ -16,7 +16,7 @@ describe('movieList reducer', () => {
   it('should give an array of movies when passed info', () => {
     const action = { type: 'FETCH_DATA_SUCCESS', movies: mockMovieData.results };
 
-    expect(movieList(undefined, action)).toEqual(mockMovieData.results);
+    expect(movieList(undefined, action).length).toEqual(mockMovieData.results.length);
   });
 });
 
@@ -69,7 +69,7 @@ describe('favorites reducer', () => {
 
   it('should return updated favorites array when a fave is added', () => {
     const action = { type: 'ADD_FAVORITE', favorite: { title: 'IT' } };
-    const expected = [{ title: 'IT' }];
+    const expected = [{ "isFav": true, "title": "IT" }];
 
     expect(favorites(undefined, action)).toEqual(expected);
   });

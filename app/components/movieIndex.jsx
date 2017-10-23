@@ -40,7 +40,6 @@ class MovieIndex extends Component {
     if (favorites.length > 0) {
       return movieList.map(movie => {
         if (faveIds.includes(movie.movie_id)) {
-          // console.log('includes works');
           return Object.assign(movie, { isFav: true });
         } else {
           return movie;
