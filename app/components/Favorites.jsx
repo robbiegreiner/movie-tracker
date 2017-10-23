@@ -52,5 +52,5 @@ Favorites.propTypes = {
   favorites: PropTypes.array,
   sendFavorite: PropTypes.func,
   user: PropTypes.object,
-  deleteFave: PropTypes.function
+  deleteFave: PropTypes.func
 };
