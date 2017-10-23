@@ -137,12 +137,12 @@ export const getAllFavorites = favorites => {
   };
 };
 
-export const postFaveError = bool => {
-  return {
-    type: 'ADD_TO_FAVES_ERRED',
-    addToFavesErred: bool
-  };
-};
+// export const postFaveError = bool => {
+//   return {
+//     type: 'ADD_TO_FAVES_ERRED',
+//     addToFavesErred: bool
+//   };
+// };
 
 export const favoritesGetter = userId => {
   return dispatch => {
