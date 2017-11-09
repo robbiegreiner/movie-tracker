@@ -1,5 +1,8 @@
 # Movie Tracker
 
+![screen shot 2017-11-09 at 11 06 48 am](https://user-images.githubusercontent.com/28495779/32621796-2e4fe05a-c53e-11e7-8ef7-b9551b5a189b.png)
+
+
   This project is working off the The Movie DB API (https://www.themoviedb.org/documentation/api - note you'll need to go create an account to get an API key). The idea of the project is to be able to sign in as a user and save favorite movies. Pretty simple right? HA HA not!
 
   Bc this is still in beta here is what you'll need to know.
